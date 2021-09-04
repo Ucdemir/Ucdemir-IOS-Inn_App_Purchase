@@ -15,6 +15,7 @@
 		CE55D54C26E3ABA700E36E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54A26E3ABA700E36E8B /* Main.storyboard */; };
 		CE55D54E26E3ABA800E36E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54D26E3ABA800E36E8B /* Assets.xcassets */; };
 		CE55D55126E3ABA800E36E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54F26E3ABA800E36E8B /* LaunchScreen.storyboard */; };
+		CE55D57726E3B90800E36E8B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D57626E3B90800E36E8B /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		CE55D54D26E3ABA800E36E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE55D55026E3ABA800E36E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE55D55226E3ABA800E36E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE55D57626E3B90800E36E8B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				CE55D4FC26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h */,
 				CE55D4FD26E3A67C00E36E8B /* Info.plist */,
+				CE55D57626E3B90800E36E8B /* TestViewController.swift */,
 			);
 			path = "YHY IOS In App Billing";
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				TargetAttributes = {
 					CE55D4F826E3A67C00E36E8B = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					CE55D50126E3A67C00E36E8B = {
 						CreatedOnToolsVersion = 12.4;
@@ -259,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE55D57726E3B90800E36E8B /* TestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +439,7 @@
 		CE55D50E26E3A67C00E36E8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RCWA9CQ2WW;
@@ -451,6 +457,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +466,7 @@
 		CE55D50F26E3A67C00E36E8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RCWA9CQ2WW;
@@ -484,6 +492,7 @@
 		CE55D51126E3A67C00E36E8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCWA9CQ2WW;
 				INFOPLIST_FILE = "YHY IOS In App BillingTests/Info.plist";
@@ -502,6 +511,7 @@
 		CE55D51226E3A67C00E36E8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCWA9CQ2WW;
 				INFOPLIST_FILE = "YHY IOS In App BillingTests/Info.plist";
