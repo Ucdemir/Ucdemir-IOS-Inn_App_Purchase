@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE55D50326E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */; };
+		CE55D50826E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D50726E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift */; };
+		CE55D50A26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55D4FC26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE55D50426E3A67C00E36E8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE55D4F026E3A67C00E36E8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE55D4F826E3A67C00E36E8B;
+			remoteInfo = "YHY IOS In App Billing";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YHY_IOS_In_App_Billing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE55D4FC26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHY_IOS_In_App_Billing.h; sourceTree = "<group>"; };
+		CE55D4FD26E3A67C00E36E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE55D50226E3A67C00E36E8B /* YHY IOS In App BillingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YHY IOS In App BillingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE55D50726E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHY_IOS_In_App_BillingTests.swift; sourceTree = "<group>"; };
+		CE55D50926E3A67C00E36E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE55D4F626E3A67C00E36E8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE55D4FF26E3A67C00E36E8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE55D50326E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE55D4EF26E3A67C00E36E8B = {
+			isa = PBXGroup;
+			children = (
+				CE55D4FB26E3A67C00E36E8B /* YHY IOS In App Billing */,
+				CE55D50626E3A67C00E36E8B /* YHY IOS In App BillingTests */,
+				CE55D4FA26E3A67C00E36E8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE55D4FA26E3A67C00E36E8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */,
+				CE55D50226E3A67C00E36E8B /* YHY IOS In App BillingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE55D4FB26E3A67C00E36E8B /* YHY IOS In App Billing */ = {
+			isa = PBXGroup;
+			children = (
+				CE55D4FC26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h */,
+				CE55D4FD26E3A67C00E36E8B /* Info.plist */,
+			);
+			path = "YHY IOS In App Billing";
+			sourceTree = "<group>";
+		};
+		CE55D50626E3A67C00E36E8B /* YHY IOS In App BillingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE55D50726E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift */,
+				CE55D50926E3A67C00E36E8B /* Info.plist */,
+			);
+			path = "YHY IOS In App BillingTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE55D4F426E3A67C00E36E8B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE55D50A26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CE55D4F826E3A67C00E36E8B /* YHY IOS In App Billing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE55D50D26E3A67C00E36E8B /* Build configuration list for PBXNativeTarget "YHY IOS In App Billing" */;
+			buildPhases = (
+				CE55D4F426E3A67C00E36E8B /* Headers */,
+				CE55D4F526E3A67C00E36E8B /* Sources */,
+				CE55D4F626E3A67C00E36E8B /* Frameworks */,
+				CE55D4F726E3A67C00E36E8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YHY IOS In App Billing";
+			productName = "YHY IOS In App Billing";
+			productReference = CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE55D50126E3A67C00E36E8B /* YHY IOS In App BillingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE55D51026E3A67C00E36E8B /* Build configuration list for PBXNativeTarget "YHY IOS In App BillingTests" */;
+			buildPhases = (
+				CE55D4FE26E3A67C00E36E8B /* Sources */,
+				CE55D4FF26E3A67C00E36E8B /* Frameworks */,
+				CE55D50026E3A67C00E36E8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE55D50526E3A67C00E36E8B /* PBXTargetDependency */,
+			);
+			name = "YHY IOS In App BillingTests";
+			productName = "YHY IOS In App BillingTests";
+			productReference = CE55D50226E3A67C00E36E8B /* YHY IOS In App BillingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE55D4F026E3A67C00E36E8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CE55D4F826E3A67C00E36E8B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CE55D50126E3A67C00E36E8B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = CE55D4F326E3A67C00E36E8B /* Build configuration list for PBXProject "YHY IOS In App Billing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE55D4EF26E3A67C00E36E8B;
+			productRefGroup = CE55D4FA26E3A67C00E36E8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE55D4F826E3A67C00E36E8B /* YHY IOS In App Billing */,
+				CE55D50126E3A67C00E36E8B /* YHY IOS In App BillingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE55D4F726E3A67C00E36E8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE55D50026E3A67C00E36E8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE55D4F526E3A67C00E36E8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE55D4FE26E3A67C00E36E8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE55D50826E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE55D50526E3A67C00E36E8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE55D4F826E3A67C00E36E8B /* YHY IOS In App Billing */;
+			targetProxy = CE55D50426E3A67C00E36E8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE55D50B26E3A67C00E36E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE55D50C26E3A67C00E36E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE55D50E26E3A67C00E36E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RCWA9CQ2WW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "YHY IOS In App Billing/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tr.dilim.hayvancilik.YHY-IOS-In-App-Billing";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE55D50F26E3A67C00E36E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RCWA9CQ2WW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "YHY IOS In App Billing/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tr.dilim.hayvancilik.YHY-IOS-In-App-Billing";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE55D51126E3A67C00E36E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RCWA9CQ2WW;
+				INFOPLIST_FILE = "YHY IOS In App BillingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tr.dilim.hayvancilik.YHY-IOS-In-App-BillingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE55D51226E3A67C00E36E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RCWA9CQ2WW;
+				INFOPLIST_FILE = "YHY IOS In App BillingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tr.dilim.hayvancilik.YHY-IOS-In-App-BillingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE55D4F326E3A67C00E36E8B /* Build configuration list for PBXProject "YHY IOS In App Billing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE55D50B26E3A67C00E36E8B /* Debug */,
+				CE55D50C26E3A67C00E36E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE55D50D26E3A67C00E36E8B /* Build configuration list for PBXNativeTarget "YHY IOS In App Billing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE55D50E26E3A67C00E36E8B /* Debug */,
+				CE55D50F26E3A67C00E36E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE55D51026E3A67C00E36E8B /* Build configuration list for PBXNativeTarget "YHY IOS In App BillingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE55D51126E3A67C00E36E8B /* Debug */,
+				CE55D51226E3A67C00E36E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE55D4F026E3A67C00E36E8B /* Project object */;
+}
