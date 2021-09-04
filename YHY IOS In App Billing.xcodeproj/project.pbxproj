@@ -10,6 +10,12 @@
 		CE55D50326E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */; };
 		CE55D50826E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D50726E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift */; };
 		CE55D50A26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55D4FC26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE55D54526E3ABA700E36E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D54426E3ABA700E36E8B /* AppDelegate.swift */; };
+		CE55D54726E3ABA700E36E8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D54626E3ABA700E36E8B /* SceneDelegate.swift */; };
+		CE55D54926E3ABA700E36E8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D54826E3ABA700E36E8B /* ViewController.swift */; };
+		CE55D54C26E3ABA700E36E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54A26E3ABA700E36E8B /* Main.storyboard */; };
+		CE55D54E26E3ABA800E36E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54D26E3ABA800E36E8B /* Assets.xcassets */; };
+		CE55D55126E3ABA800E36E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54F26E3ABA800E36E8B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,14 @@
 		CE55D50226E3A67C00E36E8B /* YHY IOS In App BillingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YHY IOS In App BillingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE55D50726E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHY_IOS_In_App_BillingTests.swift; sourceTree = "<group>"; };
 		CE55D50926E3A67C00E36E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE55D54226E3ABA700E36E8B /* IOS Inn App Purchase Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Inn App Purchase Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE55D54426E3ABA700E36E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE55D54626E3ABA700E36E8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE55D54826E3ABA700E36E8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE55D54B26E3ABA700E36E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE55D54D26E3ABA800E36E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE55D55026E3ABA800E36E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE55D55226E3ABA800E36E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE55D53F26E3ABA700E36E8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +76,7 @@
 			children = (
 				CE55D4FB26E3A67C00E36E8B /* YHY IOS In App Billing */,
 				CE55D50626E3A67C00E36E8B /* YHY IOS In App BillingTests */,
+				CE55D54326E3ABA700E36E8B /* IOS Inn App Purchase Example */,
 				CE55D4FA26E3A67C00E36E8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +86,7 @@
 			children = (
 				CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */,
 				CE55D50226E3A67C00E36E8B /* YHY IOS In App BillingTests.xctest */,
+				CE55D54226E3ABA700E36E8B /* IOS Inn App Purchase Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +107,20 @@
 				CE55D50926E3A67C00E36E8B /* Info.plist */,
 			);
 			path = "YHY IOS In App BillingTests";
+			sourceTree = "<group>";
+		};
+		CE55D54326E3ABA700E36E8B /* IOS Inn App Purchase Example */ = {
+			isa = PBXGroup;
+			children = (
+				CE55D54426E3ABA700E36E8B /* AppDelegate.swift */,
+				CE55D54626E3ABA700E36E8B /* SceneDelegate.swift */,
+				CE55D54826E3ABA700E36E8B /* ViewController.swift */,
+				CE55D54A26E3ABA700E36E8B /* Main.storyboard */,
+				CE55D54D26E3ABA800E36E8B /* Assets.xcassets */,
+				CE55D54F26E3ABA800E36E8B /* LaunchScreen.storyboard */,
+				CE55D55226E3ABA800E36E8B /* Info.plist */,
+			);
+			path = "IOS Inn App Purchase Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +173,23 @@
 			productReference = CE55D50226E3A67C00E36E8B /* YHY IOS In App BillingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CE55D54126E3ABA700E36E8B /* IOS Inn App Purchase Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE55D55326E3ABA800E36E8B /* Build configuration list for PBXNativeTarget "IOS Inn App Purchase Example" */;
+			buildPhases = (
+				CE55D53E26E3ABA700E36E8B /* Sources */,
+				CE55D53F26E3ABA700E36E8B /* Frameworks */,
+				CE55D54026E3ABA700E36E8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IOS Inn App Purchase Example";
+			productName = "IOS Inn App Purchase Example";
+			productReference = CE55D54226E3ABA700E36E8B /* IOS Inn App Purchase Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +203,9 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					CE55D50126E3A67C00E36E8B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CE55D54126E3ABA700E36E8B = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -168,6 +225,7 @@
 			targets = (
 				CE55D4F826E3A67C00E36E8B /* YHY IOS In App Billing */,
 				CE55D50126E3A67C00E36E8B /* YHY IOS In App BillingTests */,
+				CE55D54126E3ABA700E36E8B /* IOS Inn App Purchase Example */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +242,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE55D54026E3ABA700E36E8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE55D55126E3ABA800E36E8B /* LaunchScreen.storyboard in Resources */,
+				CE55D54E26E3ABA800E36E8B /* Assets.xcassets in Resources */,
+				CE55D54C26E3ABA700E36E8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +273,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE55D53E26E3ABA700E36E8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE55D54926E3ABA700E36E8B /* ViewController.swift in Sources */,
+				CE55D54526E3ABA700E36E8B /* AppDelegate.swift in Sources */,
+				CE55D54726E3ABA700E36E8B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -214,6 +292,25 @@
 			targetProxy = CE55D50426E3A67C00E36E8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE55D54A26E3ABA700E36E8B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE55D54B26E3ABA700E36E8B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE55D54F26E3ABA800E36E8B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE55D55026E3ABA800E36E8B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE55D50B26E3A67C00E36E8B /* Debug */ = {
@@ -268,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -354,9 +451,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tr.dilim.hayvancilik.YHY-IOS-In-App-Billing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yhy.inn.app.purchase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,9 +476,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tr.dilim.hayvancilik.YHY-IOS-In-App-Billing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yhy.inn.app.purchase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -422,6 +521,46 @@
 			};
 			name = Release;
 		};
+		CE55D55426E3ABA800E36E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RCWA9CQ2WW;
+				INFOPLIST_FILE = "IOS Inn App Purchase Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yhy.inn.app.purchase.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE55D55526E3ABA800E36E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RCWA9CQ2WW;
+				INFOPLIST_FILE = "IOS Inn App Purchase Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yhy.inn.app.purchase.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -448,6 +587,15 @@
 			buildConfigurations = (
 				CE55D51126E3A67C00E36E8B /* Debug */,
 				CE55D51226E3A67C00E36E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE55D55326E3ABA800E36E8B /* Build configuration list for PBXNativeTarget "IOS Inn App Purchase Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE55D55426E3ABA800E36E8B /* Debug */,
+				CE55D55526E3ABA800E36E8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

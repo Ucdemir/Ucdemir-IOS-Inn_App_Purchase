@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>IOS Inn App Purchase Example.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>YHY IOS In App Billing.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
