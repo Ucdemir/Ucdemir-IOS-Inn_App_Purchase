@@ -7,12 +7,25 @@
 		<key>IOS Inn App Purchase Example.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>YHY IOS In App Billing.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CE55D4F826E3A67C00E36E8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE55D50126E3A67C00E36E8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
