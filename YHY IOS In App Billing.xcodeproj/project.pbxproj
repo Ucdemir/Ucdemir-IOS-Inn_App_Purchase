@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		CE49B5DC26E4BA570089D469 /* TestLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B5DB26E4BA570089D469 /* TestLib.swift */; };
 		CE49B5DD26E4BA570089D469 /* TestLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B5DB26E4BA570089D469 /* TestLib.swift */; };
+		CE49B61026E4E76A0089D469 /* BuyProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B60F26E4E76A0089D469 /* BuyProductsVC.swift */; };
+		CE49B61526E4FF100089D469 /* ConnectToApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B61426E4FF100089D469 /* ConnectToApple.swift */; };
+		CE49B61D26E508BA0089D469 /* ConnectToApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B61426E4FF100089D469 /* ConnectToApple.swift */; };
 		CE55D50326E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */; };
 		CE55D50826E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D50726E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift */; };
 		CE55D50A26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55D4FC26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE55D54526E3ABA700E36E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D54426E3ABA700E36E8B /* AppDelegate.swift */; };
-		CE55D54926E3ABA700E36E8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D54826E3ABA700E36E8B /* ViewController.swift */; };
+		CE55D54926E3ABA700E36E8B /* StatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D54826E3ABA700E36E8B /* StatusVC.swift */; };
 		CE55D54C26E3ABA700E36E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54A26E3ABA700E36E8B /* Main.storyboard */; };
 		CE55D54E26E3ABA800E36E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54D26E3ABA800E36E8B /* Assets.xcassets */; };
 		CE55D55126E3ABA800E36E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54F26E3ABA800E36E8B /* LaunchScreen.storyboard */; };
@@ -31,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		CE49B5DB26E4BA570089D469 /* TestLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLib.swift; sourceTree = "<group>"; };
+		CE49B60F26E4E76A0089D469 /* BuyProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyProductsVC.swift; sourceTree = "<group>"; };
+		CE49B61426E4FF100089D469 /* ConnectToApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectToApple.swift; sourceTree = "<group>"; };
 		CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YHY_IOS_In_App_Billing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE55D4FC26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHY_IOS_In_App_Billing.h; sourceTree = "<group>"; };
 		CE55D4FD26E3A67C00E36E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,7 +44,7 @@
 		CE55D50926E3A67C00E36E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE55D54226E3ABA700E36E8B /* IOS Inn App Purchase Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Inn App Purchase Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE55D54426E3ABA700E36E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE55D54826E3ABA700E36E8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE55D54826E3ABA700E36E8B /* StatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVC.swift; sourceTree = "<group>"; };
 		CE55D54B26E3ABA700E36E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE55D54D26E3ABA800E36E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE55D55026E3ABA800E36E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,6 +103,7 @@
 				CE55D4FC26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h */,
 				CE55D4FD26E3A67C00E36E8B /* Info.plist */,
 				CE49B5DB26E4BA570089D469 /* TestLib.swift */,
+				CE49B61426E4FF100089D469 /* ConnectToApple.swift */,
 			);
 			path = "YHY IOS In App Billing";
 			sourceTree = "<group>";
@@ -115,11 +121,12 @@
 			isa = PBXGroup;
 			children = (
 				CE55D54426E3ABA700E36E8B /* AppDelegate.swift */,
-				CE55D54826E3ABA700E36E8B /* ViewController.swift */,
+				CE55D54826E3ABA700E36E8B /* StatusVC.swift */,
 				CE55D54A26E3ABA700E36E8B /* Main.storyboard */,
 				CE55D54D26E3ABA800E36E8B /* Assets.xcassets */,
 				CE55D54F26E3ABA800E36E8B /* LaunchScreen.storyboard */,
 				CE55D55226E3ABA800E36E8B /* Info.plist */,
+				CE49B60F26E4E76A0089D469 /* BuyProductsVC.swift */,
 			);
 			path = "IOS Inn App Purchase Example";
 			sourceTree = "<group>";
@@ -264,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE49B61526E4FF100089D469 /* ConnectToApple.swift in Sources */,
 				CE49B5DC26E4BA570089D469 /* TestLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE55D54926E3ABA700E36E8B /* ViewController.swift in Sources */,
+				CE49B61026E4E76A0089D469 /* BuyProductsVC.swift in Sources */,
+				CE55D54926E3ABA700E36E8B /* StatusVC.swift in Sources */,
+				CE49B61D26E508BA0089D469 /* ConnectToApple.swift in Sources */,
 				CE55D54526E3ABA700E36E8B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
