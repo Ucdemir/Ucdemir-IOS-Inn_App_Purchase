@@ -20,6 +20,34 @@
                ReferencedContainer = "container:YHY IOS In App Billing.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CE55D50126E3A67C00E36E8B"
+               BuildableName = "YHY IOS In App BillingTests.xctest"
+               BlueprintName = "YHY IOS In App BillingTests"
+               ReferencedContainer = "container:YHY IOS In App Billing.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CE55D54126E3ABA700E36E8B"
+               BuildableName = "IOS Inn App Purchase Example.app"
+               BlueprintName = "IOS Inn App Purchase Example"
+               ReferencedContainer = "container:YHY IOS In App Billing.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
