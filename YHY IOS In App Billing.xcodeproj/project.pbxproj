@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE49B5DC26E4BA570089D469 /* TestLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B5DB26E4BA570089D469 /* TestLib.swift */; };
+		CE49B5DD26E4BA570089D469 /* TestLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B5DB26E4BA570089D469 /* TestLib.swift */; };
 		CE55D50326E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */; };
 		CE55D50826E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D50726E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift */; };
 		CE55D50A26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h in Headers */ = {isa = PBXBuildFile; fileRef = CE55D4FC26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE49B5DB26E4BA570089D469 /* TestLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLib.swift; sourceTree = "<group>"; };
 		CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YHY_IOS_In_App_Billing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE55D4FC26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHY_IOS_In_App_Billing.h; sourceTree = "<group>"; };
 		CE55D4FD26E3A67C00E36E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 			children = (
 				CE55D4FC26E3A67C00E36E8B /* YHY_IOS_In_App_Billing.h */,
 				CE55D4FD26E3A67C00E36E8B /* Info.plist */,
+				CE49B5DB26E4BA570089D469 /* TestLib.swift */,
 			);
 			path = "YHY IOS In App Billing";
 			sourceTree = "<group>";
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE49B5DC26E4BA570089D469 /* TestLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE55D50826E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift in Sources */,
+				CE49B5DD26E4BA570089D469 /* TestLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +494,7 @@
 		CE55D51126E3A67C00E36E8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCWA9CQ2WW;
 				INFOPLIST_FILE = "YHY IOS In App BillingTests/Info.plist";
@@ -506,6 +513,7 @@
 		CE55D51226E3A67C00E36E8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RCWA9CQ2WW;
 				INFOPLIST_FILE = "YHY IOS In App BillingTests/Info.plist";
