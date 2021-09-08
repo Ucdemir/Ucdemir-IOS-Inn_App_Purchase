@@ -76,6 +76,8 @@ class BuyProductsVC: UIViewController {
                 
                 if isBought{
                     self.showToastMsg(message: "License Loaded...")
+                }else{
+                    self.showToastMsg(message: "Fail...")
                 }
                 
                

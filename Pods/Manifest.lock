@@ -1,16 +1,22 @@
 PODS:
   - RKDropdownAlert (0.3.0)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
 
 DEPENDENCIES:
   - RKDropdownAlert
+  - SQLite.swift (~> 0.12.0)
 
 SPEC REPOS:
   trunk:
     - RKDropdownAlert
+    - SQLite.swift
 
 SPEC CHECKSUMS:
   RKDropdownAlert: f4b3364c251829ad439dc666836a1f2dad26f4c7
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
 
-PODFILE CHECKSUM: a5bd581aec0d716fd3d889cb00b83c23fa91901e
+PODFILE CHECKSUM: 110a9ef7cade893d8448af50b286cbfa54e526d5
 
 COCOAPODS: 1.11.0

@@ -57,6 +57,10 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
         
         self.listApplicationSKU = listApplicationSKU
         
+   
+        
+        BillingDB.shared.checkAllSkuIsOnDB(skus: listApplicationSKU)
+        
         return .shared
         
     }
@@ -269,6 +273,10 @@ extension ConnectToApple: SKPaymentTransactionObserver {
             
         }
         
+        
+        for row in array{
+            BillingDB.shared.updateStatus(productId: row.productIdentifier,status:row.isPurchased)
+        }
         
         return array
         

@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/RKDropdownAlert/RKDropdownAlert.framework
+${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework
