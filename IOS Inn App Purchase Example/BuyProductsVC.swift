@@ -7,6 +7,7 @@
 
 import UIKit
 import StoreKit
+import RKDropdownAlert
 
 class BuyProductsVC: UIViewController {
     
@@ -18,13 +19,23 @@ class BuyProductsVC: UIViewController {
     @IBOutlet weak var btnPro: UIButton!
     @IBOutlet weak var btnSun: UIButton!
     
+    
+    var buyProductDic: [String: SKProduct] = [:]
+    
+    var isReady = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
+        //NotificationCenter.default.addObserver(self, selector: #selector(self.showToastMsg), name: NSNotification.Name(rawValue: "showToastMsg"), object: nil)
+        
+        YHYHud.shared.initHud(rootView: self.view)
+
         
         ConnectToApple.shared.billingSKUS(listApplicationSKU: listOfApplicationSKU)
-            .startToWork(type: ConnectToApple.CallType.GetPriceProducts).pricesOfProducts(){ success , products in
+            .startToWork(type: ConnectToApple.CallType.GetPriceProducts).pricesOfProducts(completionHandler: { success , products in
         
                 
                 
@@ -35,7 +46,7 @@ class BuyProductsVC: UIViewController {
                         self.btnBor.setTitle(self.setPriceText(product: p), for: .normal)
                         
                         //self.setPriceOfLicense(price: p.price.floatValue)
-                        //self.isReady = true
+                      
                         
                     }else if  p.productIdentifier == "sku.gas" {
                         self.btnGas.setTitle(self.setPriceText(product: p), for: .normal)
@@ -44,7 +55,7 @@ class BuyProductsVC: UIViewController {
                         self.btnNoAds.setTitle(self.setPriceText(product: p), for: .normal)
 
                     }else if  p.productIdentifier == "sku.pro" {
-                        self.btnNoAds.setTitle(self.setPriceText(product: p), for: .normal)
+                        self.btnPro.setTitle(self.setPriceText(product: p), for: .normal)
 
                     }else if  p.productIdentifier == "sku.sun" {
                         self.btnSun.setTitle(self.setPriceText(product: p), for: .normal)
@@ -52,11 +63,22 @@ class BuyProductsVC: UIViewController {
                         
                     }
                     
+                    self.isReady = true
+                    self.buyProductDic[p.productIdentifier] = p
+                    
                     //YHYHud.shared.hideHud()
                     //print("Found product: \(p.productIdentifier) \(p.localizedTitle) \(p.price.floatValue)")
                     //print(2)
                 }
+                YHYHud.shared.hideHud()
+            }
+            ).boughtProduct(){  productIdentifier, isBought in
                 
+                if isBought{
+                    self.showToastMsg(message: "License Loaded...")
+                }
+                
+               
             }
         
     }
@@ -74,29 +96,30 @@ class BuyProductsVC: UIViewController {
     
     @IBAction func actionBuyBor(_ sender: Any) {
         
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.bor"]! )
+        
     }
     
     
     @IBAction func actionBuyGas(_ sender: Any) {
-        
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.gas"]!)
     }
     
     
     @IBAction func actionBuyNoAds(_ sender: Any) {
         
-        
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.noads"]!)
     }
     
     @IBAction func actionBuyPro(_ sender: Any) {
-        
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.pro"]!)
         
     }
     
     
     
     @IBAction func actionBuySun(_ sender: Any) {
-        
-        
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.sun"]!)
     }
     
     
@@ -115,6 +138,18 @@ class BuyProductsVC: UIViewController {
         
         return formattedPrice!
         //self.btnPro.setTitle("SATIN AL\n(\(formattedPrice!))", for: .normal)
+    }
+    
+    func showToastMsg(message : String) {
+        
+        
+        RKDropdownAlert.show()
+        RKDropdownAlert.title("Information", message: message,backgroundColor: UIColor(rgb: 0x753A3A),
+                              textColor: UIColor.white)
+        
+        
+       print("YHY Bilgilendirme \(message)")
+        
     }
     
 }

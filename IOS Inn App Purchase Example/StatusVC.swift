@@ -26,10 +26,47 @@ class StatusVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //let x = ConnectToApple.shared.checkIsFreshStart()
+        
         ConnectToApple.shared.billingSKUS(listApplicationSKU: listOfApplicationSKU)
             .startToWork(type: ConnectToApple.CallType.CheckProductStatus).statusOfProducts(){ status in
         
+                
+                
+                for row in status{
+                
+                if row.productIdentifier == "sku.bor" {
+             
+                
+                    
+                    self.lblBorChecking.text = row.isPurchased.description
+                  
+                    
+                }else if  row.productIdentifier == "sku.gas" {
+                    
+                    self.lblGasChecking.text = row.isPurchased.description
+
+                    
+                }else if  row.productIdentifier == "sku.noads" {
+                    self.lblNoAdsChecking.text = row.isPurchased.description
+
+
+                }else if  row.productIdentifier == "sku.pro" {
+                    self.lblProChecking.text = row.isPurchased.description
+
+
+                }else if  row.productIdentifier == "sku.sun" {
+                    self.lblSunChecking.text = row.isPurchased.description
+
+
+                    
+                }
+                    
+                }
                
+                print(53)
+                print(53)
+
                 
              
                 

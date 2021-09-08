@@ -11,6 +11,7 @@ import StoreKit
 
 public typealias ProductIdentifier = String
 public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> ()
+public typealias ProductBoughtCompletionHandler = ( _ productIdentifier: String? , _ isBought: Bool) -> ()
 
 struct SKProductStatus {
     let productIdentifier : String
@@ -28,13 +29,15 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     var listApplicationSKU = Set<String>()
     var listProductsStatus = Set<SKPaymentTransaction>()
     
-    
     public typealias ProductStatusCompletionHandler = (_ productsStatus: [SKProductStatus]) -> ()
 
    
     
     fileprivate var productsRequest: SKProductsRequest?
     fileprivate var productsRequestCompletionHandler: ProductsRequestCompletionHandler?
+    fileprivate var productBoughtCompletionHandler: ProductBoughtCompletionHandler?
+
+    
     fileprivate var productStatus : ProductStatusCompletionHandler?
     
     
@@ -49,13 +52,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
         
     }
     
-    
-
-    
-    
     // MARK: - Class Functions
-    
-    
     func  billingSKUS( listApplicationSKU : Set<String>)-> ConnectToApple{
         
         self.listApplicationSKU = listApplicationSKU
@@ -66,7 +63,6 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     
     
     func startToWork(type : CallType)-> ConnectToApple{
-        
         
         switch type {
         case .GetPriceProducts:
@@ -97,7 +93,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     }
     
     public func buyProduct(_ product: SKProduct) {
-        print("Buying \(product.productIdentifier)...")
+      
         let payment = SKPayment(product: product)
         SKPaymentQueue.default().add(payment)
     }
@@ -112,33 +108,47 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
         SKPaymentQueue.default().restoreCompletedTransactions()
     }
     
+    // clear for new request
+    private func clearRequestAndHandler() {
+        productsRequest = nil
+        productsRequestCompletionHandler = nil
+        productsRequestCompletionHandler = nil
+        productStatus = nil
+    }
+    
+    
+    public func checkIsFreshStart() -> Bool{
+        
+        let userDefaults = UserDefaults.standard
+        
+        let isFreshStart = userDefaults.object(forKey:  "isFreshStart")
+        
+        if isFreshStart == nil{
+            userDefaults.set(true, forKey: "isFreshStart")
+            
+            return true
+        }else{
+            
+            
+            return false
+        }
+        
+    
+    }
+    
+    
 
     
     // MARK: - Delegate - SKProductsRequestDelegate
-    // this func called after getProductStatus... its delegate function
+    // This func called after getProductStatus... its delegate function
     public func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse){
         let products = response.products
-        //print("Loaded list of products...")
         
         productsRequestCompletionHandler?(true, products)
         
         clearRequestAndHandler()
         
-        /*for p in products {
-            print("Found product: \(p.productIdentifier) \(p.localizedTitle) \(p.price.floatValue)")
-            print(2)
-         }*/
-        
     }
-    
- 
-    
-    // clear for new request
-    private func clearRequestAndHandler() {
-        productsRequest = nil
-        productsRequestCompletionHandler = nil
-    }
-    
     
 }
 
@@ -148,7 +158,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
 extension ConnectToApple: SKPaymentTransactionObserver {
     
     public func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
-      
+        listProductsStatus.removeAll()
         
         for transaction in transactions {
             switch (transaction.transactionState) {
@@ -162,9 +172,9 @@ extension ConnectToApple: SKPaymentTransactionObserver {
                 
                 break
             case .restored:
-                listProductsStatus.removeAll()
+                
                 restore(transaction: transaction)
-                productStatus!(initializeProductsStatusArray())
+             
                 break
             case .deferred:
                 break
@@ -173,28 +183,22 @@ extension ConnectToApple: SKPaymentTransactionObserver {
             }
         }
         
-   
-   
+        productStatus?(initializeProductsStatusArray())
+        clearRequestAndHandler()
     
     }
     
     private func complete(transaction: SKPaymentTransaction) {
         
-        //guard let productIdentifier = transaction.original?.payment.productIdentifier else { return }
-        
-     
-        
-        //01.09.2021 alttakını cek et
+  
         deliverPurchaseNotificationFor(identifier: transaction.payment.productIdentifier)
         SKPaymentQueue.default().finishTransaction(transaction)
+    
+        //item bought
+        productBoughtCompletionHandler?(transaction.payment.productIdentifier, true)
         
-        if transaction.payment.productIdentifier == "yaz_kosesi_pro" {
-            let msg = ["Msg": "Lisans yüklendi!"]
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "showToastMsg"), object: nil, userInfo: msg)
-        }else if transaction.payment.productIdentifier == "test" {
-            let msg = ["Msg": "Lisans yüklendi!"]
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "showToastMsg"), object: nil, userInfo: msg)
-        }
+        clearRequestAndHandler()
+    
     }
     
     private func restore(transaction: SKPaymentTransaction) {
@@ -209,10 +213,7 @@ extension ConnectToApple: SKPaymentTransactionObserver {
         
         SKPaymentQueue.default().finishTransaction(transaction)
         
-        /*if productIdentifier == "yaz_kosesi_pro" {
-            let msg = ["Msg": "Lisans yüklendi!"]
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "showToastMsg"), object: nil, userInfo: msg)
-        }*/
+        
     }
     
     private func fail(transaction: SKPaymentTransaction) {
@@ -223,20 +224,15 @@ extension ConnectToApple: SKPaymentTransactionObserver {
             }
             
         }
-        let msg = ["Msg": "İşlem gerçekleştirilemedi!"]
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "showToastMsg"), object: nil, userInfo: msg)
+        
+        //fail
+        productBoughtCompletionHandler?(transaction.payment.productIdentifier, false)
         
         SKPaymentQueue.default().finishTransaction(transaction)
     }
     
-    
-    //Bu kısmı iki yer kullanıyor cek et
     private func deliverPurchaseNotificationFor(identifier: String?) {
          guard let identifier = identifier else { return }
-        
-        //purchasedProductIdentifiers.insert(identifier)
-        //UserDefaults.standard.set(true, forKey: identifier)
-         //UserDefaults.standard.synchronize()
 
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: ConnectToApple.IAPHelperPurchaseNotification) , object: identifier)
     }
@@ -247,6 +243,7 @@ extension ConnectToApple: SKPaymentTransactionObserver {
         
         var array = [SKProductStatus]()
         
+        if !checkIsFreshStart(){
         
         a: for  row in listApplicationSKU {
             
@@ -264,6 +261,13 @@ extension ConnectToApple: SKPaymentTransactionObserver {
             array.append(SKProductStatus(productIdentifier: row, isPurchased: false))
             
         }
+        }else{
+            
+            for  row in listApplicationSKU {
+                array.append(SKProductStatus(productIdentifier: row, isPurchased: true))
+            }
+            
+        }
         
         
         return array
@@ -273,11 +277,13 @@ extension ConnectToApple: SKPaymentTransactionObserver {
     
 }
 
-
+//Below funstions is like  java listener
 extension ConnectToApple{
-    func pricesOfProducts(completionHandler: @escaping ProductsRequestCompletionHandler){
+    func pricesOfProducts(completionHandler: @escaping ProductsRequestCompletionHandler) -> ConnectToApple{
         
         productsRequestCompletionHandler = completionHandler
+        
+        return self
     }
     
     func statusOfProducts(completionHandler: @escaping  ProductStatusCompletionHandler){
@@ -285,7 +291,10 @@ extension ConnectToApple{
         productStatus = completionHandler
         
     }
-    
-    
+    func boughtProduct(completionHandler: @escaping ProductBoughtCompletionHandler){
+        
+        productBoughtCompletionHandler = completionHandler
+        
+    }
     
 }

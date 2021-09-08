@@ -1,0 +1,16 @@
+PODS:
+  - RKDropdownAlert (0.3.0)
+
+DEPENDENCIES:
+  - RKDropdownAlert
+
+SPEC REPOS:
+  trunk:
+    - RKDropdownAlert
+
+SPEC CHECKSUMS:
+  RKDropdownAlert: f4b3364c251829ad439dc666836a1f2dad26f4c7
+
+PODFILE CHECKSUM: a5bd581aec0d716fd3d889cb00b83c23fa91901e
+
+COCOAPODS: 1.11.0

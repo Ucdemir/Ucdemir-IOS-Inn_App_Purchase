@@ -1,0 +1,6 @@
+framework module Pods_IOS_Inn_App_Purchase_Example {
+  umbrella header "Pods-IOS Inn App Purchase Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
