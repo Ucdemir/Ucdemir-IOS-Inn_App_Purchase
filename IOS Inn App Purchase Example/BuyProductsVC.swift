@@ -29,8 +29,6 @@ class BuyProductsVC: UIViewController {
         super.viewDidLoad()
 
         
-        //NotificationCenter.default.addObserver(self, selector: #selector(self.showToastMsg), name: NSNotification.Name(rawValue: "showToastMsg"), object: nil)
-        
         YHYHud.shared.initHud(rootView: self.view)
 
         
@@ -75,9 +73,11 @@ class BuyProductsVC: UIViewController {
             ).boughtProduct(){  productIdentifier, isBought in
                 
                 if isBought{
-                    self.showToastMsg(message: "License Loaded...")
+                    self.showToastMsg(title : "Success",message: "License Loaded... Re-Open App")
+                    ConnectToApple.shared.quitApp()
+                    
                 }else{
-                    self.showToastMsg(message: "Fail...")
+                    self.showToastMsg(title: "Fail..", message: "")
                 }
                 
                
@@ -142,11 +142,11 @@ class BuyProductsVC: UIViewController {
         //self.btnPro.setTitle("SATIN AL\n(\(formattedPrice!))", for: .normal)
     }
     
-    func showToastMsg(message : String) {
+    func showToastMsg(title : String, message : String) {
         
         
         RKDropdownAlert.show()
-        RKDropdownAlert.title("Information", message: message,backgroundColor: UIColor(rgb: 0x753A3A),
+        RKDropdownAlert.title(title, message: message,backgroundColor: UIColor(rgb: 0x753A3A),
                               textColor: UIColor.white)
         
         

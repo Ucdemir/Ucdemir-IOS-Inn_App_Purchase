@@ -65,6 +65,8 @@ class StatusVC: UIViewController {
                 }
                     
                 }
+                
+                print("YHY : Sun : Status : \(BillingDB.shared.whatIsStatus(skuName: "sku.sun"))")
                
                 print(53)
                 print(53)

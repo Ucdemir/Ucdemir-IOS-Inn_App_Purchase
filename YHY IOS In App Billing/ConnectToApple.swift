@@ -108,6 +108,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     }
     
     public func getProductStatus() {
+        
         SKPaymentQueue.default().add(self)
         SKPaymentQueue.default().restoreCompletedTransactions()
     }
@@ -161,6 +162,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
 
 extension ConnectToApple: SKPaymentTransactionObserver {
     
+
     public func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         listProductsStatus.removeAll()
         
@@ -283,6 +285,17 @@ extension ConnectToApple: SKPaymentTransactionObserver {
     }
     
     
+    func quitApp(){
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+            UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+              exit(0)
+             }
+        }
+    }
+    
+    
 }
 
 //Below funstions is like  java listener
@@ -297,6 +310,7 @@ extension ConnectToApple{
     func statusOfProducts(completionHandler: @escaping  ProductStatusCompletionHandler){
         
         productStatus = completionHandler
+        productStatus?(initializeProductsStatusArray())
         
     }
     func boughtProduct(completionHandler: @escaping ProductBoughtCompletionHandler){
