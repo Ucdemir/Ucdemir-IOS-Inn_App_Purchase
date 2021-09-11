@@ -58,3 +58,78 @@ Call ConnectToApple with Enum parameter CallType.CheckProductStatus in your Root
             }
     
 ```
+**Note: "ConnectToApple.CallType" function have below enum parameters***
+```Swift
+
+
+ public enum CallType{
+        case GetPriceProducts
+        case CheckProductStatus
+    }
+
+```
+
+**Use  CheckProductStatus in your RootVC**
+
+**Use GetPriceProducts in buying ViewController**
+
+
+**You can check product status with below functions: 
+
+```Swift
+BillingDB.shared.whatIsStatus(skuName: productIdentifier)
+```
+
+
+Use this for getting prices of your products.
+```Swift
+   ConnectToApple.shared.billingSKUS(listApplicationSKU: listOfApplicationSKU)
+            .startToWork(type: ConnectToApple.CallType.GetPriceProducts).pricesOfProducts(completionHandler: { success , products in
+        
+                for p in products! {
+                    if p.productIdentifier == "sku.bor" {
+                        //self.product = p
+                        
+                        self.btnBor.setTitle(self.setPriceText(product: p), for: .normal)
+                        
+                        //self.setPriceOfLicense(price: p.price.floatValue)
+                      
+                        
+                    }else if  p.productIdentifier == "sku.gas" {
+                        self.btnGas.setTitle(self.setPriceText(product: p), for: .normal)
+                        
+                    }else if  p.productIdentifier == "sku.noads" {
+                        self.btnNoAds.setTitle(self.setPriceText(product: p), for: .normal)
+
+                    }else if  p.productIdentifier == "sku.pro" {
+                        self.btnPro.setTitle(self.setPriceText(product: p), for: .normal)
+
+                    }else if  p.productIdentifier == "sku.sun" {
+                        self.btnSun.setTitle(self.setPriceText(product: p), for: .normal)
+
+                        
+                    }
+                    
+                    self.isReady = true
+                    self.buyProductDic[p.productIdentifier] = p
+                    
+                    //YHYHud.shared.hideHud()
+                    //print("Found product: \(p.productIdentifier) \(p.localizedTitle) \(p.price.floatValue)")
+                    //print(2)
+                }
+                YHYHud.shared.hideHud()
+            }
+            ).boughtProduct(){  productIdentifier, isBought in
+                
+                if isBought{
+                    self.showToastMsg(title : "Success",message: "License Loaded... Re-Open App")
+                    ConnectToApple.shared.quitApp()
+                    
+                }else{
+                    self.showToastMsg(title: "Fail..", message: "")
+                }
+                
+               
+            }
+            
+```
