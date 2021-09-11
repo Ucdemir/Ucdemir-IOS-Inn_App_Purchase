@@ -15,3 +15,46 @@ Create 'Set' String which is product identifiers
  ```Swift
           let listOfApplicationSKU : Set = ["sku.bor","sku.gas","sku.noads","sku.pro","sku.sun"]
 ```
+Call ConnectToApple with Enum parameter CallType.CheckProductStatus in your RootViewController. This method returns your products statuses.
+
+```Swift
+
+     ConnectToApple.shared.billingSKUS(listApplicationSKU: listOfApplicationSKU)
+            .startToWork(type: ConnectToApple.CallType.CheckProductStatus).statusOfProducts(){ status in
+                
+                
+                
+                for row in status{
+                    
+                    if row.productIdentifier == "sku.bor" {
+                        
+                        
+                        
+                        self.lblBorChecking.text = row.isPurchased.description
+                        
+                        
+                    }else if  row.productIdentifier == "sku.gas" {
+                        
+                        self.lblGasChecking.text = row.isPurchased.description
+                        
+                        
+                    }else if  row.productIdentifier == "sku.noads" {
+                        self.lblNoAdsChecking.text = row.isPurchased.description
+                        
+                        
+                    }else if  row.productIdentifier == "sku.pro" {
+                        self.lblProChecking.text = row.isPurchased.description
+                        
+                        
+                    }else if  row.productIdentifier == "sku.sun" {
+                        self.lblSunChecking.text = row.isPurchased.description
+                        
+                        
+                        
+                    }
+                    print("YHY : \(row.productIdentifier) : Status : \(BillingDB.shared.whatIsStatus(skuName: row.productIdentifier))")
+                }
+            
+            }
+    
+```
