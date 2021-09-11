@@ -30,18 +30,20 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     var listProductsStatus = Set<SKPaymentTransaction>()
     
     public typealias ProductStatusCompletionHandler = (_ productsStatus: [SKProductStatus]) -> ()
-
-   
+    
+    
     
     fileprivate var productsRequest: SKProductsRequest?
     fileprivate var productsRequestCompletionHandler: ProductsRequestCompletionHandler?
     fileprivate var productBoughtCompletionHandler: ProductBoughtCompletionHandler?
-
+    
     
     fileprivate var productStatus : ProductStatusCompletionHandler?
     
     
-
+    
+    var isFreshStart = false
+    
     
     public enum CallType{
         case GetPriceProducts
@@ -57,7 +59,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
         
         self.listApplicationSKU = listApplicationSKU
         
-   
+        
         
         BillingDB.shared.checkAllSkuIsOnDB(skus: listApplicationSKU)
         
@@ -71,7 +73,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
         switch type {
         case .GetPriceProducts:
             getPriceOfAllProduct()
-
+            
         case.CheckProductStatus:
             
             getProductStatus()
@@ -82,12 +84,12 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
         return .shared
     }
     
-  
+    
     
     //Equivalent to Our Android Library getCachedQueryList
     func getPriceOfAllProduct(){
         productsRequest?.cancel()
-    
+        
         
         productsRequest = SKProductsRequest(productIdentifiers: listApplicationSKU)
         productsRequest!.delegate = self
@@ -97,7 +99,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     }
     
     public func buyProduct(_ product: SKProduct) {
-      
+        
         let payment = SKPayment(product: product)
         SKPaymentQueue.default().add(payment)
     }
@@ -129,20 +131,78 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
         let isFreshStart = userDefaults.object(forKey:  "isFreshStart")
         
         if isFreshStart == nil{
+            self.isFreshStart = true
+            
             userDefaults.set(true, forKey: "isFreshStart")
             
             return true
         }else{
             
-            
+            self.isFreshStart = false
             return false
         }
         
-    
+        
     }
     
     
-
+    func initializeProductsStatusArray() -> [SKProductStatus] {
+        
+        var array = [SKProductStatus]()
+        
+        a: for  row in listApplicationSKU {
+            
+            
+            for row2 in listProductsStatus{
+                
+                if row == row2.original?.payment.productIdentifier{
+                    
+                    array.append(SKProductStatus(productIdentifier: row, isPurchased: true))
+                    continue a
+                    
+                }
+            }
+            
+            array.append(SKProductStatus(productIdentifier: row, isPurchased: false))
+            
+        }
+        
+        
+        for row in array{
+            BillingDB.shared.updateStatus(productId: row.productIdentifier,status:row.isPurchased)
+        }
+        
+        return array
+        
+    }
+    
+    
+    func quitApp(){
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+            UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                exit(0)
+            }
+        }
+    }
+    
+    func initProductsAtFreshStart()-> [SKProductStatus]{
+        var array = [SKProductStatus]()
+        
+        for  row in listApplicationSKU {
+            array.append(SKProductStatus(productIdentifier: row, isPurchased: true))
+            BillingDB.shared.updateStatus(productId: row,status:true)
+            
+        }
+        
+        
+        return array
+    }
+    
+    
+    
+    
     
     // MARK: - Delegate - SKProductsRequestDelegate
     // This func called after getProductStatus... its delegate function
@@ -159,10 +219,34 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
 
 
 
-
+// MARK: - Delegate SKPaymentTransactionObserver
 extension ConnectToApple: SKPaymentTransactionObserver {
     
-
+    
+    func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
+        
+        
+        if !isFreshStart{
+            
+            
+            if queue.transactions.count == 0{
+                var array = [SKProductStatus]()
+                
+                for  row in listApplicationSKU {
+                    array.append(SKProductStatus(productIdentifier: row, isPurchased: false))
+                    BillingDB.shared.updateStatus(productId: row,status:false)
+                    
+                }
+                productStatus?(array)
+            }
+            
+          
+            
+        }
+    }
+    
+    
+    
     public func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         listProductsStatus.removeAll()
         
@@ -180,7 +264,7 @@ extension ConnectToApple: SKPaymentTransactionObserver {
             case .restored:
                 
                 restore(transaction: transaction)
-             
+                
                 break
             case .deferred:
                 break
@@ -188,27 +272,29 @@ extension ConnectToApple: SKPaymentTransactionObserver {
                 break
             }
         }
+        if !self.isFreshStart{
+            productStatus?(initializeProductsStatusArray())
+        }
         
-        productStatus?(initializeProductsStatusArray())
         clearRequestAndHandler()
-    
+        
     }
     
     private func complete(transaction: SKPaymentTransaction) {
         
-  
+        
         deliverPurchaseNotificationFor(identifier: transaction.payment.productIdentifier)
         SKPaymentQueue.default().finishTransaction(transaction)
-    
+        
         //item bought
         productBoughtCompletionHandler?(transaction.payment.productIdentifier, true)
         
         clearRequestAndHandler()
-    
+        
     }
     
     private func restore(transaction: SKPaymentTransaction) {
-       
+        
         guard let productIdentifier = transaction.original?.payment.productIdentifier else { return }
         // state of product
         let state = transaction.original?.transactionState
@@ -238,66 +324,16 @@ extension ConnectToApple: SKPaymentTransactionObserver {
     }
     
     private func deliverPurchaseNotificationFor(identifier: String?) {
-         guard let identifier = identifier else { return }
-
+        guard let identifier = identifier else { return }
+        
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: ConnectToApple.IAPHelperPurchaseNotification) , object: identifier)
     }
     
     
     
-    func initializeProductsStatusArray() -> [SKProductStatus] {
-        
-        var array = [SKProductStatus]()
-        
-        if !checkIsFreshStart(){
-        
-        a: for  row in listApplicationSKU {
-            
-            
-             for row2 in listProductsStatus{
-                
-                if row == row2.original?.payment.productIdentifier{
-                    
-                    array.append(SKProductStatus(productIdentifier: row, isPurchased: true))
-                    continue a
-                    
-                }
-            }
-            
-            array.append(SKProductStatus(productIdentifier: row, isPurchased: false))
-            
-        }
-        }else{
-            
-            for  row in listApplicationSKU {
-                array.append(SKProductStatus(productIdentifier: row, isPurchased: true))
-            }
-            
-        }
-        
-        
-        for row in array{
-            BillingDB.shared.updateStatus(productId: row.productIdentifier,status:row.isPurchased)
-        }
-        
-        return array
-        
-    }
-    
-    
-    func quitApp(){
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-            UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
-             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-              exit(0)
-             }
-        }
-    }
-    
     
 }
-
+// MARK: - Our Listener
 //Below funstions is like  java listener
 extension ConnectToApple{
     func pricesOfProducts(completionHandler: @escaping ProductsRequestCompletionHandler) -> ConnectToApple{
@@ -310,7 +346,12 @@ extension ConnectToApple{
     func statusOfProducts(completionHandler: @escaping  ProductStatusCompletionHandler){
         
         productStatus = completionHandler
-        productStatus?(initializeProductsStatusArray())
+        
+        
+        if checkIsFreshStart(){
+            productStatus?(initProductsAtFreshStart())
+        }
+        
         
     }
     func boughtProduct(completionHandler: @escaping ProductBoughtCompletionHandler){
