@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YHYIOSInnAppPurchase"
-  spec.version      = "0.3"
+  spec.version      = "0.4.1"
   spec.summary      = "IOS Inn App Purchase"
 
   # This description is used to generate tags and improve search results.
@@ -122,6 +122,7 @@ IOS library helps you implement inn app purchase
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
+
   # spec.libraries = "iconv", "xml2"
 
 
@@ -135,5 +136,6 @@ IOS library helps you implement inn app purchase
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+   spec.dependency "SQLite.swift", "~> 0.12.0"
 
 end
