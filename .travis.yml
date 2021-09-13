@@ -5,6 +5,7 @@ osx_image: xcode10.1
 before_install:
   - sudo gem install cocoapods
   - pod install
+  - pod setup
 
 
 env:
