@@ -65,19 +65,9 @@ class StatusVC: UIViewController {
                     }
                     print("YHY : \(row.productIdentifier) : Status : \(BillingDB.shared.whatIsStatus(skuName: row.productIdentifier))")
                 }
-                
-                
-                
-                print(53)
-                print(53)
-                
-                
-                
-                
+            
             }
-        
-        
-        
+    
         
     }
     @IBAction func actionGoToBuyProduct(_ sender: Any) {

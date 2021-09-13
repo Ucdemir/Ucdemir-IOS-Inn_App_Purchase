@@ -35,8 +35,6 @@ class BuyProductsVC: UIViewController {
         ConnectToApple.shared.billingSKUS(listApplicationSKU: listOfApplicationSKU)
             .startToWork(type: ConnectToApple.CallType.GetPriceProducts).pricesOfProducts(completionHandler: { success , products in
         
-                
-                
                 for p in products! {
                     if p.productIdentifier == "sku.bor" {
                         //self.product = p
