@@ -7,17 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32FEE7D9984F84DF6CACE1CC /* Pods_YHY_IOS_In_App_BillingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CCA9AE008097466E1AC893 /* Pods_YHY_IOS_In_App_BillingTests.framework */; };
-		7ABEC6E0C34E740AD50DA28B /* Pods_IOS_Inn_App_Purchase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD545ACBAD3B228055DABA2 /* Pods_IOS_Inn_App_Purchase_Example.framework */; };
+		18533B47927CE47AB90531E8 /* Pods_YHY_IOS_In_App_Billing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8816531E7B7EF9D0C77BD990 /* Pods_YHY_IOS_In_App_Billing.framework */; };
+		9ED2828D7D702A4271DCB422 /* Pods_IOS_Inn_App_Purchase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE7F04CB31DAB561FCA7865 /* Pods_IOS_Inn_App_Purchase_Example.framework */; };
+		BC1189F5E6389E9CD17DDC15 /* Pods_YHY_IOS_In_App_BillingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7377DCA628F35DD33F610AF1 /* Pods_YHY_IOS_In_App_BillingTests.framework */; };
 		CE473C4F26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CE473C4E26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec */; };
-		CE473CA826EF7A6600FDA547 /* RKDropdownAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE473CA726EF7A6600FDA547 /* RKDropdownAlert.framework */; };
-		CE473CA926EF7A6600FDA547 /* RKDropdownAlert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE473CA726EF7A6600FDA547 /* RKDropdownAlert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE473CB026EF7A6A00FDA547 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE473CAF26EF7A6A00FDA547 /* SQLite.framework */; };
-		CE473CB126EF7A6A00FDA547 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE473CAF26EF7A6A00FDA547 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE473CB526EF7A7800FDA547 /* RKDropdownAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE473CB426EF7A7800FDA547 /* RKDropdownAlert.framework */; };
-		CE473CB626EF7A7800FDA547 /* RKDropdownAlert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE473CB426EF7A7800FDA547 /* RKDropdownAlert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE473CBA26EF7A8400FDA547 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE473CB926EF7A8400FDA547 /* SQLite.framework */; };
-		CE473CBB26EF7A8400FDA547 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE473CB926EF7A8400FDA547 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE49B61026E4E76A0089D469 /* BuyProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B60F26E4E76A0089D469 /* BuyProductsVC.swift */; };
 		CE49B61526E4FF100089D469 /* ConnectToApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B61426E4FF100089D469 /* ConnectToApple.swift */; };
 		CE49B61D26E508BA0089D469 /* ConnectToApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B61426E4FF100089D469 /* ConnectToApple.swift */; };
@@ -34,7 +27,6 @@
 		CEFFE6D526E9042700A38A97 /* BillingDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE6C826E8FF8600A38A97 /* BillingDB.swift */; };
 		CEFFE6D926E9042D00A38A97 /* BillingDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE6C826E8FF8600A38A97 /* BillingDB.swift */; };
 		CEFFE6DD26E9043200A38A97 /* ConnectToApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B61426E4FF100089D469 /* ConnectToApple.swift */; };
-		E04FCE28B6F929C138E0B339 /* Pods_YHY_IOS_In_App_Billing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4341785877671BEDD3F584 /* Pods_YHY_IOS_In_App_Billing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,46 +39,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		CE473CAA26EF7A6600FDA547 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CE473CB126EF7A6A00FDA547 /* SQLite.framework in Embed Frameworks */,
-				CE473CA926EF7A6600FDA547 /* RKDropdownAlert.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE473CB726EF7A7900FDA547 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CE473CBB26EF7A8400FDA547 /* SQLite.framework in Embed Frameworks */,
-				CE473CB626EF7A7800FDA547 /* RKDropdownAlert.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		0DB3C70AAC11EEE0C477A901 /* Pods-YHY IOS In App BillingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App BillingTests.release.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App BillingTests/Pods-YHY IOS In App BillingTests.release.xcconfig"; sourceTree = "<group>"; };
-		63F663957A74298F50E48385 /* Pods-IOS Inn App Purchase Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Inn App Purchase Example.debug.xcconfig"; path = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6AC329AA8DFABFD7D868F6F0 /* Pods-IOS Inn App Purchase Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Inn App Purchase Example.release.xcconfig"; path = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.release.xcconfig"; sourceTree = "<group>"; };
-		8692BB8909B798AE436B1425 /* Pods-YHY IOS In App Billing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App Billing.release.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing.release.xcconfig"; sourceTree = "<group>"; };
-		9FD545ACBAD3B228055DABA2 /* Pods_IOS_Inn_App_Purchase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Inn_App_Purchase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3973DD5995A0376F6C5DF3C /* Pods-YHY IOS In App BillingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App BillingTests.debug.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App BillingTests/Pods-YHY IOS In App BillingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A6CCA9AE008097466E1AC893 /* Pods_YHY_IOS_In_App_BillingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHY_IOS_In_App_BillingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66A04D0B0D484AE161F5128C /* Pods-YHY IOS In App BillingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App BillingTests.release.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App BillingTests/Pods-YHY IOS In App BillingTests.release.xcconfig"; sourceTree = "<group>"; };
+		66CCFD22F2FFA97F943D7D19 /* Pods-YHY IOS In App BillingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App BillingTests.debug.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App BillingTests/Pods-YHY IOS In App BillingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C0029AC17A3CC920C42F8CF /* Pods-YHY IOS In App Billing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App Billing.release.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing.release.xcconfig"; sourceTree = "<group>"; };
+		7377DCA628F35DD33F610AF1 /* Pods_YHY_IOS_In_App_BillingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHY_IOS_In_App_BillingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8816531E7B7EF9D0C77BD990 /* Pods_YHY_IOS_In_App_Billing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHY_IOS_In_App_Billing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E5F2CF3FE8932A9466BDCE /* Pods-IOS Inn App Purchase Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Inn App Purchase Example.release.xcconfig"; path = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.release.xcconfig"; sourceTree = "<group>"; };
+		961BBB82EFCE3AAF4FDE3163 /* Pods-YHY IOS In App Billing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App Billing.debug.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing.debug.xcconfig"; sourceTree = "<group>"; };
+		BAE7F04CB31DAB561FCA7865 /* Pods_IOS_Inn_App_Purchase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Inn_App_Purchase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93D5805CE0F01509DBF6DFD /* Pods-IOS Inn App Purchase Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Inn App Purchase Example.debug.xcconfig"; path = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CE473C4E26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YHYIOSInnAppPurchase.podspec; sourceTree = "<group>"; };
 		CE473CA726EF7A6600FDA547 /* RKDropdownAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RKDropdownAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE473CAF26EF7A6A00FDA547 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE473CB426EF7A7800FDA547 /* RKDropdownAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RKDropdownAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE473CB926EF7A8400FDA547 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE473CC126EF7F6D00FDA547 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE49B60F26E4E76A0089D469 /* BuyProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyProductsVC.swift; sourceTree = "<group>"; };
 		CE49B61426E4FF100089D469 /* ConnectToApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectToApple.swift; sourceTree = "<group>"; };
 		CE49B62226E5FFBB0089D469 /* YHYHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHYHud.swift; sourceTree = "<group>"; };
@@ -105,8 +73,6 @@
 		CEFFE6BE26E8FE9C00A38A97 /* YHY IOS In App Billing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "YHY IOS In App Billing"; sourceTree = "<group>"; };
 		CEFFE6C626E8FEB500A38A97 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		CEFFE6C826E8FF8600A38A97 /* BillingDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingDB.swift; sourceTree = "<group>"; };
-		DA4341785877671BEDD3F584 /* Pods_YHY_IOS_In_App_Billing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHY_IOS_In_App_Billing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDAE92303B5E7BD7BD75AE18 /* Pods-YHY IOS In App Billing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App Billing.debug.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +81,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFFE6C726E8FEB500A38A97 /* libsqlite3.dylib in Frameworks */,
-				E04FCE28B6F929C138E0B339 /* Pods_YHY_IOS_In_App_Billing.framework in Frameworks */,
-				CE473CB026EF7A6A00FDA547 /* SQLite.framework in Frameworks */,
-				CE473CA826EF7A6600FDA547 /* RKDropdownAlert.framework in Frameworks */,
+				18533B47927CE47AB90531E8 /* Pods_YHY_IOS_In_App_Billing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE55D50326E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework in Frameworks */,
-				32FEE7D9984F84DF6CACE1CC /* Pods_YHY_IOS_In_App_BillingTests.framework in Frameworks */,
+				BC1189F5E6389E9CD17DDC15 /* Pods_YHY_IOS_In_App_BillingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,9 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ABEC6E0C34E740AD50DA28B /* Pods_IOS_Inn_App_Purchase_Example.framework in Frameworks */,
-				CE473CB526EF7A7800FDA547 /* RKDropdownAlert.framework in Frameworks */,
-				CE473CBA26EF7A8400FDA547 /* SQLite.framework in Frameworks */,
+				9ED2828D7D702A4271DCB422 /* Pods_IOS_Inn_App_Purchase_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,12 +108,12 @@
 		785780E806DF0D4E552885E3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				63F663957A74298F50E48385 /* Pods-IOS Inn App Purchase Example.debug.xcconfig */,
-				6AC329AA8DFABFD7D868F6F0 /* Pods-IOS Inn App Purchase Example.release.xcconfig */,
-				FDAE92303B5E7BD7BD75AE18 /* Pods-YHY IOS In App Billing.debug.xcconfig */,
-				8692BB8909B798AE436B1425 /* Pods-YHY IOS In App Billing.release.xcconfig */,
-				A3973DD5995A0376F6C5DF3C /* Pods-YHY IOS In App BillingTests.debug.xcconfig */,
-				0DB3C70AAC11EEE0C477A901 /* Pods-YHY IOS In App BillingTests.release.xcconfig */,
+				C93D5805CE0F01509DBF6DFD /* Pods-IOS Inn App Purchase Example.debug.xcconfig */,
+				90E5F2CF3FE8932A9466BDCE /* Pods-IOS Inn App Purchase Example.release.xcconfig */,
+				961BBB82EFCE3AAF4FDE3163 /* Pods-YHY IOS In App Billing.debug.xcconfig */,
+				6C0029AC17A3CC920C42F8CF /* Pods-YHY IOS In App Billing.release.xcconfig */,
+				66CCFD22F2FFA97F943D7D19 /* Pods-YHY IOS In App BillingTests.debug.xcconfig */,
+				66A04D0B0D484AE161F5128C /* Pods-YHY IOS In App BillingTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -216,15 +178,16 @@
 		FBC801438D3DB5F3AD36EAE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE473CC126EF7F6D00FDA547 /* SQLite.framework */,
 				CE473CB926EF7A8400FDA547 /* SQLite.framework */,
 				CE473CB426EF7A7800FDA547 /* RKDropdownAlert.framework */,
 				CE473CAF26EF7A6A00FDA547 /* SQLite.framework */,
 				CE473CA726EF7A6600FDA547 /* RKDropdownAlert.framework */,
 				CEFFE6C626E8FEB500A38A97 /* libsqlite3.dylib */,
 				CEFFE6BE26E8FE9C00A38A97 /* YHY IOS In App Billing */,
-				9FD545ACBAD3B228055DABA2 /* Pods_IOS_Inn_App_Purchase_Example.framework */,
-				DA4341785877671BEDD3F584 /* Pods_YHY_IOS_In_App_Billing.framework */,
-				A6CCA9AE008097466E1AC893 /* Pods_YHY_IOS_In_App_BillingTests.framework */,
+				BAE7F04CB31DAB561FCA7865 /* Pods_IOS_Inn_App_Purchase_Example.framework */,
+				8816531E7B7EF9D0C77BD990 /* Pods_YHY_IOS_In_App_Billing.framework */,
+				7377DCA628F35DD33F610AF1 /* Pods_YHY_IOS_In_App_BillingTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -246,12 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE55D50D26E3A67C00E36E8B /* Build configuration list for PBXNativeTarget "YHY IOS In App Billing" */;
 			buildPhases = (
-				6C76191A337259637A1E084E /* [CP] Check Pods Manifest.lock */,
+				A4048E4857DCB2C8E16D5AF3 /* [CP] Check Pods Manifest.lock */,
 				CE55D4F426E3A67C00E36E8B /* Headers */,
 				CE55D4F526E3A67C00E36E8B /* Sources */,
 				CE55D4F626E3A67C00E36E8B /* Frameworks */,
 				CE55D4F726E3A67C00E36E8B /* Resources */,
-				CE473CAA26EF7A6600FDA547 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,11 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE55D51026E3A67C00E36E8B /* Build configuration list for PBXNativeTarget "YHY IOS In App BillingTests" */;
 			buildPhases = (
-				338454830F993E901E242ED4 /* [CP] Check Pods Manifest.lock */,
+				91E60DEE760C0ADDD14AAFA0 /* [CP] Check Pods Manifest.lock */,
 				CE55D4FE26E3A67C00E36E8B /* Sources */,
 				CE55D4FF26E3A67C00E36E8B /* Frameworks */,
 				CE55D50026E3A67C00E36E8B /* Resources */,
-				83AC67D6A23D2BBD69244E75 /* [CP] Embed Pods Frameworks */,
+				C293E3A12493248391BE0F2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,12 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE55D55326E3ABA800E36E8B /* Build configuration list for PBXNativeTarget "IOS Inn App Purchase Example" */;
 			buildPhases = (
-				6C49FAE8FAB0125AC41AA555 /* [CP] Check Pods Manifest.lock */,
+				9A09937BE7E135BE2BDBF2FB /* [CP] Check Pods Manifest.lock */,
 				CE55D53E26E3ABA700E36E8B /* Sources */,
 				CE55D53F26E3ABA700E36E8B /* Frameworks */,
 				CE55D54026E3ABA700E36E8B /* Resources */,
-				AC317C7BD008AE2F05DC269A /* [CP] Embed Pods Frameworks */,
-				CE473CB726EF7A7900FDA547 /* Embed Frameworks */,
+				EC1D23B9EE112BF2A073866A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,7 +333,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		338454830F993E901E242ED4 /* [CP] Check Pods Manifest.lock */ = {
+		91E60DEE760C0ADDD14AAFA0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -394,7 +355,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6C49FAE8FAB0125AC41AA555 /* [CP] Check Pods Manifest.lock */ = {
+		9A09937BE7E135BE2BDBF2FB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,7 +377,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6C76191A337259637A1E084E /* [CP] Check Pods Manifest.lock */ = {
+		A4048E4857DCB2C8E16D5AF3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -438,7 +399,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		83AC67D6A23D2BBD69244E75 /* [CP] Embed Pods Frameworks */ = {
+		C293E3A12493248391BE0F2F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,7 +416,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YHY IOS In App BillingTests/Pods-YHY IOS In App BillingTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AC317C7BD008AE2F05DC269A /* [CP] Embed Pods Frameworks */ = {
+		EC1D23B9EE112BF2A073866A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -661,7 +622,7 @@
 		};
 		CE55D50E26E3A67C00E36E8B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDAE92303B5E7BD7BD75AE18 /* Pods-YHY IOS In App Billing.debug.xcconfig */;
+			baseConfigurationReference = 961BBB82EFCE3AAF4FDE3163 /* Pods-YHY IOS In App Billing.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -689,7 +650,7 @@
 		};
 		CE55D50F26E3A67C00E36E8B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8692BB8909B798AE436B1425 /* Pods-YHY IOS In App Billing.release.xcconfig */;
+			baseConfigurationReference = 6C0029AC17A3CC920C42F8CF /* Pods-YHY IOS In App Billing.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -716,7 +677,7 @@
 		};
 		CE55D51126E3A67C00E36E8B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3973DD5995A0376F6C5DF3C /* Pods-YHY IOS In App BillingTests.debug.xcconfig */;
+			baseConfigurationReference = 66CCFD22F2FFA97F943D7D19 /* Pods-YHY IOS In App BillingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -736,7 +697,7 @@
 		};
 		CE55D51226E3A67C00E36E8B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DB3C70AAC11EEE0C477A901 /* Pods-YHY IOS In App BillingTests.release.xcconfig */;
+			baseConfigurationReference = 66A04D0B0D484AE161F5128C /* Pods-YHY IOS In App BillingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -756,7 +717,7 @@
 		};
 		CE55D55426E3ABA800E36E8B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63F663957A74298F50E48385 /* Pods-IOS Inn App Purchase Example.debug.xcconfig */;
+			baseConfigurationReference = C93D5805CE0F01509DBF6DFD /* Pods-IOS Inn App Purchase Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -777,7 +738,7 @@
 		};
 		CE55D55526E3ABA800E36E8B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AC329AA8DFABFD7D868F6F0 /* Pods-IOS Inn App Purchase Example.release.xcconfig */;
+			baseConfigurationReference = 90E5F2CF3FE8932A9466BDCE /* Pods-IOS Inn App Purchase Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
