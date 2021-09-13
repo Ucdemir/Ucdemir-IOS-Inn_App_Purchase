@@ -49,6 +49,14 @@
 		CE473C8526EF785D00FDA547 /* RKDropdownAlert in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0DD311E0D860FB2DBCD472FBE4EE3B2 /* RKDropdownAlert */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE473C8D26EF786600FDA547 /* SQLite.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.swift */; };
 		CE473C8E26EF786600FDA547 /* SQLite.swift in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.swift */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE473C9526EF795000FDA547 /* RKDropdownAlert in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DD311E0D860FB2DBCD472FBE4EE3B2 /* RKDropdownAlert */; };
+		CE473C9626EF795000FDA547 /* RKDropdownAlert in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0DD311E0D860FB2DBCD472FBE4EE3B2 /* RKDropdownAlert */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE473C9A26EF795500FDA547 /* SQLite.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.swift */; };
+		CE473C9B26EF795500FDA547 /* SQLite.swift in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.swift */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE473C9E26EF796400FDA547 /* RKDropdownAlert in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DD311E0D860FB2DBCD472FBE4EE3B2 /* RKDropdownAlert */; };
+		CE473C9F26EF796400FDA547 /* RKDropdownAlert in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0DD311E0D860FB2DBCD472FBE4EE3B2 /* RKDropdownAlert */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE473CA326EF796900FDA547 /* SQLite.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.swift */; };
+		CE473CA426EF796900FDA547 /* SQLite.swift in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.swift */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D90DC8F901689C03E25074E6F903F7B8 /* Pods-YHY IOS In App BillingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D97102FCE4CCD99F5FB81145B1A3E23F /* Pods-YHY IOS In App BillingTests-dummy.m */; };
 		E610A133A83AB9CC9BF41802CA5B0D5D /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C5ECF8D67E117AE74C991B62184FAA /* Collation.swift */; };
 		E993CA5EB7F01E7C84DC8E6193450C75 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A1192BD71238CC1AB0556B91786635 /* Errors.swift */; };
@@ -115,6 +123,34 @@
 			remoteGlobalIDString = 3F2C1776D90B62B156DB52C41A5C419C;
 			remoteInfo = SQLite.swift;
 		};
+		CE473C9726EF795000FDA547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B17CD1A03A2188ABB00010F9DB42B8D1;
+			remoteInfo = RKDropdownAlert;
+		};
+		CE473C9C26EF795500FDA547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F2C1776D90B62B156DB52C41A5C419C;
+			remoteInfo = SQLite.swift;
+		};
+		CE473CA026EF796400FDA547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B17CD1A03A2188ABB00010F9DB42B8D1;
+			remoteInfo = RKDropdownAlert;
+		};
+		CE473CA526EF796900FDA547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F2C1776D90B62B156DB52C41A5C419C;
+			remoteInfo = SQLite.swift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -126,6 +162,30 @@
 			files = (
 				CE473C8526EF785D00FDA547 /* RKDropdownAlert in Embed Frameworks */,
 				CE473C8E26EF786600FDA547 /* SQLite.swift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE473C9926EF795000FDA547 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE473C9626EF795000FDA547 /* RKDropdownAlert in Embed Frameworks */,
+				CE473C9B26EF795500FDA547 /* SQLite.swift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE473CA226EF796500FDA547 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE473C9F26EF796400FDA547 /* RKDropdownAlert in Embed Frameworks */,
+				CE473CA426EF796900FDA547 /* SQLite.swift in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +211,7 @@
 		52DCBB420818865ACA9DAB90E1616FB6 /* RKDropdownAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKDropdownAlert.h; path = SlingshotDropdownAlert/RKDropdownAlert.h; sourceTree = "<group>"; };
 		545557F1F5B785B34F7C8561793B3F6C /* Pods-YHY IOS In App BillingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YHY IOS In App BillingTests.modulemap"; sourceTree = "<group>"; };
 		57C5ECF8D67E117AE74C991B62184FAA /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
-		5818CAAADEC82BA7C27349288C180FB8 /* Pods-YHY IOS In App BillingTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-YHY IOS In App BillingTests"; path = Pods_YHY_IOS_In_App_BillingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5818CAAADEC82BA7C27349288C180FB8 /* Pods_YHY_IOS_In_App_BillingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHY_IOS_In_App_BillingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7DE13FAAE00425FA002F0F1BA9A876 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
 		5BBE0AF6D425CD517018FBF4BE32FBB0 /* Pods-IOS Inn App Purchase Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IOS Inn App Purchase Example-dummy.m"; sourceTree = "<group>"; };
 		5E20BCB70182DF06AA3F86EA9B28D9BC /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
@@ -198,7 +258,7 @@
 		E737A94EA3CF5F1BC6AAC9AA7EF29C96 /* Pods-IOS Inn App Purchase Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IOS Inn App Purchase Example-frameworks.sh"; sourceTree = "<group>"; };
 		E8D3484761908A9BB0A260540822B14E /* RKDropdownAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RKDropdownAlert.release.xcconfig; sourceTree = "<group>"; };
 		E9B0AFD42905600D9D4ADA982EA02F65 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
-		EAE2A544DAF0E2259E4EB88D426AA93A /* Pods-IOS Inn App Purchase Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-IOS Inn App Purchase Example"; path = Pods_IOS_Inn_App_Purchase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE2A544DAF0E2259E4EB88D426AA93A /* Pods_IOS_Inn_App_Purchase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Inn_App_Purchase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4BE82EA1F53B89BAE099DFC843FEE0 /* Pods-IOS Inn App Purchase Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IOS Inn App Purchase Example-umbrella.h"; sourceTree = "<group>"; };
 		F1F77249788130FBE15ACB9694028B84 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
 		F2A385AE6A66211DB638A33E648AAB8A /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
@@ -215,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB49B91E33D5B460C7BAFA9F1729937C /* Foundation.framework in Frameworks */,
+				CE473CA326EF796900FDA547 /* SQLite.swift in Frameworks */,
+				CE473C9E26EF796400FDA547 /* RKDropdownAlert in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DEC5783700134FC3D74840640EF4DA4 /* Foundation.framework in Frameworks */,
+				CE473C9A26EF795500FDA547 /* SQLite.swift in Frameworks */,
+				CE473C9526EF795000FDA547 /* RKDropdownAlert in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,9 +389,9 @@
 		57BD9B661BF7DF5FB31A30B1EECA6415 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EAE2A544DAF0E2259E4EB88D426AA93A /* Pods-IOS Inn App Purchase Example */,
+				EAE2A544DAF0E2259E4EB88D426AA93A /* Pods_IOS_Inn_App_Purchase_Example.framework */,
 				B79E4179A81FEF4704386549444F9BD2 /* Pods_YHY_IOS_In_App_Billing.framework */,
-				5818CAAADEC82BA7C27349288C180FB8 /* Pods-YHY IOS In App BillingTests */,
+				5818CAAADEC82BA7C27349288C180FB8 /* Pods_YHY_IOS_In_App_BillingTests.framework */,
 				B0DD311E0D860FB2DBCD472FBE4EE3B2 /* RKDropdownAlert */,
 				F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.swift */,
 			);
@@ -520,16 +584,19 @@
 				7E59BA4480A0473C0AA6940BA06A10F1 /* Sources */,
 				1242BAD8DC5CF3FCA828AE7A0547E77E /* Frameworks */,
 				9B9E08BEC7806E0790446B06E20CBA3A /* Resources */,
+				CE473C9926EF795000FDA547 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				C330E71453A1ABE6EAD96842E50036CC /* PBXTargetDependency */,
 				3EC421A11B4EC166E13A8FCA22E8CE85 /* PBXTargetDependency */,
+				CE473C9826EF795000FDA547 /* PBXTargetDependency */,
+				CE473C9D26EF795500FDA547 /* PBXTargetDependency */,
 			);
 			name = "Pods-IOS Inn App Purchase Example";
 			productName = Pods_IOS_Inn_App_Purchase_Example;
-			productReference = EAE2A544DAF0E2259E4EB88D426AA93A /* Pods-IOS Inn App Purchase Example */;
+			productReference = EAE2A544DAF0E2259E4EB88D426AA93A /* Pods_IOS_Inn_App_Purchase_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B17CD1A03A2188ABB00010F9DB42B8D1 /* RKDropdownAlert */ = {
@@ -558,6 +625,7 @@
 				79E47CEE33BEDD4DDA694F36EE925F50 /* Sources */,
 				024891DCC4FAA4CCB4BDE16EC268D327 /* Frameworks */,
 				7EB217C5F899FF6FCA40836372E096D1 /* Resources */,
+				CE473CA226EF796500FDA547 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -565,10 +633,12 @@
 				0D517F28E2D560AB62852C9978C50FD1 /* PBXTargetDependency */,
 				B90B9B36F9DD4D81AA2AB83CA7ADF8AB /* PBXTargetDependency */,
 				D98BDACA7E37235616925C1A69EA0D1B /* PBXTargetDependency */,
+				CE473CA126EF796400FDA547 /* PBXTargetDependency */,
+				CE473CA626EF796900FDA547 /* PBXTargetDependency */,
 			);
 			name = "Pods-YHY IOS In App BillingTests";
 			productName = Pods_YHY_IOS_In_App_BillingTests;
-			productReference = 5818CAAADEC82BA7C27349288C180FB8 /* Pods-YHY IOS In App BillingTests */;
+			productReference = 5818CAAADEC82BA7C27349288C180FB8 /* Pods_YHY_IOS_In_App_BillingTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F37E04100DB187E21927710DD94FEF1E /* Pods-YHY IOS In App Billing */ = {
@@ -771,6 +841,26 @@
 			isa = PBXTargetDependency;
 			target = 3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */;
 			targetProxy = CE473C8F26EF786600FDA547 /* PBXContainerItemProxy */;
+		};
+		CE473C9826EF795000FDA547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B17CD1A03A2188ABB00010F9DB42B8D1 /* RKDropdownAlert */;
+			targetProxy = CE473C9726EF795000FDA547 /* PBXContainerItemProxy */;
+		};
+		CE473C9D26EF795500FDA547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */;
+			targetProxy = CE473C9C26EF795500FDA547 /* PBXContainerItemProxy */;
+		};
+		CE473CA126EF796400FDA547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B17CD1A03A2188ABB00010F9DB42B8D1 /* RKDropdownAlert */;
+			targetProxy = CE473CA026EF796400FDA547 /* PBXContainerItemProxy */;
+		};
+		CE473CA626EF796900FDA547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */;
+			targetProxy = CE473CA526EF796900FDA547 /* PBXContainerItemProxy */;
 		};
 		D98BDACA7E37235616925C1A69EA0D1B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
