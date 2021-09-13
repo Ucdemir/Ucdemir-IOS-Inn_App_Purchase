@@ -6,10 +6,15 @@
 //
 
 import XCTest
+import SQLite
+
 @testable import YHY_IOS_In_App_Billing
 
 class YHY_IOS_In_App_BillingTests: XCTestCase {
 
 
 
+    
+   
+    
 }

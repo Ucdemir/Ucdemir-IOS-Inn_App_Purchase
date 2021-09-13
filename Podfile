@@ -20,7 +20,11 @@ target 'YHY IOS In App Billing' do
   # Pods for YHY IOS In App Billing
 
   target 'YHY IOS In App BillingTests' do
-    # Pods for testing
+    inherit! :search_paths
+
+    pod 'SQLite.swift', '~> 0.12.0'
+   pod 'RKDropdownAlert', "~> 0.3.0"
+   
   end
 
 end
