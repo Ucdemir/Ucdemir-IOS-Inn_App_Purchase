@@ -3,8 +3,8 @@ language: swift
 osx_image: xcode12.4
 env:
   matrix:
-    - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone XR'
-    - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone 7'
+    - TEST_SDK=iphonesimulator12.1 OS=12.4 NAME='iPhone XR'
+    - TEST_SDK=iphonesimulator12.1 OS=12.4 NAME='iPhone 7'
 
 script:
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project "YHY IOS In App Billing.xcodeproj" -scheme "YHY IOS In App Billing" -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
