@@ -269,6 +269,9 @@ extension ConnectToApple: SKPaymentTransactionObserver {
                 break
             case .purchasing:
                 break
+                
+            default:
+                break
             }
         }
         if !self.isFreshStart{
