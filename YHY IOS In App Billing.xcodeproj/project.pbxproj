@@ -16,7 +16,6 @@
 		CE49B61D26E508BA0089D469 /* ConnectToApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B61426E4FF100089D469 /* ConnectToApple.swift */; };
 		CE49B62326E5FFBB0089D469 /* YHYHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B62226E5FFBB0089D469 /* YHYHud.swift */; };
 		CE55D50326E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */; };
-		CE55D50826E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D50726E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift */; };
 		CE55D54526E3ABA700E36E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D54426E3ABA700E36E8B /* AppDelegate.swift */; };
 		CE55D54926E3ABA700E36E8B /* StatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55D54826E3ABA700E36E8B /* StatusVC.swift */; };
 		CE55D54C26E3ABA700E36E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54A26E3ABA700E36E8B /* Main.storyboard */; };
@@ -61,7 +60,6 @@
 		CE55D4F926E3A67C00E36E8B /* YHY_IOS_In_App_Billing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YHY_IOS_In_App_Billing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE55D4FD26E3A67C00E36E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE55D50226E3A67C00E36E8B /* YHY IOS In App BillingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YHY IOS In App BillingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE55D50726E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHY_IOS_In_App_BillingTests.swift; sourceTree = "<group>"; };
 		CE55D50926E3A67C00E36E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE55D54226E3ABA700E36E8B /* IOS Inn App Purchase Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Inn App Purchase Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE55D54426E3ABA700E36E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 		CE55D50626E3A67C00E36E8B /* YHY IOS In App BillingTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE55D50726E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift */,
 				CE55D50926E3A67C00E36E8B /* Info.plist */,
 			);
 			path = "YHY IOS In App BillingTests";
@@ -449,7 +446,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE55D50826E3A67C00E36E8B /* YHY_IOS_In_App_BillingTests.swift in Sources */,
 				CEFFE6DD26E9043200A38A97 /* ConnectToApple.swift in Sources */,
 				CEFFE6D926E9042D00A38A97 /* BillingDB.swift in Sources */,
 			);
