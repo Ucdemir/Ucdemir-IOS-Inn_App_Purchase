@@ -14,6 +14,7 @@ class YHY_IOS_In_App_BillingTests: XCTestCase {
 
 
 
+    let x = ConnectToApple.shared
     
    
     
