@@ -42,6 +42,9 @@
 		C15E639676F88465598040726263B54A /* Pods-YHY IOS In App BillingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C2717A8CCAFF405BE23F5A44C31498 /* Pods-YHY IOS In App BillingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6841A634228789352B104B6430870FF /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3672E1F06C9ADD6727D8C01374DE05 /* Setter.swift */; };
 		CB19005430779243C511CDB299F5CD5B /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B5B54A04F7E6DF3E78C5920D0C4F0 /* AggregateFunctions.swift */; };
+		CE473C7426EF56A400FDA547 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9D940727FF8FB9C785EB98E56350EF41 /* Podfile */; };
+		CE473C7A26EF56A500FDA547 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9D940727FF8FB9C785EB98E56350EF41 /* Podfile */; };
+		CE473C7B26EF56A600FDA547 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9D940727FF8FB9C785EB98E56350EF41 /* Podfile */; };
 		D90DC8F901689C03E25074E6F903F7B8 /* Pods-YHY IOS In App BillingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D97102FCE4CCD99F5FB81145B1A3E23F /* Pods-YHY IOS In App BillingTests-dummy.m */; };
 		E610A133A83AB9CC9BF41802CA5B0D5D /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C5ECF8D67E117AE74C991B62184FAA /* Collation.swift */; };
 		E993CA5EB7F01E7C84DC8E6193450C75 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A1192BD71238CC1AB0556B91786635 /* Errors.swift */; };
@@ -138,7 +141,7 @@
 		9A664E0BFB2223DA6F1ADEF9BC1F035D /* Pods-YHY IOS In App Billing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHY IOS In App Billing.release.xcconfig"; sourceTree = "<group>"; };
 		9B506E37A48AE4E7630EC86D1D9C489E /* RKDropdownAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RKDropdownAlert-prefix.pch"; sourceTree = "<group>"; };
 		9C1CB4B742D585E3B92B9AD278B8AD5A /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA806C49CDCD41FF28B7B0C18FC5C7A5 /* Pods-YHY IOS In App BillingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHY IOS In App BillingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD5417F129DAA6A8EB6E9DE72BB2EE3D /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
 		B0DD311E0D860FB2DBCD472FBE4EE3B2 /* RKDropdownAlert */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RKDropdownAlert; path = RKDropdownAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,7 +251,6 @@
 				97597684324556A764CF665135CFBEEF /* RKDropdownAlert.m */,
 				05183B327522100C2C4BA511E90AD185 /* Support Files */,
 			);
-			name = RKDropdownAlert;
 			path = RKDropdownAlert;
 			sourceTree = "<group>";
 		};
@@ -258,7 +260,6 @@
 				7E6330FE0DBAA8DC68E27DA4A497A4BF /* standard */,
 				9F8A37CBB80E7EE679DEC2509540867A /* Support Files */,
 			);
-			name = SQLite.swift;
 			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
@@ -590,6 +591,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE473C7A26EF56A500FDA547 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +599,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE473C7B26EF56A600FDA547 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +607,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE473C7426EF56A400FDA547 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
