@@ -7,7 +7,8 @@
 
 import UIKit
 import StoreKit
-import RKDropdownAlert
+//import RKDropdownAlert
+
 
 class BuyProductsVC: UIViewController {
     
@@ -143,12 +144,12 @@ class BuyProductsVC: UIViewController {
     func showToastMsg(title : String, message : String) {
         
         
-        RKDropdownAlert.show()
+       /* RKDropdownAlert.show()
         RKDropdownAlert.title(title, message: message,backgroundColor: UIColor(rgb: 0x753A3A),
                               textColor: UIColor.white)
         
         
-       print("YHY Bilgilendirme \(message)")
+       print("YHY Bilgilendirme \(message)")*/
         
     }
     

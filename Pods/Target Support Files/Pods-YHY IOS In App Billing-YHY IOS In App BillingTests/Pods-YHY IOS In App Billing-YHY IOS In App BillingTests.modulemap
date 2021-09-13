@@ -1,0 +1,6 @@
+framework module Pods_YHY_IOS_In_App_Billing_YHY_IOS_In_App_BillingTests {
+  umbrella header "Pods-YHY IOS In App Billing-YHY IOS In App BillingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
