@@ -1,6 +1,11 @@
 language: swift
 
 osx_image: xcode10.1
+
+before_install:
+  - pod repo update
+
+
 env:
   matrix:
     - TEST_SDK=iphonesimulator12.1 OS=12.1 NAME='iPhone XR'
