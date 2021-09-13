@@ -10,6 +10,7 @@
 		3DE5B5227644B520DA2A98A2 /* Pods_YHY_IOS_In_App_Billing_YHY_IOS_In_App_BillingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0FAD88573F88E62968C372 /* Pods_YHY_IOS_In_App_Billing_YHY_IOS_In_App_BillingTests.framework */; };
 		69289F2DEB165C4C12A393F5 /* Pods_YHY_IOS_In_App_Billing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E46E62AC7F2A15BF708D1D /* Pods_YHY_IOS_In_App_Billing.framework */; };
 		9E7EAC49FB5D928FE6A00B7B /* Pods_IOS_Inn_App_Purchase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5322BE25EF8E0E40FDF51E /* Pods_IOS_Inn_App_Purchase_Example.framework */; };
+		CE473C4F26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CE473C4E26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec */; };
 		CE49B61026E4E76A0089D469 /* BuyProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B60F26E4E76A0089D469 /* BuyProductsVC.swift */; };
 		CE49B61526E4FF100089D469 /* ConnectToApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B61426E4FF100089D469 /* ConnectToApple.swift */; };
 		CE49B61D26E508BA0089D469 /* ConnectToApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B61426E4FF100089D469 /* ConnectToApple.swift */; };
@@ -46,6 +47,7 @@
 		93D98F1AC2BB86FE965DDE0F /* Pods-YHY IOS In App Billing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App Billing.release.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing.release.xcconfig"; sourceTree = "<group>"; };
 		A0E46E62AC7F2A15BF708D1D /* Pods_YHY_IOS_In_App_Billing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHY_IOS_In_App_Billing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB80CFBDE936A28D63C487B4 /* Pods-YHY IOS In App Billing-YHY IOS In App BillingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App Billing-YHY IOS In App BillingTests.release.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App Billing-YHY IOS In App BillingTests/Pods-YHY IOS In App Billing-YHY IOS In App BillingTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE473C4E26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YHYIOSInnAppPurchase.podspec; sourceTree = "<group>"; };
 		CE49B60F26E4E76A0089D469 /* BuyProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyProductsVC.swift; sourceTree = "<group>"; };
 		CE49B61426E4FF100089D469 /* ConnectToApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectToApple.swift; sourceTree = "<group>"; };
 		CE49B62226E5FFBB0089D469 /* YHYHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHYHud.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		CE55D4EF26E3A67C00E36E8B = {
 			isa = PBXGroup;
 			children = (
+				CE473C4E26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec */,
 				CE55D4FB26E3A67C00E36E8B /* YHY IOS In App Billing */,
 				CE55D50626E3A67C00E36E8B /* YHY IOS In App BillingTests */,
 				CE55D54326E3ABA700E36E8B /* IOS Inn App Purchase Example */,
@@ -300,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE473C4F26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
