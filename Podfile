@@ -5,7 +5,7 @@ target 'IOS Inn App Purchase Example' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'SQLite.swift', '~> 0.12.0'
- pod 'RKDropdownAlert'
+ pod 'RKDropdownAlert', "~> 0.3.0"
   # Pods for IOS Inn App Purchase Example
 
 
