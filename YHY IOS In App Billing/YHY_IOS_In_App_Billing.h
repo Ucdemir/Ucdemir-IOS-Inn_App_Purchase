@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+ 
+
 //! Project version number for YHY_IOS_In_App_Billing.
 FOUNDATION_EXPORT double YHY_IOS_In_App_BillingVersionNumber;
 
