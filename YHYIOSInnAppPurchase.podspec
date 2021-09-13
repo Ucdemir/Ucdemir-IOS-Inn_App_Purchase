@@ -120,7 +120,7 @@ IOS library helps you implement inn app purchase
   #
 
   # spec.framework  = "SomeFramework"
-   spec.frameworks = "RKDropdownAlert", "SQLite"
+  # spec.frameworks = "RKDropdownAlert", "SQLite"
 
   # spec.library   = "iconv"
 
