@@ -139,5 +139,5 @@ IOS library helps you implement inn app purchase
   # spec.dependency "JSONKit", "~> 1.4"
 
 spec.dependency "RKDropdownAlert", "~> 0.3.0"
-
+spec.dependency "SQLite", "~> 0.12.2"
 end
