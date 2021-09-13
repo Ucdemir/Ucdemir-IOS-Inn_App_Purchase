@@ -138,6 +138,6 @@ IOS library helps you implement inn app purchase
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
-spec.dependency "RKDropdownAlert", "~> 0.3.0"
+  spec.dependency "RKDropdownAlert"
 
 end

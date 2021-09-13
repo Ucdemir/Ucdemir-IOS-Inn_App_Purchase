@@ -7,6 +7,7 @@
 
 import XCTest
 import SQLite
+import RKDropdownAlert
 
 @testable import YHY_IOS_In_App_Billing
 
