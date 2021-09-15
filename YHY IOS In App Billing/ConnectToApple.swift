@@ -12,24 +12,23 @@ import StoreKit
 public typealias ProductIdentifier = String
 public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> ()
 public typealias ProductBoughtCompletionHandler = ( _ productIdentifier: String? , _ isBought: Bool) -> ()
+public typealias ProductStatusCompletionHandler = (_ productsStatus: [SKProductStatus]) -> ()
 
-struct SKProductStatus {
+public struct SKProductStatus {
     let productIdentifier : String
     let isPurchased : Bool
     
 }
 
-class ConnectToApple: NSObject,SKProductsRequestDelegate{
+public class ConnectToApple: NSObject,SKProductsRequestDelegate{
     
-    static let shared = ConnectToApple()
-    
+    public static let shared = ConnectToApple()
     static let IAPHelperPurchaseNotification = "IAPHelperPurchaseNotification"
     
     
-    var listApplicationSKU = Set<String>()
-    var listProductsStatus = Set<SKPaymentTransaction>()
+  private  var listApplicationSKU = Set<String>()
+    private var listProductsStatus = Set<SKPaymentTransaction>()
     
-    public typealias ProductStatusCompletionHandler = (_ productsStatus: [SKProductStatus]) -> ()
     
     
     
@@ -42,7 +41,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     
     
     
-    var isFreshStart = false
+    private var isFreshStart = false
     
     
     public enum CallType{
@@ -55,7 +54,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     }
     
     // MARK: - Class Functions
-    func  billingSKUS( listApplicationSKU : Set<String>)-> ConnectToApple{
+   public func  billingSKUS( listApplicationSKU : Set<String>)-> ConnectToApple{
         
         self.listApplicationSKU = listApplicationSKU
         
@@ -68,7 +67,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     }
     
     
-    func startToWork(type : CallType)-> ConnectToApple{
+    public func startToWork(type : CallType)-> ConnectToApple{
         
         switch type {
         case .GetPriceProducts:
@@ -86,7 +85,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     
     
     //Equivalent to Our Android Library getCachedQueryList
-    func getPriceOfAllProduct(){
+    private func getPriceOfAllProduct(){
         productsRequest?.cancel()
         
         
@@ -145,7 +144,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     }
     
     
-    func initializeProductsStatusArray() -> [SKProductStatus] {
+    private func initializeProductsStatusArray() -> [SKProductStatus] {
         
         var array = [SKProductStatus]()
         
@@ -176,7 +175,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
     }
     
     
-    func quitApp(){
+    internal func quitApp(){
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
             UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
@@ -186,7 +185,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
         }
     }
     
-    func initProductsAtFreshStart()-> [SKProductStatus]{
+   private  func initProductsAtFreshStart()-> [SKProductStatus]{
         var array = [SKProductStatus]()
         
         for  row in listApplicationSKU {
@@ -222,7 +221,7 @@ class ConnectToApple: NSObject,SKProductsRequestDelegate{
 extension ConnectToApple: SKPaymentTransactionObserver {
     
     
-    func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
+    private func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
         
         
         if !isFreshStart{
@@ -338,14 +337,14 @@ extension ConnectToApple: SKPaymentTransactionObserver {
 // MARK: - Our Listener
 //Below funstions is like  java listener
 extension ConnectToApple{
-    func pricesOfProducts(completionHandler: @escaping ProductsRequestCompletionHandler) -> ConnectToApple{
+    public func pricesOfProducts(completionHandler: @escaping ProductsRequestCompletionHandler) -> ConnectToApple{
         
         productsRequestCompletionHandler = completionHandler
         
         return self
     }
     
-    func statusOfProducts(completionHandler: @escaping  ProductStatusCompletionHandler){
+    public func statusOfProducts(completionHandler: @escaping  ProductStatusCompletionHandler){
         
         productStatus = completionHandler
         
@@ -356,7 +355,7 @@ extension ConnectToApple{
         
         
     }
-    func boughtProduct(completionHandler: @escaping ProductBoughtCompletionHandler){
+    public func boughtProduct(completionHandler: @escaping ProductBoughtCompletionHandler){
         
         productBoughtCompletionHandler = completionHandler
         

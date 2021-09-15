@@ -9,11 +9,11 @@ import SQLite
 
 
 
-class BillingDB{
+public class BillingDB{
     
     // MARK: - Properties
     private var db: Connection?
-    static let shared = BillingDB()
+    public static let shared = BillingDB()
     
     // MARK: - Table Pro
     let tablePRO = Table("TablePro")
@@ -51,7 +51,7 @@ class BillingDB{
     }
     
     // MARK: - Pro DB
-    func whatIsStatus(skuName : String )-> Bool{
+    public func whatIsStatus(skuName : String )-> Bool{
         var result = false
         
         do{
@@ -78,7 +78,7 @@ class BillingDB{
     
     
     
-    func updateStatus(productId : String,status : Bool){
+    public func updateStatus(productId : String,status : Bool){
         
         let filteredDB = tablePRO.filter(tbProductName == productId)
         do {
@@ -114,7 +114,7 @@ class BillingDB{
     }*/
     
     
-    func insertSkuToPro(productName : String){
+   internal func insertSkuToPro(productName : String){
         do {
             
             try db?.run(tablePRO.insert(or: .replace, tbIsBought <- false, tbProductName <- productName))
@@ -125,7 +125,7 @@ class BillingDB{
     }
     
     
-    func checkProductIsOnSqliteIfNotInsertIt(skuName : String ){
+   internal func checkProductIsOnSqliteIfNotInsertIt(skuName : String ){
 
         var count : Int64 = 0
         do{
@@ -149,7 +149,7 @@ class BillingDB{
         
     }
     
-    func checkAllSkuIsOnDB(skus:  Set<String>){
+    internal func checkAllSkuIsOnDB(skus:  Set<String>){
         
     
         for row in skus{
