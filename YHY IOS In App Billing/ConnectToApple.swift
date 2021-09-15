@@ -221,7 +221,7 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate{
 extension ConnectToApple: SKPaymentTransactionObserver {
     
     
-    private func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
+    public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
         
         
         if !isFreshStart{
