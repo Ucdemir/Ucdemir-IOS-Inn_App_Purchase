@@ -15,8 +15,8 @@ public typealias ProductBoughtCompletionHandler = ( _ productIdentifier: String?
 public typealias ProductStatusCompletionHandler = (_ productsStatus: [SKProductStatus]) -> ()
 
 public struct SKProductStatus {
-    let productIdentifier : String
-    let isPurchased : Bool
+    public  let productIdentifier : String
+    public let isPurchased : Bool
     
 }
 
