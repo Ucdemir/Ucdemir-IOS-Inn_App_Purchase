@@ -50,6 +50,8 @@ public class BillingDB{
         
     }
     
+   
+    
     // MARK: - Pro DB
     public func whatIsStatus(skuName : String )-> Bool{
         var result = false
@@ -59,20 +61,26 @@ public class BillingDB{
             let sql = "Select isBought from TablePro where ProProductName = '\(skuName)'"
             for row in try db!.prepare(sql) {
                
-                 result = (row[0] as! Int64).boolValue
+                result = (row[0] as! Int64).boolValue
                 
-            
                 print(2)
-                
             }
             
         } catch {
             print(error.localizedDescription)
         }
+        if isFreshStart{
+            if firstProductsReturnTrue {
+                return true
+            }else{
+                return result
+            }
+        }else{
+            return  result
+        }
         
         
-        
-        return result
+        //return result
         // return true
     }
     

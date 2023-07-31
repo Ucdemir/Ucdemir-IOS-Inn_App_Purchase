@@ -8,6 +8,8 @@
 import Foundation
 import StoreKit
 
+var isFreshStart = false
+var firstProductsReturnTrue = false
 
 public typealias ProductIdentifier = String
 public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> ()
@@ -41,7 +43,7 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate{
     
     
     
-    private var isFreshStart = false
+    
     
     
     public enum CallType{
@@ -54,13 +56,20 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate{
     }
     
     // MARK: - Class Functions
+    /*
+        This function pass skus to library
+     */
    public func  billingSKUS( listApplicationSKU : Set<String>)-> ConnectToApple{
         
-        self.listApplicationSKU = listApplicationSKU
+       self.listApplicationSKU = listApplicationSKU
         
+       /* Below one no need like Android
         
-        
-        BillingDB.shared.checkAllSkuIsOnDB(skus: listApplicationSKU)
+       if checkIsFreshStart() == true{
+           
+       }*/
+       
+       BillingDB.shared.checkAllSkuIsOnDB(skus: listApplicationSKU)
         
         return .shared
         
@@ -129,21 +138,23 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate{
         let isFreshStart = userDefaults.object(forKey:  "isFreshStart")
         
         if isFreshStart == nil{
-            self.isFreshStart = true
+            //self.isFreshStart = true
             
             userDefaults.set(true, forKey: "isFreshStart")
             
             return true
         }else{
             
-            self.isFreshStart = false
+           // self.isFreshStart = false
             return false
         }
         
         
     }
     
-    
+    /*
+     This function checks whether products bought or not  and it update DB
+     */
     private func initializeProductsStatusArray() -> [SKProductStatus] {
         
         var array = [SKProductStatus]()
@@ -184,7 +195,10 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate{
             }
         }
     }
-    
+    /*
+     Android mentalite ile aynı olacak... ilave parametre eklenip user seçilebilir olacak
+     Ya güncellencek yada silincek
+     */
    private  func initProductsAtFreshStart()-> [SKProductStatus]{
         var array = [SKProductStatus]()
         
@@ -203,7 +217,10 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate{
     
     
     // MARK: - Delegate - SKProductsRequestDelegate
-    // This func called after getProductStatus... its delegate function
+    /* This func called after getProductStatus... its delegate function
+     This function return products price -> came from -> getPriceOfAllProduct() - above
+     */
+    
     public func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse){
         let products = response.products
         
@@ -220,11 +237,15 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate{
 // MARK: - Delegate SKPaymentTransactionObserver
 extension ConnectToApple: SKPaymentTransactionObserver {
     
-    
+    /*
+     This delegate used for return product bought status. in Main VC ->
+     .startToWork(type: ConnectToApple.CallType.CheckProductStatus).statusOfProducts()
+     
+     */
     public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
         
-        
-        if !isFreshStart{
+        //Below commented for isFreshStart
+        /*if !isFreshStart{
             
             
             if queue.transactions.count == 0{
@@ -233,18 +254,21 @@ extension ConnectToApple: SKPaymentTransactionObserver {
                 for  row in listApplicationSKU {
                     array.append(SKProductStatus(productIdentifier: row, isPurchased: false))
                     BillingDB.shared.updateStatus(productId: row,status:false)
-                    
                 }
                 productStatus?(array)
             }
-            
-          
-            
-        }
+        }*/
+        
+        /*
+         New one
+         */
+        productStatus?(initializeProductsStatusArray())
     }
     
     
-    
+    /* This is delegate function for SKPaymentTransactionObserver
+     it complate and restore order  or it fail
+     */
     public func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         listProductsStatus.removeAll()
         
@@ -273,9 +297,12 @@ extension ConnectToApple: SKPaymentTransactionObserver {
                 break
             }
         }
-        if !self.isFreshStart{
+        productStatus?(initializeProductsStatusArray())
+        /*
+         below Updated for isFreshStart
+        if !isFreshStart{
             productStatus?(initializeProductsStatusArray())
-        }
+        }*/
         
         clearRequestAndHandler()
         
@@ -347,8 +374,10 @@ extension ConnectToApple{
     public func statusOfProducts(completionHandler: @escaping  ProductStatusCompletionHandler){
         
         productStatus = completionHandler
+      
         
         
+        //UPDATE - Below will be checked
         if checkIsFreshStart(){
             productStatus?(initProductsAtFreshStart())
         }
@@ -361,4 +390,11 @@ extension ConnectToApple{
         
     }
     
+ 
+    
+}
+public func shouldFirstProductsReturnTrue(shouldFirstProductsReturnTrue : Bool)-> ConnectToApple{
+    
+    firstProductsReturnTrue = shouldFirstProductsReturnTrue
+    return ConnectToApple.shared
 }

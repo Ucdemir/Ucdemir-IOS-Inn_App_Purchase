@@ -67,7 +67,6 @@ class StatusVC: UIViewController {
                 }
             
             }
-    
         
     }
     @IBAction func actionGoToBuyProduct(_ sender: Any) {
