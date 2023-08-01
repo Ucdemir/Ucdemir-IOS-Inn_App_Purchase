@@ -7,6 +7,7 @@
 
 import UIKit
 import StoreKit
+import RKDropdownAlert
 //import RKDropdownAlert
 
 
@@ -42,38 +43,57 @@ class BuyProductsVC: UIViewController {
         ConnectToApple.shared.billingSKUS(listApplicationSKU: listOfApplicationSKU)
             .startToWork(type: ConnectToApple.CallType.GetPriceProducts).pricesOfProducts(completionHandler: { success , products in
         
-                for p in products! {
-                    if p.productIdentifier == "sku.bor" {
-                        //self.product = p
-                        
-                        self.btnBor.setTitle(self.setPriceText(product: p), for: .normal)
-                        
-                        //self.setPriceOfLicense(price: p.price.floatValue)
-                      
-                        
-                    }else if  p.productIdentifier == "sku.gas" {
-                        self.btnGas.setTitle(self.setPriceText(product: p), for: .normal)
-                        
-                    }else if  p.productIdentifier == "sku.noads" {
-                        self.btnNoAds.setTitle(self.setPriceText(product: p), for: .normal)
-
-                    }else if  p.productIdentifier == "sku.pro" {
-                        self.btnPro.setTitle(self.setPriceText(product: p), for: .normal)
-
-                    }else if  p.productIdentifier == "sku.sun" {
-                        self.btnSun.setTitle(self.setPriceText(product: p), for: .normal)
-
-                        
-                    }
+           
+                
                     
-                    self.isReady = true
+                    for p in products! {
+                        
+                            
+                            if p.productIdentifier == "sku.A" {
+                                //self.product = p
+                                
+                                
+                                self.btnA.setTitle(self.setPriceText(product: p), for: .normal)
+                                
+                                //self.setPriceOfLicense(price: p.price.floatValue)
+                                
+                                
+                            }else if  p.productIdentifier == "sku.B" {
+                                self.btnB.setTitle(self.setPriceText(product: p), for: .normal)
+                                
+                            }else if  p.productIdentifier == "sku.C" {
+                                self.btnC.setTitle(self.setPriceText(product: p), for: .normal)
+                                
+                            }else if  p.productIdentifier == "sku.D" {
+                                self.btnD.setTitle(self.setPriceText(product: p), for: .normal)
+                                
+                            }else if  p.productIdentifier == "sku.E" {
+                                self.btnE.setTitle(self.setPriceText(product: p), for: .normal)
+                                
+                                
+                            }else if  p.productIdentifier == "sku.F" {
+                                self.btnF.setTitle(self.setPriceText(product: p), for: .normal)
+                                
+                                
+                            }else if  p.productIdentifier == "sku.G" {
+                                self.btnG.setTitle(self.setPriceText(product: p), for: .normal)
+                                
+                                
+                            }else if  p.productIdentifier == "sku.H" {
+                                self.btnH.setTitle(self.setPriceText(product: p), for: .normal)
+                                
+                                
+                            }
+                            
+                        
+                    YHYHud.shared.hideHud()
                     self.buyProductDic[p.productIdentifier] = p
                     
                     //YHYHud.shared.hideHud()
                     //print("Found product: \(p.productIdentifier) \(p.localizedTitle) \(p.price.floatValue)")
                     //print(2)
                 }
-                YHYHud.shared.hideHud()
+                
             }
             ).boughtProduct(){  productIdentifier, isBought in
                 
@@ -82,7 +102,7 @@ class BuyProductsVC: UIViewController {
                     ConnectToApple.shared.quitApp()
                     
                 }else{
-                    self.showToastMsg(title: "Fail..", message: "")
+                    self.showToastMsg(title: "Fail..", message: "Purchase failed")
                 }
                 
                
@@ -101,37 +121,46 @@ class BuyProductsVC: UIViewController {
     
     
     
-    @IBAction func actionBuyBor(_ sender: Any) {
+    @IBAction func actionBuyA(_ sender: Any) {
         
         
 
         
-        ConnectToApple.shared.buyProduct(buyProductDic["sku.bor"]! )
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.A"]! )
         
     }
     
     
-    @IBAction func actionBuyGas(_ sender: Any) {
-        ConnectToApple.shared.buyProduct(buyProductDic["sku.gas"]!)
+    @IBAction func actionBuyB(_ sender: Any) {
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.B"]!)
     }
     
     
-    @IBAction func actionBuyNoAds(_ sender: Any) {
+    @IBAction func actionBuyC(_ sender: Any) {
         
-        ConnectToApple.shared.buyProduct(buyProductDic["sku.noads"]!)
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.C"]!)
     }
     
-    @IBAction func actionBuyPro(_ sender: Any) {
-        ConnectToApple.shared.buyProduct(buyProductDic["sku.pro"]!)
+    @IBAction func actionBuyD(_ sender: Any) {
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.D"]!)
         
     }
     
     
-    
-    @IBAction func actionBuySun(_ sender: Any) {
-        ConnectToApple.shared.buyProduct(buyProductDic["sku.sun"]!)
+    @IBAction func actionBuyE(_ sender: Any) {
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.E"]!)
+    }
+    @IBAction func actionBuyF(_ sender: Any) {
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.F"]!)
+        
+    }
+    @IBAction func actionBuyG(_ sender: Any) {
+        ConnectToApple.shared.buyProduct(buyProductDic["sku.G"]!)
     }
     
+    @IBAction func actionBuyH(_ sender: Any) {
+       ConnectToApple.shared.buyProduct(buyProductDic["sku.H"]!)
+   }
     
     @IBAction func actionBack(_ sender: Any) {
         
@@ -153,12 +182,12 @@ class BuyProductsVC: UIViewController {
     func showToastMsg(title : String, message : String) {
         
         
-       /* RKDropdownAlert.show()
+       RKDropdownAlert.show()
         RKDropdownAlert.title(title, message: message,backgroundColor: UIColor(rgb: 0x753A3A),
                               textColor: UIColor.white)
         
         
-       print("YHY Bilgilendirme \(message)")*/
+       print("YHY Bilgilendirme \(message)")
         
     }
     

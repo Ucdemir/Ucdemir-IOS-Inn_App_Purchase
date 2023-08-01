@@ -9,7 +9,7 @@ import UIKit
 
 
 
-let listOfApplicationSKU : Set = ["sku.bor","sku.gas","sku.noads","sku.pro","sku.sun"]
+let listOfApplicationSKU : Set = ["sku.A","sku.B","sku.C","sku.D","sku.E","sku.F","sku.G","sku.H"]
 
 class StatusVC: UIViewController {
     

@@ -109,8 +109,8 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate {
     
     public func buyProduct(_ product: SKProduct) {
         
-       // let payment = SKPayment(product: product)
-        //SKPaymentQueue.default().add(payment)
+         let payment = SKPayment(product: product)
+        SKPaymentQueue.default().add(payment)
         
         
     }
@@ -168,7 +168,9 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate {
             
             for row2 in listProductsStatus{
                 
-                if row == row2.original?.payment.productIdentifier{
+                let boughtIdentifier = row2.payment.productIdentifier
+                
+                if row == boughtIdentifier{
                     
                     array.append(SKProductStatus(productIdentifier: row, isPurchased: true))
                     continue a
@@ -259,7 +261,7 @@ extension ConnectToApple: SKPaymentTransactionObserver {
     public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
         
         //Below commented for isFreshStart
-        /*if !isFreshStart{
+        /*if !isFreshStart{ b
             
             
             if queue.transactions.count == 0{
@@ -275,14 +277,29 @@ extension ConnectToApple: SKPaymentTransactionObserver {
         
         /*
          New one
+         
+         let state = transaction.transactionState
+         
+         if state == SKPaymentTransactionState.purchased  || state == SKPaymentTransactionState.restored {
+             listProductsStatus.insert(transaction)
+         }
          */
-        if queue.transactions.count == 0{
+        listProductsStatus.removeAll()
+        for transaction in queue.transactions{
+            let state = transaction.transactionState
+            
+            if state == SKPaymentTransactionState.purchased  || state == SKPaymentTransactionState.restored {
+                listProductsStatus.insert(transaction)
+            }
+            
+        }
+        /*if queue.transactions.count == 0{
             let h = ""
             let g = ""
         }else {
             let h = ""
             let g = ""
-        }
+        }*/
 
         
         
@@ -350,12 +367,11 @@ extension ConnectToApple: SKPaymentTransactionObserver {
         
         //guard let productIdentifier = transaction.original?.payment.productIdentifier else { return }
         // state of product
-        let state = transaction.original?.transactionState
+        let state = transaction.transactionState
         
-        if state == SKPaymentTransactionState.purchased{
+        if state == SKPaymentTransactionState.purchased  || state == SKPaymentTransactionState.restored {
             listProductsStatus.insert(transaction)
         }
-        
         SKPaymentQueue.default().finishTransaction(transaction)
         
         

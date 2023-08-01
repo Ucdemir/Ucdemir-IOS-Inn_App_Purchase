@@ -38,52 +38,54 @@ class YHYHud: UIView,UIGestureRecognizerDelegate {
         
         //superView = rootView
       
-        self.frame = CGRect(x: 0, y: 0, width: rootView.frame.width, height: rootView.frame.height)
-        let bezelWidth = self.frame.width/6*2.3
-        let textWidth =  bezelWidth - 4
-         let bezelHeight = bezelText.height(withConstrainedWidth: textWidth, font: hudText.font)
-        
-        
-        self.bezelView.frame = CGRect(x: ((rootView.frame.width)/2)-(bezelWidth/2), y: ((rootView.frame.height)/2 )-((rootView.frame.width)/8) , width: bezelWidth, height: bezelHeight + 70)
-        
-        self.indicator.frame = CGRect(x: self.bezelView.frame.width/2-13, y: bezelHeight/2 + 35 - 26, width: 26, height: 26)
-        self.indicator.color = UIColor.white
-       // self.indicator.backgroundColor = UIColor.black
-        
-       
-      self.hudText.frame = CGRect(x: 0, y: bezelHeight/2 + 40, width:textWidth , height: bezelHeight )
-        
-        self.hudText.textColor = UIColor.white
-        self.hudText.text = bezelText
-        self.hudText.textAlignment = .center
-        self.hudText.font = self.hudText.font.withSize(14.0)
-        
-        self.bezelView.addSubview(self.indicator)
-        self.bezelView.addSubview(self.hudText)
-        
-        self.bezelView.backgroundColor = UIColor(rgb: 0x000000, alpha: 1)
-        
-        //self.isUserInteractionEnabled = false
-        self.backgroundColor = UIColor(rgb: 0x262626, alpha: 0.53)
-        
-     
-        self.bezelView.layer.cornerRadius = 14
-        
-        self.addSubview(self.bezelView)
-        self.bringSubviewToFront(bezelView)
-        
-       // self.backgroundColor = UIColor.clear
-        
-     /*   self.addSubview(indicator)
-        self.bringSubviewToFront(indicator)*/
-        
-        rootView.addSubview(self)
-        rootView.bringSubviewToFront(self)
-      
-        //rootView.bringSubviewToFront(self.bezelView)
-        
-        indicator.startAnimating()
-        self.addBezelTapGesture()
+        DispatchQueue.main.async {
+            self.frame = CGRect(x: 0, y: 0, width: rootView.frame.width, height: rootView.frame.height)
+            let bezelWidth = self.frame.width/6*2.3
+            let textWidth =  bezelWidth - 4
+            let bezelHeight = self.bezelText.height(withConstrainedWidth: textWidth, font: self.hudText.font)
+            
+            
+            self.bezelView.frame = CGRect(x: ((rootView.frame.width)/2)-(bezelWidth/2), y: ((rootView.frame.height)/2 )-((rootView.frame.width)/8) , width: bezelWidth, height: bezelHeight + 70)
+            
+            self.indicator.frame = CGRect(x: self.bezelView.frame.width/2-13, y: bezelHeight/2 + 35 - 26, width: 26, height: 26)
+            self.indicator.color = UIColor.white
+            // self.indicator.backgroundColor = UIColor.black
+            
+            
+            self.hudText.frame = CGRect(x: 0, y: bezelHeight/2 + 40, width:textWidth , height: bezelHeight )
+            
+            self.hudText.textColor = UIColor.white
+            self.hudText.text = self.bezelText
+            self.hudText.textAlignment = .center
+            self.hudText.font = self.hudText.font.withSize(14.0)
+            
+            self.bezelView.addSubview(self.indicator)
+            self.bezelView.addSubview(self.hudText)
+            
+            self.bezelView.backgroundColor = UIColor(rgb: 0x000000, alpha: 1)
+            
+            //self.isUserInteractionEnabled = false
+            self.backgroundColor = UIColor(rgb: 0x262626, alpha: 0.53)
+            
+            
+            self.bezelView.layer.cornerRadius = 14
+            
+            self.addSubview(self.bezelView)
+            self.bringSubviewToFront(self.bezelView)
+            
+            // self.backgroundColor = UIColor.clear
+            
+            /*   self.addSubview(indicator)
+             self.bringSubviewToFront(indicator)*/
+            
+            rootView.addSubview(self)
+            rootView.bringSubviewToFront(self)
+            
+            //rootView.bringSubviewToFront(self.bezelView)
+            
+            self.indicator.startAnimating()
+            self.addBezelTapGesture()
+        }
     }
     
     func addBezelTapGesture(){
@@ -99,17 +101,22 @@ class YHYHud: UIView,UIGestureRecognizerDelegate {
     }
     
     @objc func bezelViewClicked(){
-        self.removeFromSuperview()
+        DispatchQueue.main.async {
+            self.removeFromSuperview()
+        }
         
         //RKDropdownAlert.title("Yükleme", message: "Veriler hâlâ yükleniyor...",backgroundColor: UIColor(rgb: 0x753A3A),textColor: UIColor.white)
     }
     
    
     func hideHud(){
-         self.removeFromSuperview()
+        DispatchQueue.main.async {
+            self.removeFromSuperview()
+        }
     }
     
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        
          for view in self.subviews {
               if view.isUserInteractionEnabled, view.point(inside: self.convert(point, to: view), with: event) {
                   return true
