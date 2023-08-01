@@ -13,13 +13,19 @@ import StoreKit
 class BuyProductsVC: UIViewController {
     
     
+    //Consumable
+    @IBOutlet weak var btnA: UIButton!
+    @IBOutlet weak var btnB: UIButton!
+    @IBOutlet weak var btnC: UIButton!
+    @IBOutlet weak var btnD: UIButton!
     
-    @IBOutlet weak var btnBor: UIButton!
-    @IBOutlet weak var btnGas: UIButton!
-    @IBOutlet weak var btnNoAds: UIButton!
-    @IBOutlet weak var btnPro: UIButton!
-    @IBOutlet weak var btnSun: UIButton!
-    
+
+    //NON - Consumable
+    @IBOutlet weak var btnE: UIButton!
+    @IBOutlet weak var btnF: UIButton!
+    @IBOutlet weak var btnG: UIButton!
+    @IBOutlet weak var btnH: UIButton!
+
     
     var buyProductDic: [String: SKProduct] = [:]
     
@@ -96,6 +102,9 @@ class BuyProductsVC: UIViewController {
     
     
     @IBAction func actionBuyBor(_ sender: Any) {
+        
+        
+
         
         ConnectToApple.shared.buyProduct(buyProductDic["sku.bor"]! )
         

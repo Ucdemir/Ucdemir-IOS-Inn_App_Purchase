@@ -16,12 +16,18 @@ class StatusVC: UIViewController {
     
     
     
+    //Consumable
+    @IBOutlet weak var lblAChecking: UILabel!
+    @IBOutlet weak var lblBChecking: UILabel!
+    @IBOutlet weak var lblCChecking: UILabel!
+    @IBOutlet weak var lblDChecking: UILabel!
+   
     
-    @IBOutlet weak var lblBorChecking: UILabel!
-    @IBOutlet weak var lblGasChecking: UILabel!
-    @IBOutlet weak var lblNoAdsChecking: UILabel!
-    @IBOutlet weak var lblProChecking: UILabel!
-    @IBOutlet weak var lblSunChecking: UILabel!
+    //NON - Consumable
+    @IBOutlet weak var lblEChecking: UILabel!
+    @IBOutlet weak var lblFChecking: UILabel!
+    @IBOutlet weak var lblGChecking: UILabel!
+    @IBOutlet weak var lblHChecking: UILabel!
     
     
     
@@ -37,28 +43,43 @@ class StatusVC: UIViewController {
                 
                 for row in status{
                     
-                    if row.productIdentifier == "sku.bor" {
+                    if row.productIdentifier == "sku.A" {
                         
                         
                         
-                        self.lblBorChecking.text = row.isPurchased.description
+                        self.lblAChecking.text = row.isPurchased.description
                         
                         
-                    }else if  row.productIdentifier == "sku.gas" {
+                    }else if  row.productIdentifier == "sku.B" {
                         
-                        self.lblGasChecking.text = row.isPurchased.description
-                        
-                        
-                    }else if  row.productIdentifier == "sku.noads" {
-                        self.lblNoAdsChecking.text = row.isPurchased.description
+                        self.lblBChecking.text = row.isPurchased.description
                         
                         
-                    }else if  row.productIdentifier == "sku.pro" {
-                        self.lblProChecking.text = row.isPurchased.description
+                    }else if  row.productIdentifier == "sku.C" {
+                        self.lblCChecking.text = row.isPurchased.description
                         
                         
-                    }else if  row.productIdentifier == "sku.sun" {
-                        self.lblSunChecking.text = row.isPurchased.description
+                    }else if  row.productIdentifier == "sku.D" {
+                        self.lblDChecking.text = row.isPurchased.description
+                        
+                        
+                    }else if  row.productIdentifier == "sku.E" {
+                        self.lblEChecking.text = row.isPurchased.description
+                        
+                        
+                        
+                    }else if  row.productIdentifier == "sku.F" {
+                        self.lblFChecking.text = row.isPurchased.description
+                        
+                        
+                        
+                    }else if  row.productIdentifier == "sku.G" {
+                        self.lblGChecking.text = row.isPurchased.description
+                        
+                        
+                        
+                    }else if  row.productIdentifier == "sku.H" {
+                        self.lblHChecking.text = row.isPurchased.description
                         
                         
                         

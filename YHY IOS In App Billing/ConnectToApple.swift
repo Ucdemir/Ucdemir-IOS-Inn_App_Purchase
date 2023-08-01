@@ -22,7 +22,7 @@ public struct SKProductStatus {
     
 }
 
-public class ConnectToApple: NSObject,SKProductsRequestDelegate{
+public class ConnectToApple: NSObject,SKProductsRequestDelegate {
     
     public static let shared = ConnectToApple()
     static let IAPHelperPurchaseNotification = "IAPHelperPurchaseNotification"
@@ -93,7 +93,9 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate{
     
     
     
-    //Equivalent to Our Android Library getCachedQueryList
+    /*Equivalent to Our Android Library getCachedQueryList
+     ios -> library -> func requestProducts(completionHandler: @escaping ProductsRequestCompletionHandler)
+     */
     private func getPriceOfAllProduct(){
         productsRequest?.cancel()
         
@@ -107,8 +109,10 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate{
     
     public func buyProduct(_ product: SKProduct) {
         
-        let payment = SKPayment(product: product)
-        SKPaymentQueue.default().add(payment)
+       // let payment = SKPayment(product: product)
+        //SKPaymentQueue.default().add(payment)
+        
+        
     }
     
     
@@ -198,8 +202,8 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate{
     /*
      Android mentalite ile aynı olacak... ilave parametre eklenip user seçilebilir olacak
      Ya güncellencek yada silincek
-     */
-   private  func initProductsAtFreshStart()-> [SKProductStatus]{
+      Suan silinmiş durumda 01-08-2023*/
+   /*private  func initProductsAtFreshStart()-> [SKProductStatus]{
         var array = [SKProductStatus]()
         
         for  row in listApplicationSKU {
@@ -210,7 +214,8 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate{
         
         
         return array
-    }
+    }*/
+
     
     
     
@@ -241,6 +246,15 @@ extension ConnectToApple: SKPaymentTransactionObserver {
      This delegate used for return product bought status. in Main VC ->
      .startToWork(type: ConnectToApple.CallType.CheckProductStatus).statusOfProducts()
      
+     SKPaymentQueue.default().restoreCompletedTransactions this call  below
+     
+     
+     https://stackoverflow.com/questions/5628710/restorecompletedtransactions-broken
+     Products Consumable cannot be restored.
+     Products Non-Consumable can be restored.
+     Check if your products are type Non-Consumable.
+     
+     -- Consumables are not to be restored, just as you were reasoning in your original question. --
      */
     public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
         
@@ -262,7 +276,18 @@ extension ConnectToApple: SKPaymentTransactionObserver {
         /*
          New one
          */
+        if queue.transactions.count == 0{
+            let h = ""
+            let g = ""
+        }else {
+            let h = ""
+            let g = ""
+        }
+
+        
+        
         productStatus?(initializeProductsStatusArray())
+        let aa = 1
     }
     
     
@@ -375,12 +400,13 @@ extension ConnectToApple{
         
         productStatus = completionHandler
       
+        let test = ""
         
         
-        //UPDATE - Below will be checked
-        if checkIsFreshStart(){
+        //UPDATE - Below will be checked - 01.08.2023 commentlendi
+        /*if checkIsFreshStart(){
             productStatus?(initProductsAtFreshStart())
-        }
+        }*/
         
         
     }
