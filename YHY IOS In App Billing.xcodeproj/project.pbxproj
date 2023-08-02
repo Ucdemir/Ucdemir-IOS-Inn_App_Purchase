@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F10F245534A24F7E3059BF5 /* Pods_YHY_IOS_In_App_Billing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608479EBDD24716A9E6B3C09 /* Pods_YHY_IOS_In_App_Billing.framework */; };
-		A3E96130315E067C1EC50B51 /* Pods_IOS_Inn_App_Purchase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37958BA90E9D1B06100D7BD /* Pods_IOS_Inn_App_Purchase_Example.framework */; };
+		15A3CB00887791960194BF6B /* Pods_YHY_IOS_In_App_Billing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A0E96F734FFB598FEAA82B /* Pods_YHY_IOS_In_App_Billing.framework */; };
+		2817192E8C82E516BA3EE937 /* Pods_IOS_Inn_App_Purchase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967AE78F75890D2CD19EEE94 /* Pods_IOS_Inn_App_Purchase_Example.framework */; };
 		CE473C4F26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CE473C4E26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec */; };
 		CE473D2526EF852800FDA547 /* ConnectToApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B61426E4FF100089D469 /* ConnectToApple.swift */; };
 		CE473D7A26EF874500FDA547 /* BillingDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE6C826E8FF8600A38A97 /* BillingDB.swift */; };
@@ -26,11 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		147ACED60B27EFB9144BB5A0 /* Pods-YHY IOS In App Billing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App Billing.release.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing.release.xcconfig"; sourceTree = "<group>"; };
-		31CF6A86F4325CF2059AB81C /* Pods-IOS Inn App Purchase Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Inn App Purchase Example.debug.xcconfig"; path = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.debug.xcconfig"; sourceTree = "<group>"; };
-		608479EBDD24716A9E6B3C09 /* Pods_YHY_IOS_In_App_Billing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHY_IOS_In_App_Billing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6405CB9C4F083FE3F7771F81 /* Pods-IOS Inn App Purchase Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Inn App Purchase Example.release.xcconfig"; path = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.release.xcconfig"; sourceTree = "<group>"; };
-		B37958BA90E9D1B06100D7BD /* Pods_IOS_Inn_App_Purchase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Inn_App_Purchase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2058D04BBAD6F9DD7747D629 /* Pods-YHY IOS In App Billing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App Billing.release.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing.release.xcconfig"; sourceTree = "<group>"; };
+		4642167F6D5684E57376ED71 /* Pods-IOS Inn App Purchase Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Inn App Purchase Example.debug.xcconfig"; path = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.debug.xcconfig"; sourceTree = "<group>"; };
+		53A0E96F734FFB598FEAA82B /* Pods_YHY_IOS_In_App_Billing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHY_IOS_In_App_Billing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		967AE78F75890D2CD19EEE94 /* Pods_IOS_Inn_App_Purchase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Inn_App_Purchase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F8A4B91BF354191005225D /* Pods-IOS Inn App Purchase Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Inn App Purchase Example.release.xcconfig"; path = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.release.xcconfig"; sourceTree = "<group>"; };
+		AC5F92D6F260C6BC2BA32EEC /* Pods-YHY IOS In App Billing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App Billing.debug.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing.debug.xcconfig"; sourceTree = "<group>"; };
 		CE473C4E26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YHYIOSInnAppPurchase.podspec; sourceTree = "<group>"; };
 		CE473CA726EF7A6600FDA547 /* RKDropdownAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RKDropdownAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE473CAF26EF7A6A00FDA547 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +55,6 @@
 		CEFFE6BE26E8FE9C00A38A97 /* YHY IOS In App Billing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "YHY IOS In App Billing"; sourceTree = "<group>"; };
 		CEFFE6C626E8FEB500A38A97 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		CEFFE6C826E8FF8600A38A97 /* BillingDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingDB.swift; sourceTree = "<group>"; };
-		E4C6582DE1506A0379908E89 /* Pods-YHY IOS In App Billing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHY IOS In App Billing.debug.xcconfig"; path = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFFE6C726E8FEB500A38A97 /* libsqlite3.dylib in Frameworks */,
-				6F10F245534A24F7E3059BF5 /* Pods_YHY_IOS_In_App_Billing.framework in Frameworks */,
+				15A3CB00887791960194BF6B /* Pods_YHY_IOS_In_App_Billing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE728B892A790369001A5F0E /* StoreKit.framework in Frameworks */,
-				A3E96130315E067C1EC50B51 /* Pods_IOS_Inn_App_Purchase_Example.framework in Frameworks */,
+				2817192E8C82E516BA3EE937 /* Pods_IOS_Inn_App_Purchase_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +82,10 @@
 		785780E806DF0D4E552885E3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				31CF6A86F4325CF2059AB81C /* Pods-IOS Inn App Purchase Example.debug.xcconfig */,
-				6405CB9C4F083FE3F7771F81 /* Pods-IOS Inn App Purchase Example.release.xcconfig */,
-				E4C6582DE1506A0379908E89 /* Pods-YHY IOS In App Billing.debug.xcconfig */,
-				147ACED60B27EFB9144BB5A0 /* Pods-YHY IOS In App Billing.release.xcconfig */,
+				4642167F6D5684E57376ED71 /* Pods-IOS Inn App Purchase Example.debug.xcconfig */,
+				A6F8A4B91BF354191005225D /* Pods-IOS Inn App Purchase Example.release.xcconfig */,
+				AC5F92D6F260C6BC2BA32EEC /* Pods-YHY IOS In App Billing.debug.xcconfig */,
+				2058D04BBAD6F9DD7747D629 /* Pods-YHY IOS In App Billing.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -148,8 +148,8 @@
 				CE473CA726EF7A6600FDA547 /* RKDropdownAlert.framework */,
 				CEFFE6C626E8FEB500A38A97 /* libsqlite3.dylib */,
 				CEFFE6BE26E8FE9C00A38A97 /* YHY IOS In App Billing */,
-				B37958BA90E9D1B06100D7BD /* Pods_IOS_Inn_App_Purchase_Example.framework */,
-				608479EBDD24716A9E6B3C09 /* Pods_YHY_IOS_In_App_Billing.framework */,
+				967AE78F75890D2CD19EEE94 /* Pods_IOS_Inn_App_Purchase_Example.framework */,
+				53A0E96F734FFB598FEAA82B /* Pods_YHY_IOS_In_App_Billing.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE55D50D26E3A67C00E36E8B /* Build configuration list for PBXNativeTarget "YHY IOS In App Billing" */;
 			buildPhases = (
-				A9CE93FF00888FD28220DF33 /* [CP] Check Pods Manifest.lock */,
+				0B6EEB185106DACEC11D7848 /* [CP] Check Pods Manifest.lock */,
 				CE55D4F426E3A67C00E36E8B /* Headers */,
 				CE55D4F526E3A67C00E36E8B /* Sources */,
 				CE55D4F626E3A67C00E36E8B /* Frameworks */,
@@ -190,11 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE55D55326E3ABA800E36E8B /* Build configuration list for PBXNativeTarget "IOS Inn App Purchase Example" */;
 			buildPhases = (
-				C2A2EF0B8ADDD6597C5EF71C /* [CP] Check Pods Manifest.lock */,
+				A9C8F0FDA7E5012B8F90B3CB /* [CP] Check Pods Manifest.lock */,
 				CE55D53E26E3ABA700E36E8B /* Sources */,
 				CE55D53F26E3ABA700E36E8B /* Frameworks */,
 				CE55D54026E3ABA700E36E8B /* Resources */,
-				B544D11DC8E1985C477C0894 /* [CP] Embed Pods Frameworks */,
+				C0A62E2667B0496B36B36B48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,7 +264,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A9CE93FF00888FD28220DF33 /* [CP] Check Pods Manifest.lock */ = {
+		0B6EEB185106DACEC11D7848 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,24 +286,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B544D11DC8E1985C477C0894 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C2A2EF0B8ADDD6597C5EF71C /* [CP] Check Pods Manifest.lock */ = {
+		A9C8F0FDA7E5012B8F90B3CB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,6 +306,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0A62E2667B0496B36B36B48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -496,7 +496,7 @@
 		};
 		CE55D50E26E3A67C00E36E8B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4C6582DE1506A0379908E89 /* Pods-YHY IOS In App Billing.debug.xcconfig */;
+			baseConfigurationReference = AC5F92D6F260C6BC2BA32EEC /* Pods-YHY IOS In App Billing.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -526,7 +526,7 @@
 		};
 		CE55D50F26E3A67C00E36E8B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 147ACED60B27EFB9144BB5A0 /* Pods-YHY IOS In App Billing.release.xcconfig */;
+			baseConfigurationReference = 2058D04BBAD6F9DD7747D629 /* Pods-YHY IOS In App Billing.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -556,7 +556,7 @@
 		};
 		CE55D55426E3ABA800E36E8B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31CF6A86F4325CF2059AB81C /* Pods-IOS Inn App Purchase Example.debug.xcconfig */;
+			baseConfigurationReference = 4642167F6D5684E57376ED71 /* Pods-IOS Inn App Purchase Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -582,7 +582,7 @@
 		};
 		CE55D55526E3ABA800E36E8B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6405CB9C4F083FE3F7771F81 /* Pods-IOS Inn App Purchase Example.release.xcconfig */;
+			baseConfigurationReference = A6F8A4B91BF354191005225D /* Pods-IOS Inn App Purchase Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
