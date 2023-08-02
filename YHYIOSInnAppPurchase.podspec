@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YHYIOSInnAppPurchase"
-  spec.version      = "0.4.2.17"
+  spec.version      = "0.4.2.18"
   spec.summary      = "IOS Inn App Purchase"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ IOS library helps you implement inn app purchase
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Ucdemir/Ucdemir-IOS-Inn_App_Purchase.git", :tag => "0.4.2.17" }
+  spec.source       = { :git => "https://github.com/Ucdemir/Ucdemir-IOS-Inn_App_Purchase.git", :tag => "0.4.2.18" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -144,7 +144,7 @@ IOS library helps you implement inn app purchase
 
  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-
+spec.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
 
 
 
