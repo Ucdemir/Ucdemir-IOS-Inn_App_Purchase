@@ -435,7 +435,7 @@ extension ConnectToApple{
         
        
         
-    }
+    }//
     
     public func shouldRestartApp(shouldRestartApp : Bool)-> ConnectToApple {
         self.shouldRestartApp = shouldRestartApp
