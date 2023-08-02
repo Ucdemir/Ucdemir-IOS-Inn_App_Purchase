@@ -294,6 +294,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hA-5h-LoT">
                                                 <rect key="frame" x="30" y="124.5" width="354" height="30"/>
                                                 <state key="normal" title="CLICK TO VIEW LIBRARY SOURCE"/>
+                                                <connections>
+                                                    <action selector="ActionGoToLibraryPage:" destination="VtJ-xd-yHz" eventType="touchUpInside" id="aT0-ho-zmM"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONSUMABLE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MW3-AR-3fj">
                                                 <rect key="frame" x="109.5" y="184.5" width="195" height="33.5"/>

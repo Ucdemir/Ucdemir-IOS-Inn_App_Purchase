@@ -43,7 +43,7 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate {
     
     
     
-    
+    var shouldRestartApp = false
     
     
     public enum CallType{
@@ -68,6 +68,7 @@ public class ConnectToApple: NSObject,SKProductsRequestDelegate {
        if checkIsFreshStart() == true{
            
        }*/
+       isFreshStart = checkIsFreshStart()
        
        BillingDB.shared.checkAllSkuIsOnDB(skus: listApplicationSKU)
         
@@ -293,18 +294,11 @@ extension ConnectToApple: SKPaymentTransactionObserver {
             }
             
         }
-        /*if queue.transactions.count == 0{
-            let h = ""
-            let g = ""
-        }else {
-            let h = ""
-            let g = ""
-        }*/
-
+       
         
         
         productStatus?(initializeProductsStatusArray())
-        let aa = 1
+        
     }
     
     
@@ -340,6 +334,8 @@ extension ConnectToApple: SKPaymentTransactionObserver {
             }
         }
         productStatus?(initializeProductsStatusArray())
+        
+        
         /*
          below Updated for isFreshStart
         if !isFreshStart{
@@ -358,6 +354,11 @@ extension ConnectToApple: SKPaymentTransactionObserver {
         
         //item bought
         productBoughtCompletionHandler?(transaction.payment.productIdentifier, true)
+        
+        if self.shouldRestartApp{
+            self.quitApp()
+        }
+        
         
         clearRequestAndHandler()
         
@@ -430,13 +431,23 @@ extension ConnectToApple{
         
         productBoughtCompletionHandler = completionHandler
         
+      
+        
+       
+        
     }
     
- 
+    public func shouldRestartApp(shouldRestartApp : Bool)-> ConnectToApple {
+        self.shouldRestartApp = shouldRestartApp
+        
+        return self
+    }
     
-}
-public func shouldFirstProductsReturnTrue(shouldFirstProductsReturnTrue : Bool)-> ConnectToApple{
+    public func shouldFirstProductsReturnTrue(shouldFirstProductsReturnTrue : Bool)-> ConnectToApple{
+        
+        firstProductsReturnTrue = shouldFirstProductsReturnTrue
+        return ConnectToApple.shared
+    }
+
     
-    firstProductsReturnTrue = shouldFirstProductsReturnTrue
-    return ConnectToApple.shared
 }

@@ -89,17 +89,15 @@ class BuyProductsVC: UIViewController {
                     YHYHud.shared.hideHud()
                     self.buyProductDic[p.productIdentifier] = p
                     
-                    //YHYHud.shared.hideHud()
-                    //print("Found product: \(p.productIdentifier) \(p.localizedTitle) \(p.price.floatValue)")
-                    //print(2)
+                   
                 }
                 
             }
-            ).boughtProduct(){  productIdentifier, isBought in
+            ).shouldRestartApp(shouldRestartApp: false).boughtProduct(){  productIdentifier, isBought in
                 
                 if isBought{
                     self.showToastMsg(title : "Success",message: "License Loaded... Re-Open App")
-                    ConnectToApple.shared.quitApp()
+                    //ConnectToApple.shared.quitApp()
                     
                 }else{
                     self.showToastMsg(title: "Fail..", message: "Purchase failed")

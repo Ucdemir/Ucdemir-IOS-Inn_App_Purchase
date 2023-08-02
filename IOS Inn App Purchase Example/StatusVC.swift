@@ -37,7 +37,7 @@ class StatusVC: UIViewController {
         //let x = ConnectToApple.shared.checkIsFreshStart()
         
         ConnectToApple.shared.billingSKUS(listApplicationSKU: listOfApplicationSKU)
-            .startToWork(type: ConnectToApple.CallType.CheckProductStatus).statusOfProducts(){ status in
+            .startToWork(type: ConnectToApple.CallType.CheckProductStatus).shouldFirstProductsReturnTrue(shouldFirstProductsReturnTrue: false).statusOfProducts(){ status in
                 
                 
                 
@@ -47,39 +47,39 @@ class StatusVC: UIViewController {
                         
                         
                         
-                        self.lblAChecking.text = row.isPurchased.description
+                        self.lblAChecking.text = BillingDB.shared.whatIsStatus(skuName: row.productIdentifier).description//row.isPurchased.description
                         
                         
                     }else if  row.productIdentifier == "sku.B" {
                         
-                        self.lblBChecking.text = row.isPurchased.description
+                        self.lblBChecking.text = BillingDB.shared.whatIsStatus(skuName: row.productIdentifier).description//row.isPurchased.description
                         
                         
                     }else if  row.productIdentifier == "sku.C" {
-                        self.lblCChecking.text = row.isPurchased.description
+                        self.lblCChecking.text = BillingDB.shared.whatIsStatus(skuName: row.productIdentifier).description//row.isPurchased.description
                         
                         
                     }else if  row.productIdentifier == "sku.D" {
-                        self.lblDChecking.text = row.isPurchased.description
+                        self.lblDChecking.text = BillingDB.shared.whatIsStatus(skuName: row.productIdentifier).description//row.isPurchased.description
                         
                         
                     }else if  row.productIdentifier == "sku.E" {
-                        self.lblEChecking.text = row.isPurchased.description
+                        self.lblEChecking.text = BillingDB.shared.whatIsStatus(skuName: row.productIdentifier).description//row.isPurchased.description
                         
                         
                         
                     }else if  row.productIdentifier == "sku.F" {
-                        self.lblFChecking.text = row.isPurchased.description
+                        self.lblFChecking.text = BillingDB.shared.whatIsStatus(skuName: row.productIdentifier).description//row.isPurchased.description
                         
                         
                         
                     }else if  row.productIdentifier == "sku.G" {
-                        self.lblGChecking.text = row.isPurchased.description
+                        self.lblGChecking.text = BillingDB.shared.whatIsStatus(skuName: row.productIdentifier).description//row.isPurchased.description
                         
                         
                         
                     }else if  row.productIdentifier == "sku.H" {
-                        self.lblHChecking.text = row.isPurchased.description
+                        self.lblHChecking.text = BillingDB.shared.whatIsStatus(skuName: row.productIdentifier).description//row.isPurchased.description
                         
                         
                         

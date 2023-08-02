@@ -127,12 +127,12 @@
 			children = (
 				CE55D54426E3ABA700E36E8B /* AppDelegate.swift */,
 				CE55D54826E3ABA700E36E8B /* StatusVC.swift */,
+				CE49B60F26E4E76A0089D469 /* BuyProductsVC.swift */,
+				CE49B62226E5FFBB0089D469 /* YHYHud.swift */,
 				CE55D54A26E3ABA700E36E8B /* Main.storyboard */,
 				CE55D54D26E3ABA800E36E8B /* Assets.xcassets */,
 				CE55D54F26E3ABA800E36E8B /* LaunchScreen.storyboard */,
 				CE55D55226E3ABA800E36E8B /* Info.plist */,
-				CE49B60F26E4E76A0089D469 /* BuyProductsVC.swift */,
-				CE49B62226E5FFBB0089D469 /* YHYHud.swift */,
 			);
 			path = "IOS Inn App Purchase Example";
 			sourceTree = "<group>";
