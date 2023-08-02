@@ -562,6 +562,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "IOS Inn App Purchase Example/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "In App Purchase Example";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -587,6 +588,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "IOS Inn App Purchase Example/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "In App Purchase Example";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
