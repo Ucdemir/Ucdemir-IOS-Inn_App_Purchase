@@ -35,7 +35,7 @@ import SQLite3
 public typealias Star = (Expression<Binding>?, Expression<Binding>?) -> Expression<Void>
 
 public func *(_: Expression<Binding>?, _: Expression<Binding>?) -> Expression<Void> {
-    return Expression(literal: "*")
+    Expression(literal: "*")
 }
 
 public protocol _OptionalType {
@@ -44,7 +44,7 @@ public protocol _OptionalType {
 
 }
 
-extension Optional : _OptionalType {
+extension Optional: _OptionalType {
 
     public typealias WrappedType = Wrapped
 
@@ -54,12 +54,17 @@ extension Optional : _OptionalType {
 let SQLITE_TRANSIENT = unsafeBitCast(-1, to: sqlite3_destructor_type.self)
 
 extension String {
-
     func quote(_ mark: Character = "\"") -> String {
-        let escaped = reduce("") { string, character in
-            string + (character == mark ? "\(mark)\(mark)" : "\(character)")
+        var quoted = ""
+        quoted.append(mark)
+        for character in self {
+            quoted.append(character)
+            if character == mark {
+                quoted.append(character)
+            }
         }
-        return "\(mark)\(escaped)\(mark)"
+        quoted.append(mark)
+        return quoted
     }
 
     func join(_ expressions: [Expressible]) -> Expressible {
@@ -73,9 +78,9 @@ extension String {
     }
 
     func infix<T>(_ lhs: Expressible, _ rhs: Expressible, wrap: Bool = true) -> Expression<T> {
-        return infix([lhs, rhs], wrap: wrap)
+        infix([lhs, rhs], wrap: wrap)
     }
-    
+
     func infix<T>(_ terms: [Expressible], wrap: Bool = true) -> Expression<T> {
         let expression = Expression<T>(" \(self) ".join(terms).expression)
         guard wrap else {
@@ -85,19 +90,19 @@ extension String {
     }
 
     func prefix(_ expressions: Expressible) -> Expressible {
-        return "\(self) ".wrap(expressions) as Expression<Void>
+        "\(self) ".wrap(expressions) as Expression<Void>
     }
 
     func prefix(_ expressions: [Expressible]) -> Expressible {
-        return "\(self) ".wrap(expressions) as Expression<Void>
+        "\(self) ".wrap(expressions) as Expression<Void>
     }
 
     func wrap<T>(_ expression: Expressible) -> Expression<T> {
-        return Expression("\(self)(\(expression.expression.template))", expression.expression.bindings)
+        Expression("\(self)(\(expression.expression.template))", expression.expression.bindings)
     }
 
     func wrap<T>(_ expressions: [Expressible]) -> Expression<T> {
-        return wrap(", ".join(expressions))
+        wrap(", ".join(expressions))
     }
 
 }
@@ -115,10 +120,11 @@ func transcode(_ literal: Binding?) -> String {
     }
 }
 
-func value<A: Value>(_ v: Binding) -> A {
-    return A.fromDatatypeValue(v as! A.Datatype) as! A
+// swiftlint:disable force_cast
+func value<A: Value>(_ binding: Binding) -> A {
+    A.fromDatatypeValue(binding as! A.Datatype) as! A
 }
 
-func value<A: Value>(_ v: Binding?) -> A {
-    return value(v!)
+func value<A: Value>(_ binding: Binding?) -> A {
+    value(binding!)
 }
