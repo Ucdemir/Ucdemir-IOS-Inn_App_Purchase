@@ -81,7 +81,7 @@ IOS library helps you implement inn app purchase
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Ucdemir/Ucdemir-IOS-Inn_App_Purchase.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Ucdemir/Ucdemir-IOS-Inn_App_Purchase.git", :tag => "0.4.2.16" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
