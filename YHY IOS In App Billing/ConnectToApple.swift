@@ -418,7 +418,7 @@ extension ConnectToApple{
         
         productStatus = completionHandler
       
-        let test = ""
+        
         
         
         //UPDATE - Below will be checked - 01.08.2023 commentlendi
