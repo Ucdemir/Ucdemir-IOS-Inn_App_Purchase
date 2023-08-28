@@ -4,7 +4,7 @@
 target 'IOS Inn App Purchase Example' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'SQLite.swift'
+
 pod 'RKDropdownAlert'
   # Pods for IOS Inn App Purchase Example
 
@@ -13,7 +13,7 @@ end
 target 'YHY IOS In App Billing' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'SQLite.swift'
+  pod 'SQLite.swift', '0.14.1'
 
   # Pods for YHY IOS In App Billing
 
@@ -24,7 +24,7 @@ end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = "11.0"
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = "13.0"
      end
   end
 end
