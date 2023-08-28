@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YHYIOSInnAppPurchase"
-  spec.version      = "0.4.2.25"
+  spec.version      = "0.4.2.26"
   spec.summary      = "IOS Inn App Purchase"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ IOS library helps you implement inn app purchase
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Ucdemir/Ucdemir-IOS-Inn_App_Purchase.git", :tag => "0.4.2.25" }
+  spec.source       = { :git => "https://github.com/Ucdemir/Ucdemir-IOS-Inn_App_Purchase.git", :tag => "0.4.2.26" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -138,7 +138,7 @@ IOS library helps you implement inn app purchase
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
-  # spec.dependency 'SQLite.swift', '~> 0.12.0'
+  spec.dependency 'SQLite.swift', '~> 0.14.1'
 
  
 

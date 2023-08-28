@@ -18,82 +18,10 @@
 		CE55D54C26E3ABA700E36E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54A26E3ABA700E36E8B /* Main.storyboard */; };
 		CE55D54E26E3ABA800E36E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54D26E3ABA800E36E8B /* Assets.xcassets */; };
 		CE55D55126E3ABA800E36E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE55D54F26E3ABA800E36E8B /* LaunchScreen.storyboard */; };
-		CE71C76C2A9CA38B00AAD655 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C73D2A9CA38B00AAD655 /* Connection.swift */; };
-		CE71C76D2A9CA38B00AAD655 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C73E2A9CA38B00AAD655 /* Backup.swift */; };
-		CE71C76E2A9CA38B00AAD655 /* SQLiteVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C73F2A9CA38B00AAD655 /* SQLiteVersion.swift */; };
-		CE71C76F2A9CA38B00AAD655 /* SQLiteFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7402A9CA38B00AAD655 /* SQLiteFeature.swift */; };
-		CE71C7702A9CA38B00AAD655 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7412A9CA38B00AAD655 /* Result.swift */; };
-		CE71C7712A9CA38B00AAD655 /* Connection+Aggregation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7422A9CA38B00AAD655 /* Connection+Aggregation.swift */; };
-		CE71C7722A9CA38B00AAD655 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7432A9CA38B00AAD655 /* Blob.swift */; };
-		CE71C7732A9CA38B00AAD655 /* Connection+Pragmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7442A9CA38B00AAD655 /* Connection+Pragmas.swift */; };
-		CE71C7742A9CA38B00AAD655 /* URIQueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7452A9CA38B00AAD655 /* URIQueryParameter.swift */; };
-		CE71C7752A9CA38B00AAD655 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7462A9CA38B00AAD655 /* Errors.swift */; };
-		CE71C7762A9CA38B00AAD655 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7472A9CA38B00AAD655 /* Statement.swift */; };
-		CE71C7772A9CA38B00AAD655 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7482A9CA38B00AAD655 /* Value.swift */; };
-		CE71C7782A9CA38B00AAD655 /* Connection+Attach.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7492A9CA38B00AAD655 /* Connection+Attach.swift */; };
-		CE71C7792A9CA38B00AAD655 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74A2A9CA38B00AAD655 /* Helpers.swift */; };
-		CE71C77A2A9CA38B00AAD655 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74C2A9CA38B00AAD655 /* Cipher.swift */; };
-		CE71C77B2A9CA38B00AAD655 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74D2A9CA38B00AAD655 /* RTree.swift */; };
-		CE71C77C2A9CA38B00AAD655 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74E2A9CA38B00AAD655 /* FTS4.swift */; };
-		CE71C77D2A9CA38B00AAD655 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74F2A9CA38B00AAD655 /* FTS5.swift */; };
-		CE71C77E2A9CA38B00AAD655 /* SchemaDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7512A9CA38B00AAD655 /* SchemaDefinitions.swift */; };
-		CE71C77F2A9CA38B00AAD655 /* SchemaReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7522A9CA38B00AAD655 /* SchemaReader.swift */; };
-		CE71C7802A9CA38B00AAD655 /* Connection+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7532A9CA38B00AAD655 /* Connection+Schema.swift */; };
-		CE71C7812A9CA38B00AAD655 /* SchemaChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7542A9CA38B00AAD655 /* SchemaChanger.swift */; };
-		CE71C7822A9CA38B00AAD655 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7552A9CA38B00AAD655 /* Foundation.swift */; };
-		CE71C7832A9CA38B00AAD655 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = CE71C7562A9CA38B00AAD655 /* SQLite.h */; };
-		CE71C7842A9CA38B00AAD655 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7582A9CA38B00AAD655 /* Query.swift */; };
-		CE71C7852A9CA38B00AAD655 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7592A9CA38B00AAD655 /* Coding.swift */; };
-		CE71C7862A9CA38B00AAD655 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75A2A9CA38B00AAD655 /* Expression.swift */; };
-		CE71C7872A9CA38B00AAD655 /* Query+with.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75B2A9CA38B00AAD655 /* Query+with.swift */; };
-		CE71C7882A9CA38B00AAD655 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75C2A9CA38B00AAD655 /* CoreFunctions.swift */; };
-		CE71C7892A9CA38B00AAD655 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75D2A9CA38B00AAD655 /* Collation.swift */; };
-		CE71C78A2A9CA38B00AAD655 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75E2A9CA38B00AAD655 /* CustomFunctions.swift */; };
-		CE71C78B2A9CA38B00AAD655 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75F2A9CA38B00AAD655 /* DateAndTimeFunctions.swift */; };
-		CE71C78C2A9CA38B00AAD655 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7602A9CA38B00AAD655 /* Setter.swift */; };
-		CE71C78D2A9CA38B00AAD655 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7612A9CA38B00AAD655 /* Operators.swift */; };
-		CE71C78E2A9CA38B00AAD655 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7622A9CA38B00AAD655 /* Schema.swift */; };
-		CE71C78F2A9CA38B00AAD655 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7632A9CA38B00AAD655 /* AggregateFunctions.swift */; };
-		CE71C7902A9CA38B00AAD655 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE71C7642A9CA38B00AAD655 /* Info.plist */; };
 		CE72542C2A7AEC6300445BC0 /* BillingDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE6C826E8FF8600A38A97 /* BillingDB.swift */; };
 		CE72542D2A7AECDE00445BC0 /* ConnectToApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B61426E4FF100089D469 /* ConnectToApple.swift */; };
 		CE72542E2A7AECE100445BC0 /* BillingDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE6C826E8FF8600A38A97 /* BillingDB.swift */; };
 		CE728B892A790369001A5F0E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE728B882A790369001A5F0E /* StoreKit.framework */; };
-		CE7D96B62A9D1C8200ABA390 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C73D2A9CA38B00AAD655 /* Connection.swift */; };
-		CE7D96BE2A9D1C8400ABA390 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C73E2A9CA38B00AAD655 /* Backup.swift */; };
-		CE7D96BF2A9D1C8600ABA390 /* SQLiteVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C73F2A9CA38B00AAD655 /* SQLiteVersion.swift */; };
-		CE7D96C02A9D1C8800ABA390 /* SQLiteFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7402A9CA38B00AAD655 /* SQLiteFeature.swift */; };
-		CE7D96C12A9D1C8A00ABA390 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7412A9CA38B00AAD655 /* Result.swift */; };
-		CE7D96C22A9D1C8D00ABA390 /* Connection+Aggregation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7422A9CA38B00AAD655 /* Connection+Aggregation.swift */; };
-		CE7D96C32A9D1C8F00ABA390 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7432A9CA38B00AAD655 /* Blob.swift */; };
-		CE7D96C42A9D1C9100ABA390 /* Connection+Pragmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7442A9CA38B00AAD655 /* Connection+Pragmas.swift */; };
-		CE7D96C52A9D1C9300ABA390 /* URIQueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7452A9CA38B00AAD655 /* URIQueryParameter.swift */; };
-		CE7D96C62A9D1C9600ABA390 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7462A9CA38B00AAD655 /* Errors.swift */; };
-		CE7D96C72A9D1C9A00ABA390 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7472A9CA38B00AAD655 /* Statement.swift */; };
-		CE7D96C82A9D1C9C00ABA390 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7482A9CA38B00AAD655 /* Value.swift */; };
-		CE7D96C92A9D1C9F00ABA390 /* Connection+Attach.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7492A9CA38B00AAD655 /* Connection+Attach.swift */; };
-		CE7D96CA2A9D1CA100ABA390 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74A2A9CA38B00AAD655 /* Helpers.swift */; };
-		CE7D96CB2A9D1CA700ABA390 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74C2A9CA38B00AAD655 /* Cipher.swift */; };
-		CE7D96CC2A9D1CA900ABA390 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74D2A9CA38B00AAD655 /* RTree.swift */; };
-		CE7D96CD2A9D1CAB00ABA390 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74E2A9CA38B00AAD655 /* FTS4.swift */; };
-		CE7D96CE2A9D1CAD00ABA390 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74F2A9CA38B00AAD655 /* FTS5.swift */; };
-		CE7D96CF2A9D1CB100ABA390 /* SchemaDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7512A9CA38B00AAD655 /* SchemaDefinitions.swift */; };
-		CE7D96D02A9D1CB300ABA390 /* SchemaReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7522A9CA38B00AAD655 /* SchemaReader.swift */; };
-		CE7D96D12A9D1CB500ABA390 /* Connection+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7532A9CA38B00AAD655 /* Connection+Schema.swift */; };
-		CE7D96D22A9D1CB800ABA390 /* SchemaChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7542A9CA38B00AAD655 /* SchemaChanger.swift */; };
-		CE7D96D32A9D1CBA00ABA390 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7552A9CA38B00AAD655 /* Foundation.swift */; };
-		CE7D96D42A9D1CCE00ABA390 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7582A9CA38B00AAD655 /* Query.swift */; };
-		CE7D96D52A9D1CD000ABA390 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7592A9CA38B00AAD655 /* Coding.swift */; };
-		CE7D96D62A9D1CE100ABA390 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75A2A9CA38B00AAD655 /* Expression.swift */; };
-		CE7D96D72A9D1CE500ABA390 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75C2A9CA38B00AAD655 /* CoreFunctions.swift */; };
-		CE7D96D82A9D1CE500ABA390 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7622A9CA38B00AAD655 /* Schema.swift */; };
-		CE7D96D92A9D1CE500ABA390 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7612A9CA38B00AAD655 /* Operators.swift */; };
-		CE7D96DA2A9D1CE500ABA390 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75E2A9CA38B00AAD655 /* CustomFunctions.swift */; };
-		CE7D96DB2A9D1CE500ABA390 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7602A9CA38B00AAD655 /* Setter.swift */; };
-		CE7D96DC2A9D1CE500ABA390 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7632A9CA38B00AAD655 /* AggregateFunctions.swift */; };
-		CE7D96DD2A9D1CE500ABA390 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75D2A9CA38B00AAD655 /* Collation.swift */; };
-		CE7D96DE2A9D1CE500ABA390 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75F2A9CA38B00AAD655 /* DateAndTimeFunctions.swift */; };
-		CE7D96DF2A9D1CE500ABA390 /* Query+with.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75B2A9CA38B00AAD655 /* Query+with.swift */; };
 		CEFFE6C726E8FEB500A38A97 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFFE6C626E8FEB500A38A97 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
@@ -175,43 +103,6 @@
 		CE55D54D26E3ABA800E36E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE55D55026E3ABA800E36E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE55D55226E3ABA800E36E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE71C73D2A9CA38B00AAD655 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
-		CE71C73E2A9CA38B00AAD655 /* Backup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
-		CE71C73F2A9CA38B00AAD655 /* SQLiteVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteVersion.swift; sourceTree = "<group>"; };
-		CE71C7402A9CA38B00AAD655 /* SQLiteFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteFeature.swift; sourceTree = "<group>"; };
-		CE71C7412A9CA38B00AAD655 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		CE71C7422A9CA38B00AAD655 /* Connection+Aggregation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+Aggregation.swift"; sourceTree = "<group>"; };
-		CE71C7432A9CA38B00AAD655 /* Blob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
-		CE71C7442A9CA38B00AAD655 /* Connection+Pragmas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+Pragmas.swift"; sourceTree = "<group>"; };
-		CE71C7452A9CA38B00AAD655 /* URIQueryParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URIQueryParameter.swift; sourceTree = "<group>"; };
-		CE71C7462A9CA38B00AAD655 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		CE71C7472A9CA38B00AAD655 /* Statement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
-		CE71C7482A9CA38B00AAD655 /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
-		CE71C7492A9CA38B00AAD655 /* Connection+Attach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+Attach.swift"; sourceTree = "<group>"; };
-		CE71C74A2A9CA38B00AAD655 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		CE71C74C2A9CA38B00AAD655 /* Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cipher.swift; sourceTree = "<group>"; };
-		CE71C74D2A9CA38B00AAD655 /* RTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTree.swift; sourceTree = "<group>"; };
-		CE71C74E2A9CA38B00AAD655 /* FTS4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTS4.swift; sourceTree = "<group>"; };
-		CE71C74F2A9CA38B00AAD655 /* FTS5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTS5.swift; sourceTree = "<group>"; };
-		CE71C7512A9CA38B00AAD655 /* SchemaDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaDefinitions.swift; sourceTree = "<group>"; };
-		CE71C7522A9CA38B00AAD655 /* SchemaReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaReader.swift; sourceTree = "<group>"; };
-		CE71C7532A9CA38B00AAD655 /* Connection+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+Schema.swift"; sourceTree = "<group>"; };
-		CE71C7542A9CA38B00AAD655 /* SchemaChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaChanger.swift; sourceTree = "<group>"; };
-		CE71C7552A9CA38B00AAD655 /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
-		CE71C7562A9CA38B00AAD655 /* SQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLite.h; sourceTree = "<group>"; };
-		CE71C7582A9CA38B00AAD655 /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
-		CE71C7592A9CA38B00AAD655 /* Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
-		CE71C75A2A9CA38B00AAD655 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
-		CE71C75B2A9CA38B00AAD655 /* Query+with.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+with.swift"; sourceTree = "<group>"; };
-		CE71C75C2A9CA38B00AAD655 /* CoreFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreFunctions.swift; sourceTree = "<group>"; };
-		CE71C75D2A9CA38B00AAD655 /* Collation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collation.swift; sourceTree = "<group>"; };
-		CE71C75E2A9CA38B00AAD655 /* CustomFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFunctions.swift; sourceTree = "<group>"; };
-		CE71C75F2A9CA38B00AAD655 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateAndTimeFunctions.swift; sourceTree = "<group>"; };
-		CE71C7602A9CA38B00AAD655 /* Setter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setter.swift; sourceTree = "<group>"; };
-		CE71C7612A9CA38B00AAD655 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
-		CE71C7622A9CA38B00AAD655 /* Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
-		CE71C7632A9CA38B00AAD655 /* AggregateFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateFunctions.swift; sourceTree = "<group>"; };
-		CE71C7642A9CA38B00AAD655 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE72540D2A7AEACD00445BC0 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		CE7254422A7AEE3E00445BC0 /* RKDropdownAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RKDropdownAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE728B882A790369001A5F0E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -257,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				CE473C4E26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec */,
-				CE71C73B2A9CA38B00AAD655 /* Sqlite */,
 				CE55D4FB26E3A67C00E36E8B /* YHY IOS In App Billing */,
 				CE55D54326E3ABA700E36E8B /* IOS Inn App Purchase Example */,
 				CE55D4FA26E3A67C00E36E8B /* Products */,
@@ -301,82 +191,6 @@
 			path = "IOS Inn App Purchase Example";
 			sourceTree = "<group>";
 		};
-		CE71C73B2A9CA38B00AAD655 /* Sqlite */ = {
-			isa = PBXGroup;
-			children = (
-				CE71C73C2A9CA38B00AAD655 /* Core */,
-				CE71C74A2A9CA38B00AAD655 /* Helpers.swift */,
-				CE71C74B2A9CA38B00AAD655 /* Extensions */,
-				CE71C7502A9CA38B00AAD655 /* Schema */,
-				CE71C7552A9CA38B00AAD655 /* Foundation.swift */,
-				CE71C7562A9CA38B00AAD655 /* SQLite.h */,
-				CE71C7572A9CA38B00AAD655 /* Typed */,
-				CE71C7642A9CA38B00AAD655 /* Info.plist */,
-			);
-			path = Sqlite;
-			sourceTree = "<group>";
-		};
-		CE71C73C2A9CA38B00AAD655 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				CE71C73D2A9CA38B00AAD655 /* Connection.swift */,
-				CE71C73E2A9CA38B00AAD655 /* Backup.swift */,
-				CE71C73F2A9CA38B00AAD655 /* SQLiteVersion.swift */,
-				CE71C7402A9CA38B00AAD655 /* SQLiteFeature.swift */,
-				CE71C7412A9CA38B00AAD655 /* Result.swift */,
-				CE71C7422A9CA38B00AAD655 /* Connection+Aggregation.swift */,
-				CE71C7432A9CA38B00AAD655 /* Blob.swift */,
-				CE71C7442A9CA38B00AAD655 /* Connection+Pragmas.swift */,
-				CE71C7452A9CA38B00AAD655 /* URIQueryParameter.swift */,
-				CE71C7462A9CA38B00AAD655 /* Errors.swift */,
-				CE71C7472A9CA38B00AAD655 /* Statement.swift */,
-				CE71C7482A9CA38B00AAD655 /* Value.swift */,
-				CE71C7492A9CA38B00AAD655 /* Connection+Attach.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		CE71C74B2A9CA38B00AAD655 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CE71C74C2A9CA38B00AAD655 /* Cipher.swift */,
-				CE71C74D2A9CA38B00AAD655 /* RTree.swift */,
-				CE71C74E2A9CA38B00AAD655 /* FTS4.swift */,
-				CE71C74F2A9CA38B00AAD655 /* FTS5.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		CE71C7502A9CA38B00AAD655 /* Schema */ = {
-			isa = PBXGroup;
-			children = (
-				CE71C7512A9CA38B00AAD655 /* SchemaDefinitions.swift */,
-				CE71C7522A9CA38B00AAD655 /* SchemaReader.swift */,
-				CE71C7532A9CA38B00AAD655 /* Connection+Schema.swift */,
-				CE71C7542A9CA38B00AAD655 /* SchemaChanger.swift */,
-			);
-			path = Schema;
-			sourceTree = "<group>";
-		};
-		CE71C7572A9CA38B00AAD655 /* Typed */ = {
-			isa = PBXGroup;
-			children = (
-				CE71C7582A9CA38B00AAD655 /* Query.swift */,
-				CE71C7592A9CA38B00AAD655 /* Coding.swift */,
-				CE71C75A2A9CA38B00AAD655 /* Expression.swift */,
-				CE71C75B2A9CA38B00AAD655 /* Query+with.swift */,
-				CE71C75C2A9CA38B00AAD655 /* CoreFunctions.swift */,
-				CE71C75D2A9CA38B00AAD655 /* Collation.swift */,
-				CE71C75E2A9CA38B00AAD655 /* CustomFunctions.swift */,
-				CE71C75F2A9CA38B00AAD655 /* DateAndTimeFunctions.swift */,
-				CE71C7602A9CA38B00AAD655 /* Setter.swift */,
-				CE71C7612A9CA38B00AAD655 /* Operators.swift */,
-				CE71C7622A9CA38B00AAD655 /* Schema.swift */,
-				CE71C7632A9CA38B00AAD655 /* AggregateFunctions.swift */,
-			);
-			path = Typed;
-			sourceTree = "<group>";
-		};
 		CE72540E2A7AEACD00445BC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,7 +231,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE71C7832A9CA38B00AAD655 /* SQLite.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +375,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE71C7902A9CA38B00AAD655 /* Info.plist in Resources */,
 				CE473C4F26EF4D4500FDA547 /* YHYIOSInnAppPurchase.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -648,42 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE71C78E2A9CA38B00AAD655 /* Schema.swift in Sources */,
-				CE71C78F2A9CA38B00AAD655 /* AggregateFunctions.swift in Sources */,
-				CE71C76F2A9CA38B00AAD655 /* SQLiteFeature.swift in Sources */,
-				CE71C7782A9CA38B00AAD655 /* Connection+Attach.swift in Sources */,
-				CE71C7732A9CA38B00AAD655 /* Connection+Pragmas.swift in Sources */,
 				CE49B61526E4FF100089D469 /* ConnectToApple.swift in Sources */,
-				CE71C78A2A9CA38B00AAD655 /* CustomFunctions.swift in Sources */,
-				CE71C7712A9CA38B00AAD655 /* Connection+Aggregation.swift in Sources */,
-				CE71C78C2A9CA38B00AAD655 /* Setter.swift in Sources */,
-				CE71C77F2A9CA38B00AAD655 /* SchemaReader.swift in Sources */,
-				CE71C7882A9CA38B00AAD655 /* CoreFunctions.swift in Sources */,
-				CE71C7872A9CA38B00AAD655 /* Query+with.swift in Sources */,
-				CE71C7762A9CA38B00AAD655 /* Statement.swift in Sources */,
-				CE71C7802A9CA38B00AAD655 /* Connection+Schema.swift in Sources */,
-				CE71C7752A9CA38B00AAD655 /* Errors.swift in Sources */,
-				CE71C77A2A9CA38B00AAD655 /* Cipher.swift in Sources */,
-				CE71C76E2A9CA38B00AAD655 /* SQLiteVersion.swift in Sources */,
-				CE71C77C2A9CA38B00AAD655 /* FTS4.swift in Sources */,
-				CE71C78D2A9CA38B00AAD655 /* Operators.swift in Sources */,
-				CE71C77E2A9CA38B00AAD655 /* SchemaDefinitions.swift in Sources */,
-				CE71C76D2A9CA38B00AAD655 /* Backup.swift in Sources */,
-				CE71C77D2A9CA38B00AAD655 /* FTS5.swift in Sources */,
-				CE71C7812A9CA38B00AAD655 /* SchemaChanger.swift in Sources */,
-				CE71C77B2A9CA38B00AAD655 /* RTree.swift in Sources */,
-				CE71C7742A9CA38B00AAD655 /* URIQueryParameter.swift in Sources */,
-				CE71C7822A9CA38B00AAD655 /* Foundation.swift in Sources */,
-				CE71C7862A9CA38B00AAD655 /* Expression.swift in Sources */,
-				CE71C7772A9CA38B00AAD655 /* Value.swift in Sources */,
-				CE71C7842A9CA38B00AAD655 /* Query.swift in Sources */,
-				CE71C7852A9CA38B00AAD655 /* Coding.swift in Sources */,
-				CE71C7792A9CA38B00AAD655 /* Helpers.swift in Sources */,
-				CE71C78B2A9CA38B00AAD655 /* DateAndTimeFunctions.swift in Sources */,
-				CE71C7702A9CA38B00AAD655 /* Result.swift in Sources */,
-				CE71C7892A9CA38B00AAD655 /* Collation.swift in Sources */,
-				CE71C7722A9CA38B00AAD655 /* Blob.swift in Sources */,
-				CE71C76C2A9CA38B00AAD655 /* Connection.swift in Sources */,
 				CE72542C2A7AEC6300445BC0 /* BillingDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,46 +470,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE49B61026E4E76A0089D469 /* BuyProductsVC.swift in Sources */,
-				CE7D96C52A9D1C9300ABA390 /* URIQueryParameter.swift in Sources */,
-				CE7D96DF2A9D1CE500ABA390 /* Query+with.swift in Sources */,
-				CE7D96C32A9D1C8F00ABA390 /* Blob.swift in Sources */,
-				CE7D96D72A9D1CE500ABA390 /* CoreFunctions.swift in Sources */,
-				CE7D96DA2A9D1CE500ABA390 /* CustomFunctions.swift in Sources */,
-				CE7D96CA2A9D1CA100ABA390 /* Helpers.swift in Sources */,
-				CE7D96DE2A9D1CE500ABA390 /* DateAndTimeFunctions.swift in Sources */,
-				CE7D96D52A9D1CD000ABA390 /* Coding.swift in Sources */,
-				CE7D96BF2A9D1C8600ABA390 /* SQLiteVersion.swift in Sources */,
-				CE7D96D02A9D1CB300ABA390 /* SchemaReader.swift in Sources */,
-				CE7D96C62A9D1C9600ABA390 /* Errors.swift in Sources */,
-				CE7D96D22A9D1CB800ABA390 /* SchemaChanger.swift in Sources */,
-				CE7D96C82A9D1C9C00ABA390 /* Value.swift in Sources */,
-				CE7D96CD2A9D1CAB00ABA390 /* FTS4.swift in Sources */,
-				CE7D96DD2A9D1CE500ABA390 /* Collation.swift in Sources */,
-				CE7D96DB2A9D1CE500ABA390 /* Setter.swift in Sources */,
-				CE7D96D82A9D1CE500ABA390 /* Schema.swift in Sources */,
-				CE7D96D42A9D1CCE00ABA390 /* Query.swift in Sources */,
 				CE55D54926E3ABA700E36E8B /* StatusVC.swift in Sources */,
-				CE7D96D32A9D1CBA00ABA390 /* Foundation.swift in Sources */,
-				CE7D96D92A9D1CE500ABA390 /* Operators.swift in Sources */,
 				CE72542D2A7AECDE00445BC0 /* ConnectToApple.swift in Sources */,
-				CE7D96CB2A9D1CA700ABA390 /* Cipher.swift in Sources */,
-				CE7D96C42A9D1C9100ABA390 /* Connection+Pragmas.swift in Sources */,
-				CE7D96C02A9D1C8800ABA390 /* SQLiteFeature.swift in Sources */,
 				CE49B62326E5FFBB0089D469 /* YHYHud.swift in Sources */,
-				CE7D96CF2A9D1CB100ABA390 /* SchemaDefinitions.swift in Sources */,
-				CE7D96C22A9D1C8D00ABA390 /* Connection+Aggregation.swift in Sources */,
-				CE7D96CC2A9D1CA900ABA390 /* RTree.swift in Sources */,
-				CE7D96DC2A9D1CE500ABA390 /* AggregateFunctions.swift in Sources */,
-				CE7D96C72A9D1C9A00ABA390 /* Statement.swift in Sources */,
 				CE55D54526E3ABA700E36E8B /* AppDelegate.swift in Sources */,
-				CE7D96BE2A9D1C8400ABA390 /* Backup.swift in Sources */,
-				CE7D96C92A9D1C9F00ABA390 /* Connection+Attach.swift in Sources */,
-				CE7D96D12A9D1CB500ABA390 /* Connection+Schema.swift in Sources */,
-				CE7D96D62A9D1CE100ABA390 /* Expression.swift in Sources */,
 				CE72542E2A7AECE100445BC0 /* BillingDB.swift in Sources */,
-				CE7D96B62A9D1C8200ABA390 /* Connection.swift in Sources */,
-				CE7D96C12A9D1C8A00ABA390 /* Result.swift in Sources */,
-				CE7D96CE2A9D1CAD00ABA390 /* FTS5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
