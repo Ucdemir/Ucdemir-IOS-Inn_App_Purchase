@@ -65,7 +65,7 @@ IOS library helps you implement inn app purchase
   #
 
   # spec.platform     = :ios
-   spec.platform     = :ios, "11.0"
+   spec.platform     = :ios, "13.0"
 
 
   #  When using multiple platforms
