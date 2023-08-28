@@ -59,6 +59,41 @@
 		CE72542D2A7AECDE00445BC0 /* ConnectToApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49B61426E4FF100089D469 /* ConnectToApple.swift */; };
 		CE72542E2A7AECE100445BC0 /* BillingDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFE6C826E8FF8600A38A97 /* BillingDB.swift */; };
 		CE728B892A790369001A5F0E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE728B882A790369001A5F0E /* StoreKit.framework */; };
+		CE7D96B62A9D1C8200ABA390 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C73D2A9CA38B00AAD655 /* Connection.swift */; };
+		CE7D96BE2A9D1C8400ABA390 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C73E2A9CA38B00AAD655 /* Backup.swift */; };
+		CE7D96BF2A9D1C8600ABA390 /* SQLiteVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C73F2A9CA38B00AAD655 /* SQLiteVersion.swift */; };
+		CE7D96C02A9D1C8800ABA390 /* SQLiteFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7402A9CA38B00AAD655 /* SQLiteFeature.swift */; };
+		CE7D96C12A9D1C8A00ABA390 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7412A9CA38B00AAD655 /* Result.swift */; };
+		CE7D96C22A9D1C8D00ABA390 /* Connection+Aggregation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7422A9CA38B00AAD655 /* Connection+Aggregation.swift */; };
+		CE7D96C32A9D1C8F00ABA390 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7432A9CA38B00AAD655 /* Blob.swift */; };
+		CE7D96C42A9D1C9100ABA390 /* Connection+Pragmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7442A9CA38B00AAD655 /* Connection+Pragmas.swift */; };
+		CE7D96C52A9D1C9300ABA390 /* URIQueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7452A9CA38B00AAD655 /* URIQueryParameter.swift */; };
+		CE7D96C62A9D1C9600ABA390 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7462A9CA38B00AAD655 /* Errors.swift */; };
+		CE7D96C72A9D1C9A00ABA390 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7472A9CA38B00AAD655 /* Statement.swift */; };
+		CE7D96C82A9D1C9C00ABA390 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7482A9CA38B00AAD655 /* Value.swift */; };
+		CE7D96C92A9D1C9F00ABA390 /* Connection+Attach.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7492A9CA38B00AAD655 /* Connection+Attach.swift */; };
+		CE7D96CA2A9D1CA100ABA390 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74A2A9CA38B00AAD655 /* Helpers.swift */; };
+		CE7D96CB2A9D1CA700ABA390 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74C2A9CA38B00AAD655 /* Cipher.swift */; };
+		CE7D96CC2A9D1CA900ABA390 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74D2A9CA38B00AAD655 /* RTree.swift */; };
+		CE7D96CD2A9D1CAB00ABA390 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74E2A9CA38B00AAD655 /* FTS4.swift */; };
+		CE7D96CE2A9D1CAD00ABA390 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C74F2A9CA38B00AAD655 /* FTS5.swift */; };
+		CE7D96CF2A9D1CB100ABA390 /* SchemaDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7512A9CA38B00AAD655 /* SchemaDefinitions.swift */; };
+		CE7D96D02A9D1CB300ABA390 /* SchemaReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7522A9CA38B00AAD655 /* SchemaReader.swift */; };
+		CE7D96D12A9D1CB500ABA390 /* Connection+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7532A9CA38B00AAD655 /* Connection+Schema.swift */; };
+		CE7D96D22A9D1CB800ABA390 /* SchemaChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7542A9CA38B00AAD655 /* SchemaChanger.swift */; };
+		CE7D96D32A9D1CBA00ABA390 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7552A9CA38B00AAD655 /* Foundation.swift */; };
+		CE7D96D42A9D1CCE00ABA390 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7582A9CA38B00AAD655 /* Query.swift */; };
+		CE7D96D52A9D1CD000ABA390 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7592A9CA38B00AAD655 /* Coding.swift */; };
+		CE7D96D62A9D1CE100ABA390 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75A2A9CA38B00AAD655 /* Expression.swift */; };
+		CE7D96D72A9D1CE500ABA390 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75C2A9CA38B00AAD655 /* CoreFunctions.swift */; };
+		CE7D96D82A9D1CE500ABA390 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7622A9CA38B00AAD655 /* Schema.swift */; };
+		CE7D96D92A9D1CE500ABA390 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7612A9CA38B00AAD655 /* Operators.swift */; };
+		CE7D96DA2A9D1CE500ABA390 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75E2A9CA38B00AAD655 /* CustomFunctions.swift */; };
+		CE7D96DB2A9D1CE500ABA390 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7602A9CA38B00AAD655 /* Setter.swift */; };
+		CE7D96DC2A9D1CE500ABA390 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C7632A9CA38B00AAD655 /* AggregateFunctions.swift */; };
+		CE7D96DD2A9D1CE500ABA390 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75D2A9CA38B00AAD655 /* Collation.swift */; };
+		CE7D96DE2A9D1CE500ABA390 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75F2A9CA38B00AAD655 /* DateAndTimeFunctions.swift */; };
+		CE7D96DF2A9D1CE500ABA390 /* Query+with.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C75B2A9CA38B00AAD655 /* Query+with.swift */; };
 		CEFFE6C726E8FEB500A38A97 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFFE6C626E8FEB500A38A97 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
@@ -658,11 +693,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE49B61026E4E76A0089D469 /* BuyProductsVC.swift in Sources */,
+				CE7D96C52A9D1C9300ABA390 /* URIQueryParameter.swift in Sources */,
+				CE7D96DF2A9D1CE500ABA390 /* Query+with.swift in Sources */,
+				CE7D96C32A9D1C8F00ABA390 /* Blob.swift in Sources */,
+				CE7D96D72A9D1CE500ABA390 /* CoreFunctions.swift in Sources */,
+				CE7D96DA2A9D1CE500ABA390 /* CustomFunctions.swift in Sources */,
+				CE7D96CA2A9D1CA100ABA390 /* Helpers.swift in Sources */,
+				CE7D96DE2A9D1CE500ABA390 /* DateAndTimeFunctions.swift in Sources */,
+				CE7D96D52A9D1CD000ABA390 /* Coding.swift in Sources */,
+				CE7D96BF2A9D1C8600ABA390 /* SQLiteVersion.swift in Sources */,
+				CE7D96D02A9D1CB300ABA390 /* SchemaReader.swift in Sources */,
+				CE7D96C62A9D1C9600ABA390 /* Errors.swift in Sources */,
+				CE7D96D22A9D1CB800ABA390 /* SchemaChanger.swift in Sources */,
+				CE7D96C82A9D1C9C00ABA390 /* Value.swift in Sources */,
+				CE7D96CD2A9D1CAB00ABA390 /* FTS4.swift in Sources */,
+				CE7D96DD2A9D1CE500ABA390 /* Collation.swift in Sources */,
+				CE7D96DB2A9D1CE500ABA390 /* Setter.swift in Sources */,
+				CE7D96D82A9D1CE500ABA390 /* Schema.swift in Sources */,
+				CE7D96D42A9D1CCE00ABA390 /* Query.swift in Sources */,
 				CE55D54926E3ABA700E36E8B /* StatusVC.swift in Sources */,
+				CE7D96D32A9D1CBA00ABA390 /* Foundation.swift in Sources */,
+				CE7D96D92A9D1CE500ABA390 /* Operators.swift in Sources */,
 				CE72542D2A7AECDE00445BC0 /* ConnectToApple.swift in Sources */,
+				CE7D96CB2A9D1CA700ABA390 /* Cipher.swift in Sources */,
+				CE7D96C42A9D1C9100ABA390 /* Connection+Pragmas.swift in Sources */,
+				CE7D96C02A9D1C8800ABA390 /* SQLiteFeature.swift in Sources */,
 				CE49B62326E5FFBB0089D469 /* YHYHud.swift in Sources */,
+				CE7D96CF2A9D1CB100ABA390 /* SchemaDefinitions.swift in Sources */,
+				CE7D96C22A9D1C8D00ABA390 /* Connection+Aggregation.swift in Sources */,
+				CE7D96CC2A9D1CA900ABA390 /* RTree.swift in Sources */,
+				CE7D96DC2A9D1CE500ABA390 /* AggregateFunctions.swift in Sources */,
+				CE7D96C72A9D1C9A00ABA390 /* Statement.swift in Sources */,
 				CE55D54526E3ABA700E36E8B /* AppDelegate.swift in Sources */,
+				CE7D96BE2A9D1C8400ABA390 /* Backup.swift in Sources */,
+				CE7D96C92A9D1C9F00ABA390 /* Connection+Attach.swift in Sources */,
+				CE7D96D12A9D1CB500ABA390 /* Connection+Schema.swift in Sources */,
+				CE7D96D62A9D1CE100ABA390 /* Expression.swift in Sources */,
 				CE72542E2A7AECE100445BC0 /* BillingDB.swift in Sources */,
+				CE7D96B62A9D1C8200ABA390 /* Connection.swift in Sources */,
+				CE7D96C12A9D1C8A00ABA390 /* Result.swift in Sources */,
+				CE7D96CE2A9D1CAD00ABA390 /* FTS5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,7 +810,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -798,7 +868,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -824,7 +894,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "YHY IOS In App Billing/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -855,7 +925,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "YHY IOS In App Billing/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -885,7 +955,7 @@
 				INFOPLIST_FILE = "IOS Inn App Purchase Example/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "In App Purchase Example";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -912,7 +982,7 @@
 				INFOPLIST_FILE = "IOS Inn App Purchase Example/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "In App Purchase Example";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

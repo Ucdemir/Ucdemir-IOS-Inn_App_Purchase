@@ -5,7 +5,7 @@
 //  Created by Ucdemir on 8.09.2021.
 //
 import Foundation
-import SQLite
+//import SQLite
 
 
 

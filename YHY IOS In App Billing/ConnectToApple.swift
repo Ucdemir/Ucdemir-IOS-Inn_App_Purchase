@@ -7,7 +7,7 @@
 
 import Foundation
 import StoreKit
-import SQLite
+
 
 var isFreshStart = false
 var firstProductsReturnTrue = false
