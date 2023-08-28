@@ -7,164 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		002C3EDAFCA788476488D5B3AF2AA129 /* Query+with.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF1DEB2FFA1F5C6F784F6ED99A7031 /* Query+with.swift */; };
-		01F9078F4F2915B788AE85711FFFBD27 /* SchemaDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48267D0B90B11333900ED53054223A89 /* SchemaDefinitions.swift */; };
-		0239971876DA68362BD12024253C83F3 /* Pods-YHY IOS In App Billing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4376763809301843D92867A45758DF11 /* Pods-YHY IOS In App Billing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03A17F435F73FB1FFE527CF71B694BBF /* SchemaReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53B172688073A71F303290C9DF2A5C7 /* SchemaReader.swift */; };
-		0A2634BD1D025A13F9F81C0240372A9F /* Pods-IOS Inn App Purchase Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D39354D6215D8A8FD03FB05388EA7A74 /* Pods-IOS Inn App Purchase Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09FF0CA04B65F8B8E0E1F2F5844D5CAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		0C82516CCDB1F5DA16ED529B80D6C8ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		0EA40B3442D4CBB1806BC773C858E32E /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F818938E4BB3F677D0BA6450741050 /* Value.swift */; };
-		0F864047B1ED95C737FB060AE6054C64 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8AFC518BB4C156EDB1E415132EA39C /* DateAndTimeFunctions.swift */; };
-		11D704A603E9DC58D92287374129F3E6 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DEC6A3399FDF329531FE9B17AF7185 /* FTS5.swift */; };
-		11F5226D59DAE79EDE1F9BCAD61217DD /* SchemaChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF04E6A430E27B384CEB18E4D99E0BE6 /* SchemaChanger.swift */; };
-		1E005ACBC25B783BED1DAE5DEC9187CA /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 81F9DB0B83D039B033EC9739C838EA41 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		220E7E30185406CFD187DCA5F69C3AC4 /* RKDropdownAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1114C22F4F732D08809085DABED7E6 /* RKDropdownAlert-dummy.m */; };
-		277B8F757F8B8AE7D9F3BE3703A82963 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D82AC0CAC776D7962EA99864A3EB40 /* Collation.swift */; };
-		2E047153ED98FBD885FAF1513E188E12 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390937517A2FD60485D8F52BC50E2FB /* FTS4.swift */; };
-		2E63D74DE70EB98CE5E984AA4CF14452 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830A042D9367C82CFDC5D766F93A963 /* Errors.swift */; };
-		32F30B12BF0B05CCBB9C4C49FE078002 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7305DB9B36F565DDDE159B16BB7849FA /* Setter.swift */; };
-		34E39B3F93B4CFC006FB51072CF01E5D /* Connection+Aggregation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD2742026EAFEA71A210CC049A8B38 /* Connection+Aggregation.swift */; };
-		3AAB9A83019AFC0D9219D184E462F244 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B72F29732BEA420E961479D5949555A /* Expression.swift */; };
-		3F964D6B9510007569602E70F552A062 /* SQLiteVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A57DFD4BA2EF15BAA9391595A2F0A /* SQLiteVersion.swift */; };
-		51E67683CF4814DC4F0C8762BF3462CB /* RKDropdownAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DCBB420818865ACA9DAB90E1616FB6 /* RKDropdownAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51F3982BD857179D864947344A7F024F /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DBA1838B6B9AAB9389ABE85466062 /* Operators.swift */; };
-		583402AC6BF0C2DF152D6DD3AB0AD7BC /* Connection+Pragmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7359F58C7C36DB581CB8D79A8ECB28 /* Connection+Pragmas.swift */; };
-		5C799083D5F40F785BBB63E8EE672C96 /* Connection+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87586B9B13F54831909DA9BCC9518A1C /* Connection+Schema.swift */; };
-		5CB7054FDF737E48EDD7FA135C460643 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B678DA3B5D63BB3F6CDF223516E4AE /* Connection.swift */; };
-		5D865FD24730AD77527038861AD48AD5 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F32B14E7A4C6ACC8C899B335DB04939 /* CustomFunctions.swift */; };
-		620A2A3037E923E422BD57B9E8420D4C /* RKDropdownAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1AB2892206E0003D1D206F8D3255184 /* RKDropdownAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68390002853D5382C2501AB0D16A7C8F /* Pods-YHY IOS In App Billing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 626742A7279E055F796418776F90382C /* Pods-YHY IOS In App Billing-dummy.m */; };
-		69AC1DFB82F9A94650CFDB601F2B4D05 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7788C9926719F9987656987A23FF715E /* Query.swift */; };
-		69E1B22E408CBC5DB205CAC9AD8D79A5 /* URIQueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DD1D053285C48C5A0C2B6481C8DDD2 /* URIQueryParameter.swift */; };
-		6AD0401DAD56A545A7C77E54D10BB4D7 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC46559778B9CE4425D72A066EE7954 /* Statement.swift */; };
-		70AB94C676B6DD04B4F0B458FB1867DC /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C0C0D168778EE142B4C3816B352413 /* AggregateFunctions.swift */; };
-		713EB5C4FB8DC74A186B1864DB4B70E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		724D38E5F47CCCA81A2DD395F3771396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		79851443979EA19F467996B10310C539 /* SQLiteFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AA3326C0E376960AC9E97C19D385FB /* SQLiteFeature.swift */; };
-		7DEC5783700134FC3D74840640EF4DA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8433DAFFCC19F13F43D031FE9949702C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D20151BE4C6C28762699C7F40B756 /* Helpers.swift */; };
-		879A4451CAB0C5AA3DEFA4AFEE730891 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650EA894D0627C1D8DA9F498FB2E3901 /* CoreFunctions.swift */; };
-		9C34A19589DD4EFAC263331C16BF2AC3 /* Connection+Attach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6D7AC17577A807294472316BF3970B /* Connection+Attach.swift */; };
-		A2952E249FF01C37C2BD0C76268BC612 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62A03F3D1DF2EB65A5F2015229A9403 /* Foundation.swift */; };
-		C2360B9F59377992AB021A214CA5D4D5 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EB62638BA2C529D085CE335482C789 /* Backup.swift */; };
-		C8D0AEC82EE8B77A8F9D3E0A3C82BFB3 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCAE2CA6BEC7F73CDF6DDEF7C9CCBC21 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D49C3A65304E762BBD1FC4836E4D3CF0 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DBF6343DDB4867674E163D06B1070C /* SQLite.swift-dummy.m */; };
-		DA0511CFD9E7816F2229107511FC4676 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9230C0DCF6549E82351442CA43661 /* RTree.swift */; };
-		DBB84C83CB83B6F1858BBB7E5697EC44 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB54BC44BAF307EAAB0FD2276565D04 /* Blob.swift */; };
-		E0ED7E4AEA5E78B480E32932F615A889 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416DFCF1932E3CE926E28776814518A9 /* Schema.swift */; };
-		F741BDF26E2E65666D3EAA1F0C82DE32 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848885138599AC96DE888F93F1351628 /* Result.swift */; };
-		F760CE9B30E3E65995964A0871AD6870 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 97597684324556A764CF665135CFBEEF /* RKDropdownAlert.m */; };
-		FBCFDCE1EAA7BC9D12B4AE8A09B72FD0 /* Pods-IOS Inn App Purchase Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A685A7EBA65A2E918D3C036FCC0DB2 /* Pods-IOS Inn App Purchase Example-dummy.m */; };
-		FE84B731FB2B107988E7FAC2362F2C56 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C957D1C24017B8D76655D4474A5EC6 /* Coding.swift */; };
+		220E7E30185406CFD187DCA5F69C3AC4 /* RKDropdownAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A43C7F28D4A4427A05429E2F54DB8 /* RKDropdownAlert-dummy.m */; };
+		49EE63848AD0DEDE54CDACD9E1533DBC /* Pods-YHY IOS In App Billing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 626742A7279E055F796418776F90382C /* Pods-YHY IOS In App Billing-dummy.m */; };
+		51E67683CF4814DC4F0C8762BF3462CB /* RKDropdownAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 15A0E4920E1BE6AF2A9705FC6208EC55 /* RKDropdownAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		620A2A3037E923E422BD57B9E8420D4C /* RKDropdownAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEF73E59B0E3AABB781541693ED6CE0A /* RKDropdownAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7417958EF424F3807EFCBC102ABFC045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		850E0849BC5CD05CC3F3475C004AC335 /* Pods-YHY IOS In App Billing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4376763809301843D92867A45758DF11 /* Pods-YHY IOS In App Billing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B10F9ED767D88C3FC4D067CD616E3108 /* Pods-IOS Inn App Purchase Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A685A7EBA65A2E918D3C036FCC0DB2 /* Pods-IOS Inn App Purchase Example-dummy.m */; };
+		DE7DF4AEEA1E38248C3024A99F52C1D4 /* Pods-IOS Inn App Purchase Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D39354D6215D8A8FD03FB05388EA7A74 /* Pods-IOS Inn App Purchase Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F760CE9B30E3E65995964A0871AD6870 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A5052BE0CCF6E94A3A507A0EB9A9AB /* RKDropdownAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7D547784194E75D2983ED8F9AFBF1E61 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F2C1776D90B62B156DB52C41A5C419C;
-			remoteInfo = SQLite.swift;
-		};
-		AD7A0DF04C1FCE04966CA738E5BACC49 /* PBXContainerItemProxy */ = {
+		6C1B7E9AECE34BA69464148FFE795998 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B17CD1A03A2188ABB00010F9DB42B8D1;
 			remoteInfo = RKDropdownAlert;
 		};
-		D727C2DE9D4418939ACE46A9EE790603 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F2C1776D90B62B156DB52C41A5C419C;
-			remoteInfo = SQLite.swift;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08D82AC0CAC776D7962EA99864A3EB40 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
 		1037BAB41CED82827DAE028A5D9E2A94 /* Pods-YHY IOS In App Billing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHY IOS In App Billing.release.xcconfig"; sourceTree = "<group>"; };
-		10B678DA3B5D63BB3F6CDF223516E4AE /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
-		111D20151BE4C6C28762699C7F40B756 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
-		15E1B024304D265E37F3B3A1D978C66F /* RKDropdownAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RKDropdownAlert.modulemap; sourceTree = "<group>"; };
+		15A0E4920E1BE6AF2A9705FC6208EC55 /* RKDropdownAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKDropdownAlert.h; path = SlingshotDropdownAlert/RKDropdownAlert.h; sourceTree = "<group>"; };
+		173A43C7F28D4A4427A05429E2F54DB8 /* RKDropdownAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RKDropdownAlert-dummy.m"; sourceTree = "<group>"; };
+		19A01B8BF21351DCFD5D09A4FD292126 /* RKDropdownAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RKDropdownAlert.modulemap; sourceTree = "<group>"; };
 		1BC790869A0AB017B08076BA5FFAE9FE /* Pods-IOS Inn App Purchase Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IOS Inn App Purchase Example.modulemap"; sourceTree = "<group>"; };
-		1E3EEBB29E05AD6E9212E72324AF0280 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		1D2C9B398ECBEE2181DFD5F60B933CFB /* RKDropdownAlert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RKDropdownAlert-Info.plist"; sourceTree = "<group>"; };
+		25A5052BE0CCF6E94A3A507A0EB9A9AB /* RKDropdownAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKDropdownAlert.m; path = SlingshotDropdownAlert/RKDropdownAlert.m; sourceTree = "<group>"; };
 		28C614196A2E1D62E365D7CF5604AE2C /* Pods-IOS Inn App Purchase Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IOS Inn App Purchase Example-frameworks.sh"; sourceTree = "<group>"; };
-		32C957D1C24017B8D76655D4474A5EC6 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
-		338DBA1838B6B9AAB9389ABE85466062 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		38C0C0D168778EE142B4C3816B352413 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
 		3DC42E6EBB5392D74DCF4C45C412F7CC /* Pods-IOS Inn App Purchase Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOS Inn App Purchase Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3FF227AB6F6AB0A9B8B00ACB89DBB286 /* Pods-IOS Inn App Purchase Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IOS Inn App Purchase Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		416DFCF1932E3CE926E28776814518A9 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
 		4376763809301843D92867A45758DF11 /* Pods-YHY IOS In App Billing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YHY IOS In App Billing-umbrella.h"; sourceTree = "<group>"; };
-		44DEC6A3399FDF329531FE9B17AF7185 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
-		47DD1D053285C48C5A0C2B6481C8DDD2 /* URIQueryParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URIQueryParameter.swift; path = Sources/SQLite/Core/URIQueryParameter.swift; sourceTree = "<group>"; };
-		48267D0B90B11333900ED53054223A89 /* SchemaDefinitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SchemaDefinitions.swift; path = Sources/SQLite/Schema/SchemaDefinitions.swift; sourceTree = "<group>"; };
-		52DCBB420818865ACA9DAB90E1616FB6 /* RKDropdownAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKDropdownAlert.h; path = SlingshotDropdownAlert/RKDropdownAlert.h; sourceTree = "<group>"; };
+		4D958D14FE175AB34452B4BABD395695 /* RKDropdownAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RKDropdownAlert.debug.xcconfig; sourceTree = "<group>"; };
 		583310766ED692E216F4DA31E2DA5393 /* Pods-YHY IOS In App Billing-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YHY IOS In App Billing-acknowledgements.plist"; sourceTree = "<group>"; };
-		5B72F29732BEA420E961479D5949555A /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
-		5F32B14E7A4C6ACC8C899B335DB04939 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		5F64B05D987067B72BEDD8E770142335 /* RKDropdownAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RKDropdownAlert-prefix.pch"; sourceTree = "<group>"; };
 		626742A7279E055F796418776F90382C /* Pods-YHY IOS In App Billing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YHY IOS In App Billing-dummy.m"; sourceTree = "<group>"; };
-		650EA894D0627C1D8DA9F498FB2E3901 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
-		6E6D7AC17577A807294472316BF3970B /* Connection+Attach.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Connection+Attach.swift"; path = "Sources/SQLite/Core/Connection+Attach.swift"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7305DB9B36F565DDDE159B16BB7849FA /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
-		731B8616D522FE5F04F062E0BEA298C5 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
 		7442F70AE3861A49400FE638CC86071B /* Pods-IOS Inn App Purchase Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOS Inn App Purchase Example.release.xcconfig"; sourceTree = "<group>"; };
 		746201DAF7D7AC03B0B024A1C6284D11 /* Pods-IOS Inn App Purchase Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOS Inn App Purchase Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		75DBF6343DDB4867674E163D06B1070C /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
-		7788C9926719F9987656987A23FF715E /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
-		7830A042D9367C82CFDC5D766F93A963 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
-		81F9DB0B83D039B033EC9739C838EA41 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
-		848885138599AC96DE888F93F1351628 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/SQLite/Core/Result.swift; sourceTree = "<group>"; };
-		87586B9B13F54831909DA9BCC9518A1C /* Connection+Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Connection+Schema.swift"; path = "Sources/SQLite/Schema/Connection+Schema.swift"; sourceTree = "<group>"; };
-		8CB54BC44BAF307EAAB0FD2276565D04 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
 		90A685A7EBA65A2E918D3C036FCC0DB2 /* Pods-IOS Inn App Purchase Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IOS Inn App Purchase Example-dummy.m"; sourceTree = "<group>"; };
 		937B8C79A3B1B63CF77B38AADB48EAE7 /* Pods-YHY IOS In App Billing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YHY IOS In App Billing.modulemap"; sourceTree = "<group>"; };
-		97597684324556A764CF665135CFBEEF /* RKDropdownAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKDropdownAlert.m; path = SlingshotDropdownAlert/RKDropdownAlert.m; sourceTree = "<group>"; };
-		9B506E37A48AE4E7630EC86D1D9C489E /* RKDropdownAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RKDropdownAlert-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AC7359F58C7C36DB581CB8D79A8ECB28 /* Connection+Pragmas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Connection+Pragmas.swift"; path = "Sources/SQLite/Core/Connection+Pragmas.swift"; sourceTree = "<group>"; };
-		AF04E6A430E27B384CEB18E4D99E0BE6 /* SchemaChanger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SchemaChanger.swift; path = Sources/SQLite/Schema/SchemaChanger.swift; sourceTree = "<group>"; };
+		ABCA0F4E516C85E611C763CB7103BE17 /* RKDropdownAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RKDropdownAlert.release.xcconfig; sourceTree = "<group>"; };
+		AEF73E59B0E3AABB781541693ED6CE0A /* RKDropdownAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RKDropdownAlert-umbrella.h"; sourceTree = "<group>"; };
 		B0DD311E0D860FB2DBCD472FBE4EE3B2 /* RKDropdownAlert */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RKDropdownAlert; path = RKDropdownAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4576295710EF365C5434719E182608B /* Pods-YHY IOS In App Billing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHY IOS In App Billing.debug.xcconfig"; sourceTree = "<group>"; };
 		B79E4179A81FEF4704386549444F9BD2 /* Pods-YHY IOS In App Billing */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-YHY IOS In App Billing"; path = Pods_YHY_IOS_In_App_Billing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBC46559778B9CE4425D72A066EE7954 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
 		BEE1172C0C3759A883B23975A99380BC /* Pods-IOS Inn App Purchase Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOS Inn App Purchase Example-Info.plist"; sourceTree = "<group>"; };
-		C0F9230C0DCF6549E82351442CA43661 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
-		C1C741B0002E28AA2BC9811250C39BF2 /* SQLite.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SQLite.swift-Info.plist"; sourceTree = "<group>"; };
-		C2EB62638BA2C529D085CE335482C789 /* Backup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Backup.swift; path = Sources/SQLite/Core/Backup.swift; sourceTree = "<group>"; };
-		C42BE102E8D7CDFAFD4BFB4D5C8B749D /* RKDropdownAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RKDropdownAlert.debug.xcconfig; sourceTree = "<group>"; };
-		C43AB0C59A2AF7AED646B680FCF28C35 /* RKDropdownAlert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RKDropdownAlert-Info.plist"; sourceTree = "<group>"; };
-		CBDF1DEB2FFA1F5C6F784F6ED99A7031 /* Query+with.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Query+with.swift"; path = "Sources/SQLite/Typed/Query+with.swift"; sourceTree = "<group>"; };
-		CECD2742026EAFEA71A210CC049A8B38 /* Connection+Aggregation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Connection+Aggregation.swift"; path = "Sources/SQLite/Core/Connection+Aggregation.swift"; sourceTree = "<group>"; };
-		D1AB2892206E0003D1D206F8D3255184 /* RKDropdownAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RKDropdownAlert-umbrella.h"; sourceTree = "<group>"; };
-		D2AA3326C0E376960AC9E97C19D385FB /* SQLiteFeature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLiteFeature.swift; path = Sources/SQLite/Core/SQLiteFeature.swift; sourceTree = "<group>"; };
 		D39354D6215D8A8FD03FB05388EA7A74 /* Pods-IOS Inn App Purchase Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IOS Inn App Purchase Example-umbrella.h"; sourceTree = "<group>"; };
-		D53B172688073A71F303290C9DF2A5C7 /* SchemaReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SchemaReader.swift; path = Sources/SQLite/Schema/SchemaReader.swift; sourceTree = "<group>"; };
-		D5A990C60B14554155502BBAF8D44231 /* SQLite.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.debug.xcconfig; sourceTree = "<group>"; };
-		E23A57DFD4BA2EF15BAA9391595A2F0A /* SQLiteVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLiteVersion.swift; path = Sources/SQLite/Core/SQLiteVersion.swift; sourceTree = "<group>"; };
 		E340FD316B29BD7708FDE1CE57058A1E /* Pods-YHY IOS In App Billing-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YHY IOS In App Billing-Info.plist"; sourceTree = "<group>"; };
-		E390937517A2FD60485D8F52BC50E2FB /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
-		E62A03F3D1DF2EB65A5F2015229A9403 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
-		E8D3484761908A9BB0A260540822B14E /* RKDropdownAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RKDropdownAlert.release.xcconfig; sourceTree = "<group>"; };
 		EAE2A544DAF0E2259E4EB88D426AA93A /* Pods-IOS Inn App Purchase Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-IOS Inn App Purchase Example"; path = Pods_IOS_Inn_App_Purchase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1A0CF282BFAE9D83B2E904A8D2FE351 /* SQLite.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.release.xcconfig; sourceTree = "<group>"; };
-		F5F818938E4BB3F677D0BA6450741050 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.swift; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB8AFC518BB4C156EDB1E415132EA39C /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
-		FCAE2CA6BEC7F73CDF6DDEF7C9CCBC21 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
 		FEAD2F0A472BEF3CF9D05EFB96A67B48 /* Pods-YHY IOS In App Billing-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YHY IOS In App Billing-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FF1114C22F4F732D08809085DABED7E6 /* RKDropdownAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RKDropdownAlert-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1242BAD8DC5CF3FCA828AE7A0547E77E /* Frameworks */ = {
+		0C20EB63C06E3F58D142C7598194E260 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DEC5783700134FC3D74840640EF4DA4 /* Foundation.framework in Frameworks */,
+				7417958EF424F3807EFCBC102ABFC045 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,49 +81,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAA3EEA1C658D0303E8A3EF0EB35FFF0 /* Frameworks */ = {
+		5E784D9504952BE3E8F7985AEEFF3A15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				724D38E5F47CCCA81A2DD395F3771396 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE5917840CC995D39A8890CA3F6F2929 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				713EB5C4FB8DC74A186B1864DB4B70E1 /* Foundation.framework in Frameworks */,
+				09FF0CA04B65F8B8E0E1F2F5844D5CAA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01E62A6DC448102D5E8D81667F854DFF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2BCBCEB94A5A2C2D75BE7D75C127B43D /* RKDropdownAlert */,
-				C6CC6AAB7AC625D63401F6D72FD47E0C /* SQLite.swift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		05183B327522100C2C4BA511E90AD185 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				15E1B024304D265E37F3B3A1D978C66F /* RKDropdownAlert.modulemap */,
-				FF1114C22F4F732D08809085DABED7E6 /* RKDropdownAlert-dummy.m */,
-				C43AB0C59A2AF7AED646B680FCF28C35 /* RKDropdownAlert-Info.plist */,
-				9B506E37A48AE4E7630EC86D1D9C489E /* RKDropdownAlert-prefix.pch */,
-				D1AB2892206E0003D1D206F8D3255184 /* RKDropdownAlert-umbrella.h */,
-				C42BE102E8D7CDFAFD4BFB4D5C8B749D /* RKDropdownAlert.debug.xcconfig */,
-				E8D3484761908A9BB0A260540822B14E /* RKDropdownAlert.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/RKDropdownAlert";
-			sourceTree = "<group>";
-		};
 		185D139984AD13ABA395D5DECAB7CFC2 /* Pods-YHY IOS In App Billing */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +106,14 @@
 			);
 			name = "Pods-YHY IOS In App Billing";
 			path = "Target Support Files/Pods-YHY IOS In App Billing";
+			sourceTree = "<group>";
+		};
+		1BC7F224C949DE43797492A6B6747962 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB7DC684A98796997271331E1B59EEE0 /* RKDropdownAlert */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		1EFC518751FA1CA6DBAFFE776D3F1AB0 /* Pods-IOS Inn App Purchase Example */ = {
@@ -252,59 +133,6 @@
 			path = "Target Support Files/Pods-IOS Inn App Purchase Example";
 			sourceTree = "<group>";
 		};
-		283961B32F1C170B87469188715DEA6B /* standard */ = {
-			isa = PBXGroup;
-			children = (
-				38C0C0D168778EE142B4C3816B352413 /* AggregateFunctions.swift */,
-				C2EB62638BA2C529D085CE335482C789 /* Backup.swift */,
-				8CB54BC44BAF307EAAB0FD2276565D04 /* Blob.swift */,
-				32C957D1C24017B8D76655D4474A5EC6 /* Coding.swift */,
-				08D82AC0CAC776D7962EA99864A3EB40 /* Collation.swift */,
-				10B678DA3B5D63BB3F6CDF223516E4AE /* Connection.swift */,
-				CECD2742026EAFEA71A210CC049A8B38 /* Connection+Aggregation.swift */,
-				6E6D7AC17577A807294472316BF3970B /* Connection+Attach.swift */,
-				AC7359F58C7C36DB581CB8D79A8ECB28 /* Connection+Pragmas.swift */,
-				87586B9B13F54831909DA9BCC9518A1C /* Connection+Schema.swift */,
-				650EA894D0627C1D8DA9F498FB2E3901 /* CoreFunctions.swift */,
-				5F32B14E7A4C6ACC8C899B335DB04939 /* CustomFunctions.swift */,
-				FB8AFC518BB4C156EDB1E415132EA39C /* DateAndTimeFunctions.swift */,
-				7830A042D9367C82CFDC5D766F93A963 /* Errors.swift */,
-				5B72F29732BEA420E961479D5949555A /* Expression.swift */,
-				E62A03F3D1DF2EB65A5F2015229A9403 /* Foundation.swift */,
-				E390937517A2FD60485D8F52BC50E2FB /* FTS4.swift */,
-				44DEC6A3399FDF329531FE9B17AF7185 /* FTS5.swift */,
-				111D20151BE4C6C28762699C7F40B756 /* Helpers.swift */,
-				338DBA1838B6B9AAB9389ABE85466062 /* Operators.swift */,
-				7788C9926719F9987656987A23FF715E /* Query.swift */,
-				CBDF1DEB2FFA1F5C6F784F6ED99A7031 /* Query+with.swift */,
-				848885138599AC96DE888F93F1351628 /* Result.swift */,
-				C0F9230C0DCF6549E82351442CA43661 /* RTree.swift */,
-				416DFCF1932E3CE926E28776814518A9 /* Schema.swift */,
-				AF04E6A430E27B384CEB18E4D99E0BE6 /* SchemaChanger.swift */,
-				48267D0B90B11333900ED53054223A89 /* SchemaDefinitions.swift */,
-				D53B172688073A71F303290C9DF2A5C7 /* SchemaReader.swift */,
-				7305DB9B36F565DDDE159B16BB7849FA /* Setter.swift */,
-				81F9DB0B83D039B033EC9739C838EA41 /* SQLite.h */,
-				D2AA3326C0E376960AC9E97C19D385FB /* SQLiteFeature.swift */,
-				E23A57DFD4BA2EF15BAA9391595A2F0A /* SQLiteVersion.swift */,
-				BBC46559778B9CE4425D72A066EE7954 /* Statement.swift */,
-				47DD1D053285C48C5A0C2B6481C8DDD2 /* URIQueryParameter.swift */,
-				F5F818938E4BB3F677D0BA6450741050 /* Value.swift */,
-			);
-			name = standard;
-			sourceTree = "<group>";
-		};
-		2BCBCEB94A5A2C2D75BE7D75C127B43D /* RKDropdownAlert */ = {
-			isa = PBXGroup;
-			children = (
-				52DCBB420818865ACA9DAB90E1616FB6 /* RKDropdownAlert.h */,
-				97597684324556A764CF665135CFBEEF /* RKDropdownAlert.m */,
-				05183B327522100C2C4BA511E90AD185 /* Support Files */,
-			);
-			name = RKDropdownAlert;
-			path = RKDropdownAlert;
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,40 +141,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		8130807634CA4A9CA146650D50D05EB7 /* Products */ = {
+		8ACAF4349DD1FF58A81CBA8815188FA4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EAE2A544DAF0E2259E4EB88D426AA93A /* Pods-IOS Inn App Purchase Example */,
-				B79E4179A81FEF4704386549444F9BD2 /* Pods-YHY IOS In App Billing */,
-				B0DD311E0D860FB2DBCD472FBE4EE3B2 /* RKDropdownAlert */,
-				F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.swift */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9E9711A095DA6A309AF0E71C0ABD34F2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				731B8616D522FE5F04F062E0BEA298C5 /* SQLite.swift.modulemap */,
-				75DBF6343DDB4867674E163D06B1070C /* SQLite.swift-dummy.m */,
-				C1C741B0002E28AA2BC9811250C39BF2 /* SQLite.swift-Info.plist */,
-				1E3EEBB29E05AD6E9212E72324AF0280 /* SQLite.swift-prefix.pch */,
-				FCAE2CA6BEC7F73CDF6DDEF7C9CCBC21 /* SQLite.swift-umbrella.h */,
-				D5A990C60B14554155502BBAF8D44231 /* SQLite.swift.debug.xcconfig */,
-				F1A0CF282BFAE9D83B2E904A8D2FE351 /* SQLite.swift.release.xcconfig */,
+				19A01B8BF21351DCFD5D09A4FD292126 /* RKDropdownAlert.modulemap */,
+				173A43C7F28D4A4427A05429E2F54DB8 /* RKDropdownAlert-dummy.m */,
+				1D2C9B398ECBEE2181DFD5F60B933CFB /* RKDropdownAlert-Info.plist */,
+				5F64B05D987067B72BEDD8E770142335 /* RKDropdownAlert-prefix.pch */,
+				AEF73E59B0E3AABB781541693ED6CE0A /* RKDropdownAlert-umbrella.h */,
+				4D958D14FE175AB34452B4BABD395695 /* RKDropdownAlert.debug.xcconfig */,
+				ABCA0F4E516C85E611C763CB7103BE17 /* RKDropdownAlert.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SQLite.swift";
-			sourceTree = "<group>";
-		};
-		C6CC6AAB7AC625D63401F6D72FD47E0C /* SQLite.swift */ = {
-			isa = PBXGroup;
-			children = (
-				283961B32F1C170B87469188715DEA6B /* standard */,
-				9E9711A095DA6A309AF0E71C0ABD34F2 /* Support Files */,
-			);
-			name = SQLite.swift;
-			path = SQLite.swift;
+			path = "../Target Support Files/RKDropdownAlert";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -354,8 +161,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				01E62A6DC448102D5E8D81667F854DFF /* Pods */,
-				8130807634CA4A9CA146650D50D05EB7 /* Products */,
+				1BC7F224C949DE43797492A6B6747962 /* Pods */,
+				E685B543769B31D0FF336E3510DBBB7C /* Products */,
 				F8537CF6EB689164FBCBF9A692D788F8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -366,6 +173,27 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E685B543769B31D0FF336E3510DBBB7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAE2A544DAF0E2259E4EB88D426AA93A /* Pods-IOS Inn App Purchase Example */,
+				B79E4179A81FEF4704386549444F9BD2 /* Pods-YHY IOS In App Billing */,
+				B0DD311E0D860FB2DBCD472FBE4EE3B2 /* RKDropdownAlert */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB7DC684A98796997271331E1B59EEE0 /* RKDropdownAlert */ = {
+			isa = PBXGroup;
+			children = (
+				15A0E4920E1BE6AF2A9705FC6208EC55 /* RKDropdownAlert.h */,
+				25A5052BE0CCF6E94A3A507A0EB9A9AB /* RKDropdownAlert.m */,
+				8ACAF4349DD1FF58A81CBA8815188FA4 /* Support Files */,
+			);
+			name = RKDropdownAlert;
+			path = RKDropdownAlert;
 			sourceTree = "<group>";
 		};
 		F8537CF6EB689164FBCBF9A692D788F8 /* Targets Support Files */ = {
@@ -380,12 +208,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		88DA2CEFE8EC78C5E956694E98A3EE59 /* Headers */ = {
+		9E5EC12C47317E6928F40B90C2A47129 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E005ACBC25B783BED1DAE5DEC9187CA /* SQLite.h in Headers */,
-				C8D0AEC82EE8B77A8F9D3E0A3C82BFB3 /* SQLite.swift-umbrella.h in Headers */,
+				DE7DF4AEEA1E38248C3024A99F52C1D4 /* Pods-IOS Inn App Purchase Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,57 +225,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6E4324E5B81F75D5D7A3FE234D1AFBF /* Headers */ = {
+		CB82F67085F51BB7C8329A9C02134693 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0239971876DA68362BD12024253C83F3 /* Pods-YHY IOS In App Billing-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAAC9F5F026A2F77588F4E007C935A66 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A2634BD1D025A13F9F81C0240372A9F /* Pods-IOS Inn App Purchase Example-umbrella.h in Headers */,
+				850E0849BC5CD05CC3F3475C004AC335 /* Pods-YHY IOS In App Billing-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 242CA9236FE0BA452D2A69C799C8A802 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
-			buildPhases = (
-				88DA2CEFE8EC78C5E956694E98A3EE59 /* Headers */,
-				6C311333AEDF70CBF1C060793679BD2B /* Sources */,
-				DE5917840CC995D39A8890CA3F6F2929 /* Frameworks */,
-				EEDC068DBE9E69C82FB5A88F1CECECC9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SQLite.swift;
-			productName = SQLite;
-			productReference = F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.swift */;
-			productType = "com.apple.product-type.framework";
-		};
 		54FD7AD081B2042ACCC10A0731E27D46 /* Pods-IOS Inn App Purchase Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E08B5DE3DB35D0840C7D55E0DC6C877 /* Build configuration list for PBXNativeTarget "Pods-IOS Inn App Purchase Example" */;
+			buildConfigurationList = 2445193031E2C7C16B7A6E5CBB7FB164 /* Build configuration list for PBXNativeTarget "Pods-IOS Inn App Purchase Example" */;
 			buildPhases = (
-				FAAC9F5F026A2F77588F4E007C935A66 /* Headers */,
-				7E59BA4480A0473C0AA6940BA06A10F1 /* Sources */,
-				1242BAD8DC5CF3FCA828AE7A0547E77E /* Frameworks */,
-				9B9E08BEC7806E0790446B06E20CBA3A /* Resources */,
+				9E5EC12C47317E6928F40B90C2A47129 /* Headers */,
+				DFA3291849EB8FF564ABD53BF3B91313 /* Sources */,
+				0C20EB63C06E3F58D142C7598194E260 /* Frameworks */,
+				639D9F3DAFDE360224792C690C07360C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				32DC762293AA9FE2EAA4775EF59D5AB3 /* PBXTargetDependency */,
-				FD34DC6AC8670FF846A5E603CC6340A8 /* PBXTargetDependency */,
+				202D3A683AF77768735334C23CA02567 /* PBXTargetDependency */,
 			);
 			name = "Pods-IOS Inn App Purchase Example";
 			productName = Pods_IOS_Inn_App_Purchase_Example;
@@ -475,17 +275,16 @@
 		};
 		F37E04100DB187E21927710DD94FEF1E /* Pods-YHY IOS In App Billing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1D815A46B299CD7AE9C308731E4F778 /* Build configuration list for PBXNativeTarget "Pods-YHY IOS In App Billing" */;
+			buildConfigurationList = B54E654286B1CAD397BCE8522944328A /* Build configuration list for PBXNativeTarget "Pods-YHY IOS In App Billing" */;
 			buildPhases = (
-				C6E4324E5B81F75D5D7A3FE234D1AFBF /* Headers */,
-				8610B00CB21CE868AD4969A704BA2A14 /* Sources */,
-				BAA3EEA1C658D0303E8A3EF0EB35FFF0 /* Frameworks */,
-				78D19AEC9E36D38EE44CA8895158A500 /* Resources */,
+				CB82F67085F51BB7C8329A9C02134693 /* Headers */,
+				8121C513E22D78FF09F9357585FEA82B /* Sources */,
+				5E784D9504952BE3E8F7985AEEFF3A15 /* Frameworks */,
+				233DF80D7BA11B1502866A54762768D9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7960D62B3521491B93BB5BDA48597E57 /* PBXTargetDependency */,
 			);
 			name = "Pods-YHY IOS In App Billing";
 			productName = Pods_YHY_IOS_In_App_Billing;
@@ -510,27 +309,26 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8130807634CA4A9CA146650D50D05EB7 /* Products */;
+			productRefGroup = E685B543769B31D0FF336E3510DBBB7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				54FD7AD081B2042ACCC10A0731E27D46 /* Pods-IOS Inn App Purchase Example */,
 				F37E04100DB187E21927710DD94FEF1E /* Pods-YHY IOS In App Billing */,
 				B17CD1A03A2188ABB00010F9DB42B8D1 /* RKDropdownAlert */,
-				3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		78D19AEC9E36D38EE44CA8895158A500 /* Resources */ = {
+		233DF80D7BA11B1502866A54762768D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B9E08BEC7806E0790446B06E20CBA3A /* Resources */ = {
+		639D9F3DAFDE360224792C690C07360C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -544,71 +342,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EEDC068DBE9E69C82FB5A88F1CECECC9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6C311333AEDF70CBF1C060793679BD2B /* Sources */ = {
+		8121C513E22D78FF09F9357585FEA82B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70AB94C676B6DD04B4F0B458FB1867DC /* AggregateFunctions.swift in Sources */,
-				C2360B9F59377992AB021A214CA5D4D5 /* Backup.swift in Sources */,
-				DBB84C83CB83B6F1858BBB7E5697EC44 /* Blob.swift in Sources */,
-				FE84B731FB2B107988E7FAC2362F2C56 /* Coding.swift in Sources */,
-				277B8F757F8B8AE7D9F3BE3703A82963 /* Collation.swift in Sources */,
-				5CB7054FDF737E48EDD7FA135C460643 /* Connection.swift in Sources */,
-				34E39B3F93B4CFC006FB51072CF01E5D /* Connection+Aggregation.swift in Sources */,
-				9C34A19589DD4EFAC263331C16BF2AC3 /* Connection+Attach.swift in Sources */,
-				583402AC6BF0C2DF152D6DD3AB0AD7BC /* Connection+Pragmas.swift in Sources */,
-				5C799083D5F40F785BBB63E8EE672C96 /* Connection+Schema.swift in Sources */,
-				879A4451CAB0C5AA3DEFA4AFEE730891 /* CoreFunctions.swift in Sources */,
-				5D865FD24730AD77527038861AD48AD5 /* CustomFunctions.swift in Sources */,
-				0F864047B1ED95C737FB060AE6054C64 /* DateAndTimeFunctions.swift in Sources */,
-				2E63D74DE70EB98CE5E984AA4CF14452 /* Errors.swift in Sources */,
-				3AAB9A83019AFC0D9219D184E462F244 /* Expression.swift in Sources */,
-				A2952E249FF01C37C2BD0C76268BC612 /* Foundation.swift in Sources */,
-				2E047153ED98FBD885FAF1513E188E12 /* FTS4.swift in Sources */,
-				11D704A603E9DC58D92287374129F3E6 /* FTS5.swift in Sources */,
-				8433DAFFCC19F13F43D031FE9949702C /* Helpers.swift in Sources */,
-				51F3982BD857179D864947344A7F024F /* Operators.swift in Sources */,
-				69AC1DFB82F9A94650CFDB601F2B4D05 /* Query.swift in Sources */,
-				002C3EDAFCA788476488D5B3AF2AA129 /* Query+with.swift in Sources */,
-				F741BDF26E2E65666D3EAA1F0C82DE32 /* Result.swift in Sources */,
-				DA0511CFD9E7816F2229107511FC4676 /* RTree.swift in Sources */,
-				E0ED7E4AEA5E78B480E32932F615A889 /* Schema.swift in Sources */,
-				11F5226D59DAE79EDE1F9BCAD61217DD /* SchemaChanger.swift in Sources */,
-				01F9078F4F2915B788AE85711FFFBD27 /* SchemaDefinitions.swift in Sources */,
-				03A17F435F73FB1FFE527CF71B694BBF /* SchemaReader.swift in Sources */,
-				32F30B12BF0B05CCBB9C4C49FE078002 /* Setter.swift in Sources */,
-				D49C3A65304E762BBD1FC4836E4D3CF0 /* SQLite.swift-dummy.m in Sources */,
-				79851443979EA19F467996B10310C539 /* SQLiteFeature.swift in Sources */,
-				3F964D6B9510007569602E70F552A062 /* SQLiteVersion.swift in Sources */,
-				6AD0401DAD56A545A7C77E54D10BB4D7 /* Statement.swift in Sources */,
-				69E1B22E408CBC5DB205CAC9AD8D79A5 /* URIQueryParameter.swift in Sources */,
-				0EA40B3442D4CBB1806BC773C858E32E /* Value.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E59BA4480A0473C0AA6940BA06A10F1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FBCFDCE1EAA7BC9D12B4AE8A09B72FD0 /* Pods-IOS Inn App Purchase Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8610B00CB21CE868AD4969A704BA2A14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68390002853D5382C2501AB0D16A7C8F /* Pods-YHY IOS In App Billing-dummy.m in Sources */,
+				49EE63848AD0DEDE54CDACD9E1533DBC /* Pods-YHY IOS In App Billing-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,34 +362,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFA3291849EB8FF564ABD53BF3B91313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10F9ED767D88C3FC4D067CD616E3108 /* Pods-IOS Inn App Purchase Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		32DC762293AA9FE2EAA4775EF59D5AB3 /* PBXTargetDependency */ = {
+		202D3A683AF77768735334C23CA02567 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RKDropdownAlert;
 			target = B17CD1A03A2188ABB00010F9DB42B8D1 /* RKDropdownAlert */;
-			targetProxy = AD7A0DF04C1FCE04966CA738E5BACC49 /* PBXContainerItemProxy */;
-		};
-		7960D62B3521491B93BB5BDA48597E57 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLite.swift;
-			target = 3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */;
-			targetProxy = 7D547784194E75D2983ED8F9AFBF1E61 /* PBXContainerItemProxy */;
-		};
-		FD34DC6AC8670FF846A5E603CC6340A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLite.swift;
-			target = 3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */;
-			targetProxy = D727C2DE9D4418939ACE46A9EE790603 /* PBXContainerItemProxy */;
+			targetProxy = 6C1B7E9AECE34BA69464148FFE795998 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		55DEBE278DAC35D547E4433F171AC608 /* Release */ = {
+		03BFEEB1DE1FB3879255F5159FB52BF0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1A0CF282BFAE9D83B2E904A8D2FE351 /* SQLite.swift.release.xcconfig */;
+			baseConfigurationReference = 7442F70AE3861A49400FE638CC86071B /* Pods-IOS Inn App Purchase Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -657,8 +396,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/SQLite.swift-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -666,19 +404,96 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
-				PRODUCT_MODULE_NAME = SQLite;
-				PRODUCT_NAME = SQLite;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		0D4F9A8EAAD0093823B4771505987516 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1037BAB41CED82827DAE028A5D9E2A94 /* Pods-YHY IOS In App Billing.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2E651EA85D0820C713D9D88BB4088710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DC42E6EBB5392D74DCF4C45C412F7CC /* Pods-IOS Inn App Purchase Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -808,79 +623,7 @@
 			};
 			name = Release;
 		};
-		A8B64ACCED3495D4FCADDA169B49F276 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7442F70AE3861A49400FE638CC86071B /* Pods-IOS Inn App Purchase Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B250405FE92605A999EBC08B50EC6F7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5A990C60B14554155502BBAF8D44231 /* SQLite.swift.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/SQLite.swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
-				PRODUCT_MODULE_NAME = SQLite;
-				PRODUCT_NAME = SQLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B76FEBC346F86C4506FC87FE0A34B5F9 /* Debug */ = {
+		AAF010D315F2BDDE72A22AFBC318853B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B4576295710EF365C5434719E182608B /* Pods-YHY IOS In App Billing.debug.xcconfig */;
 			buildSettings = {
@@ -919,7 +662,7 @@
 		};
 		B86389441E17F8923E93AC9B387E1B8B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8D3484761908A9BB0A260540822B14E /* RKDropdownAlert.release.xcconfig */;
+			baseConfigurationReference = ABCA0F4E516C85E611C763CB7103BE17 /* RKDropdownAlert.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -945,44 +688,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D349917A40A6254CACA3568175478D8F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1037BAB41CED82827DAE028A5D9E2A94 /* Pods-YHY IOS In App Billing.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YHY IOS In App Billing/Pods-YHY IOS In App Billing.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -992,7 +697,7 @@
 		};
 		EF0A76D60F2277BDBBB417742BB8EC13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C42BE102E8D7CDFAFD4BFB4D5C8B749D /* RKDropdownAlert.debug.xcconfig */;
+			baseConfigurationReference = 4D958D14FE175AB34452B4BABD395695 /* RKDropdownAlert.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1024,60 +729,14 @@
 			};
 			name = Debug;
 		};
-		FF7E4E47C214216239CF951C6E4F4A5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DC42E6EBB5392D74DCF4C45C412F7CC /* Pods-IOS Inn App Purchase Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IOS Inn App Purchase Example/Pods-IOS Inn App Purchase Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		242CA9236FE0BA452D2A69C799C8A802 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+		2445193031E2C7C16B7A6E5CBB7FB164 /* Build configuration list for PBXNativeTarget "Pods-IOS Inn App Purchase Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B250405FE92605A999EBC08B50EC6F7A /* Debug */,
-				55DEBE278DAC35D547E4433F171AC608 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3E08B5DE3DB35D0840C7D55E0DC6C877 /* Build configuration list for PBXNativeTarget "Pods-IOS Inn App Purchase Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF7E4E47C214216239CF951C6E4F4A5B /* Debug */,
-				A8B64ACCED3495D4FCADDA169B49F276 /* Release */,
+				2E651EA85D0820C713D9D88BB4088710 /* Debug */,
+				03BFEEB1DE1FB3879255F5159FB52BF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1091,11 +750,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1D815A46B299CD7AE9C308731E4F778 /* Build configuration list for PBXNativeTarget "Pods-YHY IOS In App Billing" */ = {
+		B54E654286B1CAD397BCE8522944328A /* Build configuration list for PBXNativeTarget "Pods-YHY IOS In App Billing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B76FEBC346F86C4506FC87FE0A34B5F9 /* Debug */,
-				D349917A40A6254CACA3568175478D8F /* Release */,
+				AAF010D315F2BDDE72A22AFBC318853B /* Debug */,
+				0D4F9A8EAAD0093823B4771505987516 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

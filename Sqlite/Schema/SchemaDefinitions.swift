@@ -170,7 +170,7 @@ public enum LiteralValue: Equatable, CustomStringConvertible {
     // swiftlint:enable identifier_name
 
     init(_ string: String?) {
-        guard let string = string else {
+        guard let string else {
             self = .NULL
             return
         }
@@ -266,12 +266,12 @@ public struct IndexDefinition: Equatable {
                   orders: indexSQL.flatMap(orders))
     }
 
-    let table: String
-    let name: String
-    let unique: Bool
-    let columns: [String]
-    let `where`: String?
-    let orders: [String: Order]?
+    public let table: String
+    public let name: String
+    public let unique: Bool
+    public let columns: [String]
+    public let `where`: String?
+    public let orders: [String: Order]?
 
     enum IndexError: LocalizedError {
         case tooLong(String, String)
